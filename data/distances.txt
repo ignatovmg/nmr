@@ -1,0 +1,61 @@
+The list of proton pairs you can use to check your structures is below. 
+Obviously, the proton pairs, such as glycil alpha protons, 
+and leucine's methyl, which are separated by a naturally fixed distance 
+are not included in the list.  This list is just a rough estimate, 
+and it was NOT obtained from a full relaxation matrix calculations.
+To discriminate magnetically non-equivalent nuclei, I denote them as H and H', 
+or Me and Me'. This always refers to the same atoms, although it is hard 
+to tell from these spectra alone which of the two diastereotopic atoms each 
+of them is.
+Unfortunately, the Leu-N-methyl, Phe H alpha, and Asp H beta resonances 
+coincide, and this does not allow us to use them for obtaining distance 
+restrains. 
+
+Short distance (2 - 2.25A, starting from the smallest distance):
+Asp H beta'-H alpha
+(80,81)     (79)
+Arg H beta - H alpha
+(52,53)     (51)
+Asp H beta - H alpha
+
+(the distances in between 2.25 - 3 A are only between the protons belonging to leucine residue, so they are not included as non informative) 
+
+-------Medium distance (3 - 3.7 A, starting from the smallest distance):
+
+Gly H - Arg H alpha (this peak is close to the diagonal, so don't trust to this distance too much)
+(68,69)  (51)
+
+Leu Me' - Arg H beta
+(37,38,39) (52,53)
+
+Asp H alpha - Phe phenyl (distance to the center of the benzene ring
+(79)          (15,16,17,18,19,20)
+
+-------------------Long distance (3.7 -4.5 A)
+
+Leu Me - Asp H alpha
+(37,38,39)   (79)
+
+Leu H alpha - Phe phenyl
+(28)         (15,16,17,18,19,20)
+
+Leu Me - Phe phenyl
+(37,38,39) (15,16,17,18,19,20)
+
+Leu Me' - Arg H alpha
+(37,38,39)  (51)
+
+
+Actually, upon meditation I realized the preliminary distances set I send you may be less informative that what was left beyond the scope. The most informative are the data about cross-peack that are MISSING from the spectrum, which means the distance between the protons they correspond to is greater that 6 A
+
+Concretely,
+1. one methyl of Leu's isopropyl and phenylalanine's phenyl.
+   (33,34,35) or (30,31,32) to (15,16,17,18,19,20)
+2. ANOTHER methyl of Leu's isopropyl and Arg's H-alpha and H-beta.
+                                               51          52,53
+3. BOTH methyls of Leu's isopropyl and Arg's H-gamma/delta.
+                                             (54,55)   (56,57)
+4. Asp's H-beta sees only adjacent Gly's Ha and Phe (WHAT?)
+         (80,81)                   (68,69)      
+5. Phe's Hb sees only its neihgbours' backbone protons, and it does not see other residues.
+   (13,14)
