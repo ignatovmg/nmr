@@ -3,8 +3,11 @@
 # experiment
 NOESY=data/noesy.csv
 
+# path to complexes
+PDBS=data
+
 # preprocess data
-python src/dataprep.py
+python src/dataprep.py ${PDBS}
 python src/preprocess.py ${NOESY}
 
 FILE_LIST=`find ./sandbox/refined/*`
@@ -21,4 +24,5 @@ done
 # sort results
 python src/sortres.py
 
-
+echo
+echo "Scores can be found in sandbox"

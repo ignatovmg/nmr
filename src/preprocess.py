@@ -18,15 +18,17 @@ summary = "./sandbox/groups/"
 
 if not os.path.isdir('./sandbox/matrix/'):
 	os.mkdir('./sandbox/matrix/')
-filelist = glob.glob('./sandbox/matrix/*')
-for f in filelist:
-    os.remove(f)
+else:
+	filelist = glob.glob('./sandbox/matrix/*')
+	for f in filelist:
+		os.remove(f)
    
 if not os.path.isdir('./sandbox/groups/'): 
 	os.mkdir('./sandbox/groups/')
-filelist = glob.glob('./sandbox/groups/*')
-for f in filelist:
-    os.remove(f)
+else:
+	filelist = glob.glob('./sandbox/groups/*')
+	for f in filelist:
+		os.remove(f)
 
 # In[8]:
 

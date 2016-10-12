@@ -237,7 +237,7 @@ double chi_score(char* path, double* m, int size)
 	
 	fclose(f);
 	//printf("k = %lf\n", k);
-	return sqrt(chi);
+	return sqrt(chi/n);
 }
 
 
