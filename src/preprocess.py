@@ -50,7 +50,7 @@ for item in list(noesy[1])+list(noesy[2]):
 f = open(summary+'eq_groups', 'w')
 counter = 0
 groups_dict = {}
-for item in groups:
+for item in sorted(groups):
     if ';' in item:
         f.write("%i\t%s\n" % (counter, '\t'.join(item.split(';'))))
         #groups_dict.update({counter: tuple(map(int, item.split(';')))})

@@ -192,8 +192,8 @@ void my_fprint_matrix(FILE* f, double* m, int size)
 	for (int i = 0; i < size; i++)
 	{
 		for (int j = 0; j < size-1; j++)
-			fprintf(f, "%.2f\t", m[i*size+j]);
-		fprintf(f, "%.2f\n", m[i*size+size-1]);
+			fprintf(f, "%.6f\t", m[i*size+j]);
+		fprintf(f, "%.6f\n", m[i*size+size-1]);
 	}
 }
 
@@ -362,21 +362,24 @@ int main(int argc, char** argv)
 	double* grouped_in = calloc(eq_groups->N*eq_groups->N, sizeof(double));
 	collapse_groups(grouped_in, in, eq_groups);
 	
-	FILE* comp_file = fopen("sandbox/computed_matrix", "a");
+	if (strcmp(complex_path, "./sandbox/refined/CIL_05734.dat") == 0){
+	FILE* comp_file = fopen("sandbox/computed_matrix", "w");
 	my_fprint_matrix(comp_file, grouped_in, eq_groups->N);
 	fclose(comp_file);
+	printf("asdfs\n");
+	}
 	
 	// Add line to output file
 	FILE* output = fopen(output_path, "a");
-	fprintf(comp_file, "%s\t", complex_path);
+	fprintf(output, "%s\t", complex_path);
 	for (i = 0; i < argc-4; i++)
 	{
 		char* exp_path = argv[4+i];
 		double chi = chi_score(exp_path, grouped_in, eq_groups->N);
 		if (i < argc-5)
-			fprintf(comp_file, "%.1lf\t", chi);
+			fprintf(output, "%.1lf\t", chi);
 		else
-			fprintf(comp_file, "%.1lf\n", chi);
+			fprintf(output, "%.1lf\n", chi);
 	}
 	fclose(output);
 	
