@@ -7,6 +7,8 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import os
+import glob
+import sys
 
 
 # In[7]:
@@ -14,10 +16,21 @@ import os
 perm_path = "./sandbox/matrix/"
 summary = "./sandbox/groups/"
 
+if not os.path.isdir('./sandbox/matrix/'):
+	os.mkdir('./sandbox/matrix/')
+filelist = glob.glob('./sandbox/matrix/*')
+for f in filelist:
+    os.remove(f)
+   
+if not os.path.isdir('./sandbox/groups/'): 
+	os.mkdir('./sandbox/groups/')
+filelist = glob.glob('./sandbox/groups/*')
+for f in filelist:
+    os.remove(f)
 
 # In[8]:
 
-noesy = pd.read_csv("./data/matrix_versions/noesy.csv", sep='\t', header=None)
+noesy = pd.read_csv(sys.argv[1], sep='\t', header=None)
 noesy = noesy.iloc[:, 1:4]
 noesy.columns = list(range(noesy.shape[1]))
 noesy.iloc[:, 1:3] = noesy.iloc[:, 1:3].applymap(str)

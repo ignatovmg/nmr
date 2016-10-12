@@ -5,8 +5,12 @@ import numpy as np
 import os
 import glob
 
-if not os.path.isdir('./sandbox'): os.mkdir('sandbox')
+if not os.path.isdir('./sandbox'): os.mkdir('./sandbox')
 if not os.path.isdir('./sandbox/refined'): os.mkdir('./sandbox/refined')
+filelist = glob.glob('./sandbox/refined/*')
+for f in filelist:
+    os.remove(f)
+    
 if not os.path.isdir('./data'): exit('There is no data dir in current dir')
 os.chdir('data')
 

@@ -215,15 +215,29 @@ double chi_score(char* path, double* m, int size)
 		exit(0);
 	}
 	
-	int i, j, val;
-	/*while(fscanf(f, "%i\t%i\t%lf\n", i, j, val) != EOF);
+	int i, j;
+	double val;
+	double num = 0.0;
+	double den = 0.0;
+	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
 	{
-		m[i*size
-	}*/
+		num += val*m[i*size+j];
+		den += m[i*size+j]*m[i*size+j];
+	}
+	rewind(f);
+	double k = num/den;
 	
+	double chi = 0.0;
+	int n = 0;
+	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
+	{
+		chi += (val-k*m[i*size+j])*(val-k*m[i*size+j]);
+		n++;
+	}
 	
 	fclose(f);
-	return 0.0;
+	//printf("k = %lf\n", k);
+	return sqrt(chi);
 }
 
 
@@ -235,10 +249,10 @@ int main(int argc, char** argv)
  * sing_freq_coef = 3./2.*J(1)*gamma^4*h^2/(4pi^2*10)
  * doub_freq_coef = 6.*J(2*omega)*gamma^4*h^2/(4pi^2*10)
 **/
-	double zero_freq_coef = 0.001; // TODO: Decide about the constants
-	double doub_freq_coef = 0.01;  //
-	double sing_freq_coef = 0.01;  //
-	double mixing_time = 300.0;
+	double zero_freq_coef = 5.67426; // TODO: Decide about the constants
+	double doub_freq_coef = 3.0/2.0*5.67426/1.0047;  //
+	double sing_freq_coef = 6.0*5.67426/1.0196;  //
+	double mixing_time = 0.3;
 	char* eq_groups_path = argv[1]; // path to equivalent proton groups
 	char* complex_path = argv[2]; // path to peptide
 	char* output_path = argv[3];
@@ -340,10 +354,9 @@ int main(int argc, char** argv)
 	// Get proton pairwise intencity
 	gsl_matrix* in = get_intensity(rx_mat, size, mixing_time);
 	
-	//double test_mat[] = {1.0, 0.0, 0.0,
-	//					 0.0, 1.0, 0.0,
-	//					 0.0, 0.0, 1.0};
-	//my_fprint_matrix(output, get_intensity(test_mat, 3, 10.00)->data, 3);
+	//double test_mat[] = {1, 2, 3, 4, 2, 4, 2, 7, 3, 2, 1, 3, 4, 7, 3, 2};
+	//my_fprint_matrix(stdout, get_intensity(test_mat, 4, 1.00)->data, 4);
+	//getchar();
 	
 	// Get group pairwise intencity
 	double* grouped_in = calloc(eq_groups->N*eq_groups->N, sizeof(double));
@@ -361,9 +374,9 @@ int main(int argc, char** argv)
 		char* exp_path = argv[4+i];
 		double chi = chi_score(exp_path, grouped_in, eq_groups->N);
 		if (i < argc-5)
-			fprintf(comp_file, "%lf\t", chi);
+			fprintf(comp_file, "%.1lf\t", chi);
 		else
-			fprintf(comp_file, "%lf\n", chi);
+			fprintf(comp_file, "%.1lf\n", chi);
 	}
 	fclose(output);
 	

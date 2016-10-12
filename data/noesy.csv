@@ -1,0 +1,46 @@
+ArgHa-HN	2.12e+009	51	63	ga
+ArgHa-GlyHN	2.11e+009	51	70	ga
+ArgHa-GlyHb	1.92e+008	51	69|68	
+ArgHb-HN	3.92e+008	52;53	63	
+ArgHb-Ha	9.18e+008	52;53	51	ga
+ArgHb-ValMe	2.24e+008	52;53	37;38;39	ga
+ArgHg-HN	3.40e+008	54|55	63	
+ArgHg-GlyHN	1.76e+008	54|55	70	
+ArgHg'-HN	3.11e+008	55|54	63	
+ArgHg'-GlyHN	-5.26e+008	55|54	70	
+ArgHg'-Phep+mPh	1.16e+008	55|54	17;18;19	ga
+AspHa-HN	1.88e+008	79	82	ga
+AspHa-PheHN	2.53e+009	79	20	ga
+AspHa-PheoPh	7.57e+007	79	15;16	ga
+AspHb-HN	5.72e+008	80|81	82	ga
+AspHb-PheHN	1.46e+009	80|81	20	
+AspHb-PheoPh	8.07e+008	80|81	15;16	ga
+AspHb-Phep+mPh	1.23e+008	80|81	17;18;19	ga
+AspHb'-HN	1.04e+009	81|80	82	ga
+AspHb'-Ha	-2.67e+008	81|80	79	ga
+GlyHN-ArgHN	3.34e+008	70	63	ga
+GlyHN-AspHN	2.76e+007	70	82	ga
+GlyHa-ArgHa	5.60e+008	68|69	51	ga
+GlyHa-AspHN	2.13e+009	68|69	82	ga
+GlyHa-HN	-5.76e+007	68|69	70	ga
+GlyHa-Hb	3.33e+009	68|69	69|68	
+GlyHa-PheHN	7.43e+007	68|69	20	
+GlyHb-AspHN	1.65e+009	69|68	82	ga
+PheHN-AspHN	1.25e+009	20	82	ga
+PheHa-HN	1.24e+008	12	20	ga
+PheHa-oPh	9.28e+008	12	15;16	
+PheHa-p+mPh	3.92e+007	12	17;18;19	ga
+PheHb-HN	3.54e+007	13|14	20	ga
+PheHb-oPh	1.36e+008	13|14	15;16	ga
+PheHb'-HN	8.08e+008	14|13	20	
+PheHb'-oPh	1.87e+009	14|13	15;16	
+PheHb'-p+mPh	6.66e+007	14|13	17;18;19	ga
+PheoPh-HN	1.08e+008	15;16	20	
+ValCHMe-Ha	8.76e+008	33;34;35|30;31;32	28	ga
+ValCHMe-Me	8.05e+008	33;34;35|30;31;32	37;38;39	ga
+ValCHMe'-ArgHN	2.35e+008	30;31;32|33;34;35	63	
+ValCHMe'-Ha	1.33e+009	30;31;32|33;34;35	28	ga
+ValCHMe'-Me	2.09e+008	30;31;32|33;34;35	33;34;35|30;31;32	ga
+ValHa-ArgHN	2.10e+009	28	63	ga
+ValHb-ArgHN	6.74e+008	29	63	
+ValMe-ArgHN	6.38e+009	37;38;39	63	ga
