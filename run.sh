@@ -4,7 +4,7 @@
 NOESY=data/noesy.csv
 
 # path to complexes
-PDBS=data
+PDBS=data/RUN2
 
 # preprocess data
 python src/dataprep.py ${PDBS}

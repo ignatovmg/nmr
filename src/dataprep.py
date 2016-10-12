@@ -21,7 +21,7 @@ if not os.path.isdir(pdbs): exit('There is no %s dir in current dir' % pdbs)
 # find all files with .pdb extension, get H from them and put into another file
 for fname in glob.glob('%s/*.pdb' % pdbs):
 	df = pd.read_csv(fname, sep='\s+', skiprows=1, header=None)
-	df = df.ix[(df[0] == 'ATOM') & df[2].str.startswith('H'), [1,2,6,7,8]]
+	df = df.ix[(df[0] == 'ATOM') & (df[2].str.contains('^[0-9]?H', regex=True)), [1,2,6,7,8]]
 	df.columns = np.arange(5)
 	fun = lambda col: df[col].map(lambda x: '%.3f' % x)
 	df[2] = fun(2); df[3] = fun(3); df[4] = fun(4)
