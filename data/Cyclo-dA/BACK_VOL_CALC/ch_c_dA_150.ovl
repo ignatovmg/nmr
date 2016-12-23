@@ -1,0 +1,464 @@
+assign  ( resid 2 and name H2'' and segid SEG1)
+        ( resid 2 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 1 and name H2'' and segid SEG2)
+        ( resid 1 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 2 and name H2' and segid SEG1)
+        ( resid 2 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 10 and name H2'' and segid SEG1)
+        ( resid 10 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H2' and segid SEG1)
+        ( resid 3 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 8 and name H2' and segid SEG2)
+        ( resid 8 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 3 and name H3' and segid SEG1)
+        ( resid 4 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 8 and name H3' and segid SEG2)
+        ( resid 9 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 3 and name H51 and segid SEG1)
+        ( resid 2 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H52 and segid SEG1)
+        ( resid 2 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H53 and segid SEG1)
+        ( resid 2 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H51 and segid SEG1)
+        ( resid 2 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H52 and segid SEG1)
+        ( resid 2 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H53 and segid SEG1)
+        ( resid 2 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H51 and segid SEG1)
+        ( resid 2 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H52 and segid SEG1)
+        ( resid 2 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H53 and segid SEG1)
+        ( resid 2 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H51 and segid SEG1)
+        ( resid 3 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H52 and segid SEG1)
+        ( resid 3 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H53 and segid SEG1)
+        ( resid 3 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H51 and segid SEG1)
+        ( resid 4 and name H2' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H52 and segid SEG1)
+        ( resid 4 and name H2' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H53 and segid SEG1)
+        ( resid 4 and name H2' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H51 and segid SEG1)
+        ( resid 4 and name H2'' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H52 and segid SEG1)
+        ( resid 4 and name H2'' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 3 and name H53 and segid SEG1)
+        ( resid 4 and name H2'' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 4 and name H2'' and segid SEG1)
+        ( resid 4 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 8 and name H2'' and segid SEG1)
+        ( resid 8 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 4 and name H2' and segid SEG1)
+        ( resid 4 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H2' and segid SEG2)
+        ( resid 9 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H3' and segid SEG1)
+        ( resid 4 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H3' and segid SEG2)
+        ( resid 9 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H3' and segid SEG1)
+        ( resid 7 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 7 and name H3' and segid SEG1)
+        ( resid 7 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H51 and segid SEG1)
+        ( resid 8 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H52 and segid SEG1)
+        ( resid 8 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H53 and segid SEG1)
+        ( resid 8 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H51 and segid SEG1)
+        ( resid 8 and name H2' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H52 and segid SEG1)
+        ( resid 8 and name H2' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H53 and segid SEG1)
+        ( resid 8 and name H2' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H51 and segid SEG1)
+        ( resid 8 and name H2'' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H52 and segid SEG1)
+        ( resid 8 and name H2'' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H53 and segid SEG1)
+        ( resid 8 and name H2'' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H51 and segid SEG1)
+        ( resid 8 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H52 and segid SEG1)
+        ( resid 8 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H53 and segid SEG1)
+        ( resid 8 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H51 and segid SEG1)
+        ( resid 8 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H52 and segid SEG1)
+        ( resid 8 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H53 and segid SEG1)
+        ( resid 8 and name H8 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H51 and segid SEG1)
+        ( resid 9 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H52 and segid SEG1)
+        ( resid 9 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 9 and name H53 and segid SEG1)
+        ( resid 9 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 10 and name H2' and segid SEG1)
+        ( resid 11 and name H6 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 1 and name H2' and segid SEG2)
+        ( resid 2 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 11 and name H2' and segid SEG1)
+        ( resid 11 and name H5 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 11 and name H2' and segid SEG1)
+        ( resid 11 and name H5 and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 4 and name H2'' and segid SEG2)
+        ( resid 4 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 1 and name H2'' and segid SEG1)
+        ( resid 1 and name H1' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 4 and name H2'' and segid SEG2)
+        ( resid 4 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 1 and name H2' and segid SEG1)
+        ( resid 4 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H51 and segid SEG2)
+        ( resid 3 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H52 and segid SEG2)
+        ( resid 3 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H53 and segid SEG2)
+        ( resid 3 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H51 and segid SEG2)
+        ( resid 3 and name H2'' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H52 and segid SEG2)
+        ( resid 3 and name H2'' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H53 and segid SEG2)
+        ( resid 3 and name H2'' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H51 and segid SEG2)
+        ( resid 3 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H52 and segid SEG2)
+        ( resid 3 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H53 and segid SEG2)
+        ( resid 3 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H51 and segid SEG2)
+        ( resid 3 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H52 and segid SEG2)
+        ( resid 3 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H53 and segid SEG2)
+        ( resid 3 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H51 and segid SEG2)
+        ( resid 4 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H52 and segid SEG2)
+        ( resid 4 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 4 and name H53 and segid SEG2)
+        ( resid 4 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H2'' and segid SEG2)
+        ( resid 6 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 5 and name H2' and segid SEG2)
+        ( resid 6 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H51 and segid SEG2)
+        ( resid 5 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H52 and segid SEG2)
+        ( resid 5 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H53 and segid SEG2)
+        ( resid 5 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H51 and segid SEG2)
+        ( resid 5 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H52 and segid SEG2)
+        ( resid 5 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H53 and segid SEG2)
+        ( resid 5 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H51 and segid SEG2)
+        ( resid 5 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H52 and segid SEG2)
+        ( resid 5 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H53 and segid SEG2)
+        ( resid 5 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H51 and segid SEG2)
+        ( resid 6 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H52 and segid SEG2)
+        ( resid 6 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 6 and name H53 and segid SEG2)
+        ( resid 6 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 7 and name H2' and segid SEG2)
+        ( resid 7 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 2 and name H2'' and segid SEG2)
+        ( resid 2 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 7 and name H3' and segid SEG2)
+        ( resid 8 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H3' and segid SEG2)
+        ( resid 8 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H2'' and segid SEG2)
+        ( resid 8 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 3 and name H2'' and segid SEG1)
+        ( resid 3 and name H3' and segid SEG1)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 7 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 7 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 7 and name H1' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 7 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 7 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 7 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 7 and name H2'' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 7 and name H2'' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 7 and name H2'' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 7 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 7 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 7 and name H3' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 7 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 7 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 7 and name H8 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 8 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 8 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 8 and name H2' and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H51 and segid SEG2)
+        ( resid 8 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H52 and segid SEG2)
+        ( resid 8 and name H6 and segid SEG2)
+400  0.2  0.2
+
+assign  ( resid 8 and name H53 and segid SEG2)
+        ( resid 8 and name H6 and segid SEG2)
+400  0.2  0.2
+

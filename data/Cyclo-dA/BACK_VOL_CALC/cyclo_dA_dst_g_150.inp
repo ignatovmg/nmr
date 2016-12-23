@@ -1,0 +1,28 @@
+structure @cyclo_dA.psf end
+coor @cyclo_dA_bck_vol_150.pdb 
+parameter                        {* Set energy parameter *}
+	@c_dA_param.par
+	nbonds
+	atom nbxmod -3 tolerance 0.5
+	repel 0.75 rcon 4.0 rexp 2 cutnb 4.5
+      end	
+end
+
+
+
+
+
+noe
+
+  reset
+  nres=1000
+  
+
+  classification aaf300
+    @ch_c_dA_150.pks
+    @ch_c_dA_150.ovl
+   
+  potential  acro300 biharmonic 
+  print threshhold= 0.05
+end 
+ 

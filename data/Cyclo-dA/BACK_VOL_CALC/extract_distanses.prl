@@ -1,0 +1,57 @@
+# !/usr/sbin/perl -w
+
+print STDOUT "Enter  filename: ";
+$filename=<STDIN>;
+ouvert_files ();
+sub ouvert_files
+{
+open (TAM, "$filename") || die "can't open Peaks file: $!";
+while (defined ($line = <TAM>)){
+chomp $line;
+@m=split (/\s+/,$line);
+$n=shift(@m);
+push @numbering,[@m];}}
+
+for $i(0..$#numbering){
+if ($numbering[$i][0]=~/^=/)
+{$numbering[$i][0]="tttt";}
+push @numbering,[@{$$numbering[$i]}];}
+
+open (OUT, ">ort")||die "can't open xplor_format: $!";
+
+
+
+
+print "Enter Desired  Filename: ";
+$ovlp = <STDIN>;
+
+open  (OUT, ">$ovlp")||die "can't open overlaped: $!";
+
+for $i(1..$#numbering){
+
+if ($numbering[$i][0]=~/^(SEG1|SEG2|SEG3)/){
+
+if ($numbering[($i-1)][0]=~/^(SEG1|SEG2|SEG3)/ && $numbering[($i+1)][0]=~/^(SEG1|SEG2|SEG3)/){
+print OUT "     or (resid $numbering[$i][1] and name $numbering[$i][3]  and segid $numbering[$i][0])\n";}
+
+elsif ($numbering[($i-1)][0]=~/^(SEG1|SEG2|SEG3)/ && $numbering[($i+1)][0]=~/^(set|R<av)/){ 
+print OUT "     or (resid $numbering[$i][1] and name $numbering[$i][3]  and segid $numbering[$i][0]))\n";}
+
+elsif ($numbering[($i-1)][0]eq "set-i-atoms" && $numbering[($i+1)][0]=~/^(SEG1|SEG2|SEG3)/){ 
+print OUT "assign ((resid $numbering[$i][1] and name $numbering[$i][3]  and segid $numbering[$i][0])\n";}
+
+elsif ($numbering[($i-1)][0]eq "set-i-atoms" && $numbering[($i+1)][0]=~/^(set|R<av)/){
+print OUT "assign  (resid $numbering[$i][1] and name $numbering[$i][3]  and segid $numbering[$i][0])\n";}
+
+elsif ($numbering[($i-1)][0]eq "set-j-atoms" && $numbering[($i+1)][0]=~/^(SEG1|SEG2|SEG3)/){ 
+print OUT "       ((resid $numbering[$i][1] and name $numbering[$i][3]  and segid $numbering[$i][0])\n";}
+
+elsif ($numbering[($i-1)][0]eq "set-j-atoms" && $numbering[($i+1)][0]=~/^(set|R<av)/){
+print OUT "        (resid $numbering[$i][1] and name $numbering[$i][3]  and segid $numbering[$i][0])\n";}}
+
+elsif  ($numbering[$i][0]=~/^R<aver/){
+print OUT "       $numbering[$i][1] 0.02 0.02\n";
+print OUT "\n";}} 
+
+
+

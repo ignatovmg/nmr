@@ -1,0 +1,98 @@
+remarks file: nmr relaxation refinement - Raf_refine.inp
+remarks This file uses noe volumes and the relaxation energy term to 
+remarks modify an initial ideal pdb file to an experimentally adjusted pdb file.
+remarks the output pdb file will be used to determine the initial distance bounds 
+remarks for the molecular dynamics refinement of the structure.
+remarks The method used here is Relaxation Matrix Refinement by Yip and Case (1989)
+remarks with modifications made by Hazel (2001)
+
+set seed 584930 end              {*seed for random velocity assignment*}
+
+structure @ cyclo_dA.psf  end             {*Read structure file*}
+coor @c_dA_final_dnm.pdb  {*Read initial coordinates*} 
+
+parameter                        {* Set energy parameter *}
+	@c_dA_param.par 
+	nbonds
+	atom nbxmod -3 tolerance 0.5
+	repel 0.75 rcon 4.0 rexp 2 cutnb 4.5
+      end	
+end
+
+flags exclude * include relaxation  end      {* include the relaxation energy term *}
+
+relaxation
+	nrestraints 4000           {* Expected number of restraints. *}
+
+  {* ============================== Specify the physical parameters of the system *}
+
+	group		DMSO		{* A group of spectra DMSO is defined *}	
+	unresolved	DMSO
+		methyl			{* Methyl protons are unresolved *}
+	end
+	average  3			{* R-3 average to methyl groups *}
+	omega	DMSO	600.0e6
+	taucorrel	DMSO
+		model rigid
+		isotropic 2.58E-9	
+		end
+
+   classification      D260             {* Define a classification, D260 *}
+        @C_dA_300_pks.txt
+	@C_dA_300_ovl.txt
+
+	error_input
+        input=range mode=absolute 
+        end
+
+        clgroup         D260     DMSO    {* which belongs to the group DMSO *}
+        taumix          D260     0.3    {* Mixing time in s. *}
+        minint          D260     0.05    {* Minimum measurable intensity *}
+
+        cutoff          {* Cutoff used for gradient and relaxation matrix *}
+                mode all value 6.5
+        end
+
+        potential parabola              {* Error estimates are not used *}
+        iexp    0.1666666667            {* Dev = I_cal^iexp - I_obs^iexp *}
+        eexp    2                       {* E = Dev^eexp *}
+
+        calibrate                       {* Calculate spectrum and turn automatic rescaling on *}
+                quality 0.33 automatic on reference all group class
+        end
+
+        print threshold 9999 end        {* Print R value of initial structure *}
+end
+  {* ==================================  Cool from 1000 K to 100 K  *}
+
+	!evaluate ($init_t = 1000)	{* Initial annealing temperature , in K. *}
+	!evaluate ($final_t = 75)	{* Final annealing temperature , in K. *}
+	!evaluate ($tempstep = 25)	{* Temperature step per cycle, in K *}
+	!evaluate ($totalstep = 1000)	{* Total annealing time, in steps *}
+	!evaluate ($nstep = int($totalstep*$tempstep/($init_t-$final_t)))
+
+
+ {* ================================== Conjugate gradient minimization  *}
+
+
+	relaxation
+	weight D260 10000
+	tolerance       0.0 			{* Relaxation energy has to be recalculated every step *}
+
+	end
+
+	evaluate ($count = 0)
+	while ($count < 30) loop mini
+		evaluate ($count = $count + 1)
+		relaxation
+			calibrate	{* Automatic calibration has to be off *}
+				 quality 0.33 automatic on reference all group class
+	end 
+end
+	minimize powell nstep 30 end
+	end loop mini
+
+  write  coor output= cyclo_dA_bck_vol_300.pdb  end 
+
+stop 
+

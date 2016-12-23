@@ -1,0 +1,971 @@
+remark   Nucleic Acid  A L L  HYDROGEN TOPOLOGY FILE CREATION RUN
+remark   This file is the fault of MP and LN (1984).
+remark
+remark   Further modification by M.E. (1988-89).  Full charge/residue (-1)
+remark   to use EPS =80.  God knows what happens with H-Bonds
+remark   All residues have been explicitely edited for DNA, no patches
+remark   necessary, except for NUC.  CY1 and GU1 are 5'-end CYT and GUA
+remark   residues without phospahte and with net charge of -0.5. CY4 and
+remark   GU4 are 3'-end CYT and GUA residues with charge of -0.5.
+remark   EXG is propano deoxyguanosine, ADH is protonated ADE (pH < 5.8)
+remark   RESIDUE TOPOLOGY FILE FOR RNA/DNA USING ALL HYDROGENS.
+remark   SOME HINTS TAKEN FROM GELIN AND ROSSKY KARPLUS RAHMAN PAPER.
+remark   H-BOND CHARGES FOR R_DIEL & EPS=1.0
+remark   Sugar dihedrals adapted from W.Olson JACS (1982)
+remark   planarity of hydrogens on bases is now maintained by impropers
+remark    instead of dihedrals, and all impropers governing the planes
+remark    have their force constants increased to 80 (G.M. CLORE 
+remark    16/5/85)
+
+ set echo=false end
+AUTOGENERATE    ANGLES=true    END
+{*==============================*}
+{* DNA/RNA default atomic masses *}
+MASS  H      1.00800
+MASS  H2     1.00800
+MASS  HO     1.00800
+
+
+MASS  C     12.01100
+MASS  CH    12.01100
+MASS  C2    12.01100
+MASS  CA    12.01100
+MASS  CB    12.01100
+MASS  CE    12.01100
+MASS  CF    12.01100
+MASS  C3    12.01100
+MASS  CS    12.01100
+MASS  CB1   12.01100
+MASS  CB2   12.01100
+MASS  CD    12.01100
+MASS  CY    12.01100
+MASS  CU    12.01100
+
+MASS  N2    14.00670
+MASS  NA    14.00670
+MASS  NB    14.00670
+MASS  NC    14.00670
+MASS  NS    14.00670
+MASS  NH1   14.00670
+MASS  NH2   14.00670
+
+MASS  O     15.99940
+MASS  O2    15.99940
+MASS  OS    15.99940
+MASS  OH    15.99940
+MASS  P     30.97400
+
+
+!========================================================================
+
+
+RESIdue GUA
+ GROUP
+  ATOM P    TYPE=P      CHARGE=1.00      END
+  ATOM O1P  TYPE=O2     CHARge=-0.40     END
+  ATOM O2P  TYPE=O2     CHARge=-0.40     END
+  ATOM O5'  TYPE=OS     CHARge=-0.36     END
+ GROUP
+  ATOM C5'  TYPE=C2     CHARge=-0.07     END! rationalized
+  ATOM H5'  TYPE=H      CHARge=0.035     END!"
+  ATOM H5'' TYPE=H      CHARge=0.035     END!"
+ GROUP
+  ATOM C4'  TYPE=CH     CHARge=0.065     END!"
+  ATOM H4'  TYPE=H      CHARge=0.035     END!"
+  ATOM O4'  TYPE=OS     CHARge=-0.30     END
+  ATOM C1'  TYPE=CH     CHARge=0.165     END!"
+  ATOM H1'  TYPE=H      CHARge=0.035     END!"
+ GROUP
+  ATOM N9   TYPE=NS     CHARge=-0.19     END
+  ATOM C4   TYPE=CB     CHARge=0.19      EXCL=( N1 ) END
+ GROUP
+  ATOM N3   TYPE=NC     CHARge=-0.50     EXCL=( C6 ) END
+  ATOM C2   TYPE=CA     CHARge=0.50      EXCL=( C5 ) END
+ GROUP
+  ATOM N2   TYPE=N2     CHARge=-0.42     END!
+  ATOM H21  TYPE=H2     CHARge=0.21      END!
+  ATOM H22  TYPE=H2     CHARge=0.21      END!
+ GROUP
+  ATOM N1   TYPE=NA     CHARge=-0.26     END
+  ATOM H1   TYPE=H      CHARge=0.26      END
+ GROUP
+  ATOM C6   TYPE=C      CHARge=0.30      END
+  ATOM O6   TYPE=O      CHARge=-0.30     END
+ GROUP
+  ATOM C5   TYPE=CB     CHARge=0.02      END
+  ATOM N7   TYPE=NB     CHARge=-0.25     END
+  ATOM C8   TYPE=CE     CHARge=0.195     END
+  ATOM H8   TYPE=H      CHARge=0.035     END!"
+ GROUP
+  ATOM C2'  TYPE=CH     CHARge=0.115     END!"
+  ATOM H2'' TYPE=H      CHARge=0.035     END!"
+  ATOM O2'  TYPE=OH     CHARge=-0.40     END
+  ATOM H2'  TYPE=HO     CHARge=0.25      END
+ GROUP
+  ATOM C3'  TYPE=CH     CHARge=-0.035    END!"
+  ATOM H3'  TYPE=H      CHARge=0.035     END!"
+ GROUP
+  ATOM O3'  TYPE=OS     CHARge=-0.36     END
+ 
+
+ BOND P O1P     BOND P O2P     BOND P O5'
+ BOND O5' C5'   BOND C5' C4'   BOND C4' O4'    BOND C4' C3'    BOND O4' C1'
+ BOND C1' N9    BOND C1' C2'   BOND N9 C4      BOND N9 C8      BOND C4 N3
+ BOND C4 C5     BOND N3  C2    BOND C2 N2      BOND C2 N1      BOND N2 H21
+ BOND N2 H22    BOND N1 H1     BOND N1 C6      BOND C6 O6      BOND C6 C5
+ BOND C5 N7     BOND N7 C8     BOND C2' C3'    BOND C3' O3'  {* BOND O3'  +P *}
+ BOND C2' O2'   BOND O2' H2'
+ BOND C1' H1'   BOND C2' H2''  BOND C3' H3'    BOND C4' H4'    BOND C5' H5'
+ BOND C5' H5''  BOND C8 H8
+ 
+
+ {* DIHE -O3' P O5' C5'    DIHE -O3' P O5' C5'  *}
+ DIHE P O5' C5' C4'     DIHE O5' C5' C4' O4'    DIHE O5' C5' C4' C3'
+ {* DIHE C4' C3' O3' +P  DIHE C3' O3' +P +O5'    DIHE C3' O3' +P +O5' *}
+ DIHE O4' C1' N9 C4     DIHE N3  C2 N2 H21
+ ! N O T E:  SUGAR RING TERMS SET UP AS W. OLSON DOES IT
+ DIHE O4'  C1'  C2'  C3' ! O-C-C-C, twofold term
+ DIHE O4'  C1'  C2'  C3'
+ DIHE C1'  C2'  C3'  C4'
+ DIHE C2'  C3'  C4'  O4' ! O-C-C-C, twofold term
+ DIHE C2'  C3'  C4'  O4'
+ DIHE C3'  C4'  O4'  C1'
+ DIHE C4'  O4'  C1'  C2'
+ ! AND THE SPECIAL GAUCHE TERMS
+ DIHE C5'  C4'  C3'  O3'
+ DIHE O4'  C4'  C3'  O3'
+ DIHE O4'  C1'  C2'  O2'
+ DIHE C1'  C2'  C3'  O3'
+ DIHE C4'  C3'  C2'  O2'
+ DIHE O3'  C3'  C2'  O2'
+ DIHE C3'  C2'  O2'  H2'
+ ! SO THE ALLHYDROGEN TERMS
+ DIHE O4'  C4'  C3'  H3'
+ DIHE O4'  C1'  C2'  H2''
+ DIHE C4'  O4'  C1'  H1'
+ DIHE C1'  O4'  C4'  H4'
+ DIHE C3'  C4'  C5'  H5'
+ DIHE C3'  C4'  C5'  H5''
+ ! Dihedrals to keep the two purine rings parallel:
+ DIHE C8 C4 C5 N1      DIHE C8 C5 C4 C2
+ DIHE N3 C4 C5 N7      DIHE C6 C5 C4 N9
+ 
+
+ ! The ring-spanning impropers have been left out.
+ ! And the chiral impropers are not needed with all hydrogens present
+ {* IMPR C5' O4' C3' C4'    IMPR O3' C2' C4' C3'    IMPR N9  C2' O4' C1'  *}
+ IMPR C1' C4 C8 N9     ! THIS IS AN SP2 IMPROPER ABOUT N9
+ IMPR N9 C4 C5 N7      IMPR C4 C5 N7 C8       IMPR C5 N7 C8 N9
+ IMPR N7 C8 N9 C4      IMPR C8 N9 C4 C5       IMPR N2 N3 N1 C2
+ IMPR H1 C2 C6 N1      IMPR O6 N1 C5 C6       IMPR C4 N3 C2 N1
+ IMPR N3 C2 N1 C6      IMPR C2 N1 C6 C5       IMPR N1 C6 C5 C4
+ IMPR C6 C5 C4 N3      IMPR C5 C4 N3 C2       IMPR H22 H21 C2 N2
+ {* IMPR  C2' C3' C1' O2'  *}
+ IMPR H8 N7 N9 C8
+ DONO H21  N2
+ DONO H22  N2
+ DONO H1   N1
+ DONO H2'  O2'
+ 
+ACCE O6   C6
+ ACCE N3   " "
+ ACCE N7   " "   !added
+ ACCE O1P  P
+ ACCE O2P  P
+ ACCE O2'  " "
+ ACCE O3'  " "
+ ACCE O4'  " "
+ ACCE O5'  " "
+ 
+
+ {* IC -O3' P     O5'  C5'   1.6001  101.45  -39.25  119.00   1.4401 *}
+ {* IC -O3'  O5' *P   O1P    1.6001  101.45 -115.82  109.74   1.4802 *}
+ {* IC -O3'  O5' *P   O2P    1.6001  101.45  115.90  109.80   1.4801 *}
+ IC  P   O5'  C5'  C4'    1.5996  119.00 -151.39  110.04   1.5160
+ IC O5'  C5'  C4'  C3'    1.4401  108.83 -179.85  116.10   1.5284
+ IC C5'  C4'  C3'  O3'    1.5160  116.10   76.70  115.12   1.4212
+ {* IC C4'  C3'  O3'  +P     1.5284  111.92  159.13  119.05   1.6001 *}
+ {* IC C3'  O3'  +P   +O5'   1.4212  119.05  -98.86  101.45   1.5996 *}
+ IC O4'  C3'  *C4' C5'    1.4572  104.06 -120.04  116.10   1.5160
+ IC C2'  C4'  *C3' O3'    1.5284  100.16 -124.08  115.12   1.4212
+ IC C4'  C3'  C2'  C1'    1.5284  100.16   39.58  102.04   1.5251
+ IC C3'  C2'  C1'  N9     1.5284  101.97  144.39  113.71   1.4896
+ IC O4'  C1'  N9   C4     1.5251  113.71  -96.0   125.59   1.3783
+ IC C1'  C4   *N9  C8     1.4896  125.59 -179.99  105.19   1.3777
+ IC C4   N9   C8   N7     1.3783  105.19    0.02  114.02   1.3107
+ IC C8   N9   C4   C5     1.3777  105.19   -0.01  106.45   1.3749
+ IC N9   C5   *C4  N3     1.3783  106.45  179.96  128.52   1.3591
+ IC C5   C4   N3   C2     1.3749  128.52    0.04  112.23   1.3310
+ IC C4   N3   C2   N1     1.3591  112.23    0.00  123.30   1.3813
+ IC N1   N3   *C2  N2     1.3813  123.30  179.93  120.68   1.3350
+ IC N3   C2   N2   H21    1.3310  120.68  179.25  127.00   1.0100
+ IC H21  C2   *N2  H22    1.0100  127.00 -178.62  116.53   1.0100
+ IC N3   C2   N1   C6     1.3310  123.30   -0.04  125.24   1.4021
+ IC C6   C2   *N1  H1     1.4021  125.24  180.00  117.40   1.0000
+ IC C5   N1   *C6  O6     1.4188  111.38  179.92  119.80   1.2276
+ IC C1'  C3'  *C2' O2'    1.5284  102.04 -114.67  110.81   1.4212 !INFERENCE
+ IC H2'  O2'  C2'  C3'    0.9600  114.97  148.63  111.92   1.5284 !GUESS
+ ! the all hydrogen part (NOT TOO CAREFULLY DONE /LN)
+ IC O4'  C2'  *C1' H1'    0.0     0.0     -115.0  0.0      0.0
+ IC C1'  C3'  *C2' H2''   0.0     0.0      115.0  0.0      0.0
+ IC C2'  C4'  *C3' H3'    0.0     0.0      115.0  0.0      0.0
+ IC C3'  O4'  *C4' H4'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5''   0.0     0.0      115.0  0.0      0.0
+ ! THE BASE:
+ IC N9   N7   *C8  H8     0.0     0.0      180.0  0.0      0.0
+ 
+END {* GUA *}
+ 
+!=================================================================
+
+
+RESIdue ADE
+ GROUP
+  ATOM P    TYPE=P      CHARge=1.00    END
+  ATOM O1P  TYPE=O2     CHARge=-0.40   END
+  ATOM O2P  TYPE=O2     CHARge=-0.40   END
+  ATOM O5'  TYPE=OS     CHARge=-0.36   END
+ GROUP
+  ATOM C5'  TYPE=C2     CHARge=-0.070  END!"
+  ATOM H5'  TYPE=H      CHARge=0.035   END!"
+  ATOM H5'' TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM C4'  TYPE=CH     CHARge=0.065   END! "
+  ATOM H4'  TYPE=H      CHARge=0.035   END!"
+  ATOM O4'  TYPE=OS     CHARge=-0.30   END
+  ATOM C1'  TYPE=CH     CHARge=0.165   END!"
+  ATOM H1'  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM N9   TYPE=NS     CHARge=-0.19   END
+  ATOM C4   TYPE=CB     CHARge=0.19    EXCL=( N1 )  END
+ GROUP
+  ATOM N3   TYPE=NC     CHARge=-0.26   EXCL=( C6 )  END
+  ATOM C2   TYPE=CE     CHARge=0.225   EXCL=( C5 )  END !"
+  ATOM H2   TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM N1   TYPE=NC     CHARge=-0.28   END
+  ATOM C6   TYPE=CA     CHARge=0.28    END
+ GROUP
+  ATOM N6   TYPE=N2     CHARGE=-0.42   END!
+  ATOM H61  TYPE=H2     CHARge=0.21    END!
+  ATOM H62  TYPE=H2     CHARge=0.21    END!
+ GROUP
+  ATOM C5   TYPE=CB     CHARge=0.02    END
+  ATOM N7   TYPE=NB     CHARge=-0.25   END
+  ATOM C8   TYPE=CE     CHARge=0.195   END!"
+  ATOM H8   TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM C2'  TYPE=CH     CHARge=0.115   END!"
+  ATOM H2'' TYPE=H      CHARge=0.035   END!"
+  ATOM O2'  TYPE=OH     CHARge=-0.40   END
+  ATOM H2'  TYPE=HO     CHARge=0.25    END
+ GROUP
+  ATOM C3'  TYPE=CH     CHARge=-0.035  END!"
+  ATOM H3'  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM O3'  TYPE=OS     CHARge=-0.36   END
+ 
+
+ BOND P O1P     BOND P O2P     BOND P O5'
+ BOND O5' C5'   BOND C5' C4'   BOND C4' O4'    BOND C4' C3'  BOND O4' C1'
+ BOND C1' N9    BOND C1' C2'   BOND N9 C4      BOND N9 C8    BOND C4 N3
+ BOND C4 C5     BOND N3 C2     BOND C2 N1      BOND N1 C6    BOND C6 N6
+ BOND N6 H61    BOND N6 H62    BOND C6 C5      BOND C5 N7    BOND N7 C8
+ BOND C2' C3'   BOND C2' O2'   BOND O2' H2'    BOND C3' O3'  {* BOND O3'+P *}
+ BOND C1' H1'   BOND C2' H2''  BOND C3' H3'    BOND C4' H4'  BOND C5' H5'
+ BOND C5'  H5'' BOND C8 H8     BOND C2 H2
+ 
+
+{* DIHE -O3' P O5' C5'    DIHE -O3' P O5' C5'  *}
+ DIHE P O5' C5' C4'     DIHE O5' C5' C4' O4'    DIHE O5' C5' C4' C3'
+ {* DIHE C4' C3' O3' +P  DIHE C3' O3' +P +O5'    DIHE C3' O3' +P  +O5'  *}
+ DIHE O4' C1' N9 C4     DIHE C5 C6 N6 H61
+ ! N O T E:  SUGAR RING TERMS SET UP AS W. OLSON DOES IT
+ DIHE O4'  C1'  C2'  C3' ! O-C-C-C, twofold term
+ DIHE O4'  C1'  C2'  C3'
+ DIHE C1'  C2'  C3'  C4'
+ DIHE C2'  C3'  C4'  O4' ! O-C-C-C, twofold term
+ DIHE C2'  C3'  C4'  O4'
+ DIHE C3'  C4'  O4'  C1'
+ DIHE C4'  O4'  C1'  C2'
+ ! AND THE SPECIAL GAUCHE TERMS
+ DIHE C5'  C4'  C3'  O3'
+ DIHE O4'  C4'  C3'  O3'
+ DIHE O4'  C1'  C2'  O2'
+ DIHE C1'  C2'  C3'  O3'
+ DIHE C4'  C3'  C2'  O2'
+ DIHE O3'  C3'  C2'  O2'
+ DIHE C3'  C2'  O2'  H2'
+ ! SO THE ALLHYDROGEN TERMS
+ DIHE O4'  C4'  C3'  H3'
+ DIHE O4'  C1'  C2'  H2''
+ DIHE C4'  O4'  C1'  H1'
+ DIHE C1'  O4'  C4'  H4'
+ DIHE C3'  C4'  C5'  H5'
+ DIHE C3'  C4'  C5'  H5''
+ ! Dihedrals to keep the two purine rings parallel:
+ DIHE C8   C4   C5   N1      DIHE C8   C5   C4   C2
+ DIHE N3   C4   C5   N7      DIHE C6   C5   C4   N9
+ 
+
+! The ring-spanning impropers have been left out.
+ !IMPR C5'  O4'  C3'  C4'    IMPR O3'  C2'  C4'  C3'    IMPR N9   C2'  O4'  C1'
+ IMPR C1'  C4   C8   N9
+ IMPR N9   C4   C5   N7      IMPR C4   C5   N7   C8     IMPR C5   N7   C8   N9
+ IMPR N7   C8   N9   C4      IMPR C8   N9   C4   C5     IMPR N6   N1   C5   C6
+ IMPR H62  C6   H61  N6      IMPR C4   N3   C2   N1     IMPR N3   C2   N1   C6
+ IMPR C2   N1   C6   C5      IMPR N1   C6   C5   C4     IMPR C6   C5   C4   N3
+ IMPR C5   C4   N3   C2      IMPR H8   N7   N9   C8
+ IMPR H2   N1   N3   C2
+ !IMPR C2'  C3'  C1'  O2'
+ 
+ DONO H61  N6
+ DONO H62  N6
+ DONO H2'  O2'
+ 
+ ACCE N3 " "
+ ACCE N1 " "
+ ACCE N7 " "
+ ACCE O1P  P
+ ACCE O2P  P
+ ACCE O2' " "
+ ACCE O3' " "
+ ACCE O4' " "
+ ACCE O5' " "
+ 
+ {* IC -O3' P     O5'  C5'   1.6001  101.45  -39.25  119.00   1.4401 *}
+ {* IC -O3'  O5' *P   O1P    1.6001  101.45 -115.82  109.74   1.4802 *}
+ {* IC -O3'  O5' *P   O2P    1.6001  101.45  115.90  109.80   1.4801 *}
+ IC  P   O5'  C5'  C4'    1.5996  119.00 -151.39  110.04   1.5160
+ IC O5'  C5'  C4'  C3'    1.4401  108.83 -179.85  116.10   1.5284
+ IC C5'  C4'  C3'  O3'    1.5160  116.10   76.70  115.12   1.4212
+ {* IC C4'  C3'  O3'  +P     1.5284  111.92  159.13  119.05   1.6001 *}
+ {* IC C3'  O3'  +P   +O5'   1.4212  119.05  -98.86  101.45   1.5996 *}
+ IC O4'  C3'  *C4' C5'    1.4572  104.06 -120.04  116.10   1.5160
+ IC C2'  C4'  *C3' O3'    1.5284  100.16 -124.08  115.12   1.4212
+ IC C4'  C3'  C2'  C1'    1.5284  100.16   39.58  102.04   1.5251
+ IC C3'  C2'  C1'  N9     1.5284  101.97  144.39  113.71   1.4896
+ IC O4'  C1'  N9   C4     1.5251  113.71  -96.00  125.97   1.3703
+ IC C1'  C4   *N9  C8     1.4896  125.97 -179.94  105.00   1.3768
+ IC C4   N9   C8   N7     1.3703  105.00   -0.07  113.93   1.2970
+ IC C8   N9   C4   C5     1.3768  105.00    0.06  106.60   1.3650
+ IC N9   C5   *C4  N3     1.3703  106.60 -179.93  126.69   1.3486
+ IC C5   C4   N3   C2     1.3650  126.69   -0.04  111.18   1.3130
+ IC C4   N3   C2   N1     1.3486  111.18   -0.02  128.64   1.3399
+ IC N3   C2   N1   C6     1.3130  128.64    0.06  118.95   1.3456
+ IC C5   N1   *C6  N6     1.4034  117.43 -179.96  119.06   1.3410
+ IC N1   C6   N6   H61    1.3456  119.06  179.96  120.00   1.0100
+ IC H61  C6   *N6  H62    1.0100  120.00  180.00  120.00   1.0100
+ IC C1'  C3'  *C2' O2'    1.5284  102.04 -114.67  110.81   1.4212 !INFERENCE
+ IC H2'  O2'  C2'  C3'    0.9600  114.97  148.63  111.92   1.5284 !GUESS
+ 
+
+! the all hydrogen part (NOT TOO CAREFULLY DONE /LN)
+ IC O4'  C2'  *C1' H1'    0.0     0.0     -115.0  0.0      0.0
+ IC C1'  C3'  *C2' H2''   0.0     0.0      115.0  0.0      0.0
+ IC C2'  C4'  *C3' H3'    0.0     0.0      115.0  0.0      0.0
+ IC C3'  O4'  *C4' H4'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5''   0.0     0.0      115.0  0.0      0.0
+ ! THE BASE:
+ IC N9   N7   *C8   H8    0.0     0.0      180.0  0.0      0.0
+ IC N1   N3   *C2   H2    0.0     0.0      180.0  0.0      0.0
+ 
+END {* ADE *}
+ 
+!=========================================================================
+ 
+
+RESIdue CYT
+ GROUP
+  ATOM P    TYPE=P      CHARge=1.00     END
+  ATOM O1P  TYPE=O2     CHARge=-0.40    END
+  ATOM O2P  TYPE=O2     CHARge=-0.40    END
+  ATOM O5'  TYPE=OS     CHARge=-0.36    END
+ GROUP
+  ATOM C5'  TYPE=C2     CHARge=-0.070   END! rationalized
+  ATOM H5'  TYPE=H      CHARge=0.035    END! "
+  ATOM H5'' TYPE=H      CHARge=0.035    END! "
+ GROUP
+  ATOM C4'  TYPE=CH     CHARge=0.065    END! "
+  ATOM H4'  TYPE=H      CHARge=0.035    END!"
+  ATOM O4'  TYPE=OS     CHARge=-0.30    END
+  ATOM C1'  TYPE=CH     CHARge=0.165    END!"
+  ATOM H1'  TYPE=H      CHARge=0.035    END!"
+ GROUP
+  ATOM N1   TYPE=NS     CHARge=-0.19    EXCL=( C4 )  END
+  ATOM C6   TYPE=CF     CHARge=0.155    EXCL=( N3 )  END !"
+  ATOM H6   TYPE=H      CHARge=0.035    END!"
+ GROUP
+  ATOM C2   TYPE=C      CHARge=0.30     EXCL=( C5 )   END
+  ATOM O2   TYPE=O      CHARge=-0.30    END
+ GROUP
+  ATOM N3   TYPE=NC     CHARge=-0.28    END
+  ATOM C4   TYPE=CA     CHARge=0.28     END
+ GROUP
+  ATOM N4   TYPE=N2     CHARge=-0.42    END!
+  ATOM H41  TYPE=H2     CHARge=0.21     END!
+  ATOM H42  TYPE=H2     CHARge=0.21     END!
+ GROUP
+  ATOM C5   TYPE=CF     CHARge=-0.035   END!"
+  ATOM H5   TYPE=H      CHARge=0.035    END!"
+ GROUP
+  ATOM C2'  TYPE=CH     CHARge=0.115    END!"
+  ATOM H2'' TYPE=H      CHARge=0.035    END!"
+  ATOM O2'  TYPE=OH     CHARge=-0.40    END
+  ATOM H2'  TYPE=HO     CHARge=0.25     END
+ GROUP
+  ATOM C3'  TYPE=CH     CHARge=-0.035   END!"
+  ATOM H3'  TYPE=H      CHARge=0.035    END!"
+ GROUP
+  ATOM O3'  TYPE=OS     CHARge=-0.36    END
+ 
+
+ BOND P O1P     BOND P O2P      BOND P O5'
+ BOND O5' C5'   BOND C5' C4'    BOND C4' O4'    BOND C4' C3'   BOND O4' C1'
+ BOND C1' N1    BOND C1' C2'    BOND N1 C2      BOND N1 C6     BOND C2 O2
+ BOND C2 N3     BOND N3 C4      BOND C4 N4      BOND N4 H41    BOND N4 H42
+ BOND C4 C5     BOND C5 C6      BOND C2' C3'    BOND C3' O3'   {* BOND O3' +P *}
+ BOND C2' O2'   BOND O2' H2'
+ BOND C1' H1'   BOND C2' H2''   BOND C3' H3'    BOND C4' H4'   BOND C5' H5'
+ BOND C5' H5''  BOND C5 H5      BOND C6 H6
+ 
+
+  {* DIHE -O3' P O5' C5'     DIHE -O3' P O5' C5'  *}
+ DIHE P O5' C5' C4'      DIHE O5' C5' C4' O4'     DIHE O5' C5' C4' C3'
+ {* DIHE C4' C3' O3' +P   DIHE C3' O3' +P +O5'     DIHE C3' O3' +P +O5' *}
+ DIHE O4' C1' N1 C2      DIHE C5 C4 N4 H41
+ ! N O T E:  SUGAR RING TERMS SET UP AS W. OLSON DOES IT
+ DIHE O4'  C1'  C2'  C3' ! O-C-C-C, twofold term
+ DIHE O4'  C1'  C2'  C3'
+ DIHE C1'  C2'  C3'  C4'
+ DIHE C2'  C3'  C4'  O4' ! O-C-C-C, twofold term
+ DIHE C2'  C3'  C4'  O4'
+ DIHE C3'  C4'  O4'  C1'
+ DIHE C4'  O4'  C1'  C2'
+ ! AND THE SPECIAL GAUCHE TERMS
+ DIHE C5'  C4'  C3'  O3'
+ DIHE O4'  C4'  C3'  O3'
+ DIHE O4'  C1'  C2'  O2'
+ DIHE C1'  C2'  C3'  O3'
+ DIHE C4'  C3'  C2'  O2'
+ DIHE O3'  C3'  C2'  O2'
+ DIHE C3'  C2'  O2'  H2'
+ ! SO THE ALLHYDROGEN TERMS
+ DIHE O4'  C4'  C3'  H3'
+ DIHE O4'  C1'  C2'  H2''
+ DIHE C4'  O4'  C1'  H1'
+ DIHE C1'  O4'  C4'  H4'
+ DIHE C3'  C4'  C5'  H5'
+ DIHE C3'  C4'  C5'  H5''
+ 
+ !IMPR C5'  O4'  C3'  C4'    IMPR O3'  C2'  C4'  C3'    IMPR N1   C2'  O4'  C1'
+ IMPR C1'  C2   C6   N1
+ IMPR O2   N1   N3   C2      IMPR N4   N3   C5   C4
+ IMPR N1   C2   N3   C4      IMPR C2   N3   C4   C5     IMPR N3   C4   C5   C6
+ IMPR C4   C5   C6   N1      IMPR C5   C6   N1   C2     IMPR C6   N1   C2   N3
+ IMPR H42  C4   H41  N4      IMPR H6   N1   C5   C6
+ IMPR H5   C4   C6   C5
+ !IMPR C2'  C3'  C1'  O2'
+ 
+
+DONO H42  N4
+ DONO H2'  O2'
+ DONO H41  N4
+ 
+ ACCE O2   C2
+ ACCE N3  " "
+ ACCE O1P  P
+ ACCE O2P  P
+ ACCE O2' " "
+ ACCE O3' " "
+ ACCE O4' " "
+ ACCE O5' " "
+ 
+
+ {* IC -O3' P     O5'  C5'   1.6001  101.45  -39.25  119.00   1.4401 *}
+ {* IC -O3'  O5' *P   O1P    1.6001  101.45 -115.82  109.74   1.4802 *}
+ {* IC -O3'  O5' *P   O2P    1.6001  101.45  115.90  109.80   1.4801 *}
+ IC  P   O5'  C5'  C4'    1.5996  119.00 -151.39  110.04   1.5160
+ IC O5'  C5'  C4'  C3'    1.4401  108.83 -179.85  116.10   1.5284
+ IC C5'  C4'  C3'  O3'    1.5160  116.10   76.70  115.12   1.4212
+ {* IC C4'  C3'  O3'  +P     1.5284  111.92  159.13  119.05   1.6001 *}
+ {* IC C3'  O3'  +P   +O5'   1.4212  119.05  -98.86  101.45   1.5996 *}
+ IC O4'  C3'  *C4' C5'    1.4572  104.06 -120.04  116.10   1.5160
+ IC C2'  C4'  *C3' O3'    1.5284  100.16 -124.08  115.12   1.4212
+ IC C4'  C3'  C2'  C1'    1.5284  100.16   39.58  102.04   1.5251
+ IC C3'  C2'  C1'  N1     1.5284  101.97  144.39  113.71   1.4896
+ IC O4'  C1'  N1   C2     1.5251  113.71  -96.0   117.79   1.3923
+ IC C1'  C2   *N1  C6     1.4896  117.79 -179.99  121.13   1.3595
+ IC C2   N1   C6   C5     1.3923  121.13    0.02  121.13   1.3570
+ IC C6   N1   C2   N3     1.3595  121.13    0.01  118.71   1.3578
+ IC N1   N3   *C2  O2     1.3923  118.71  179.98  122.46   1.2378
+ IC N1   C2   N3   C4     1.3923  118.71   -0.03  120.61   1.3386
+ IC C5   N3   *C4  N4     1.4331  121.58  180.00  118.32   1.3246
+ IC N3   C4   N4   H41    1.3386  118.32  180.00  117.70   1.0100
+ IC H41  C4   *N4  H42    1.0100  117.70  180.00  120.27   1.0100
+ IC C1'  C3'  *C2' O2'    1.5284  102.04 -114.67  110.81   1.4212 !INFERENCE
+ IC H2'  O2'  C2'  C3'    0.9600  114.97  148.63  111.92   1.5284 !GUESS
+ 
+
+! the all hydrogen part (NOT TOO CAREFULLY DONE /LN)
+ IC O4'  C2'  *C1' H1'    0.0     0.0     -115.0  0.0      0.0
+ IC C1'  C3'  *C2' H2''   0.0     0.0      115.0  0.0      0.0
+ IC C2'  C4'  *C3' H3'    0.0     0.0      115.0  0.0      0.0
+ IC C3'  O4'  *C4' H4'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5''   0.0     0.0      115.0  0.0      0.0
+ ! THE BASE:
+ IC C6   C4   *C5  H5     0.0     0.0      180.0  0.0      0.0
+ IC N1   C5   *C6  H6     0.0     0.0      180.0  0.0      0.0
+ 
+END {* CYT *}
+ 
+!========================================================================
+ 
+
+RESIdue THY
+ GROUP
+  ATOM P    TYPE=P      CHARge=1.00    END
+  ATOM O1P  TYPE=O2     CHARge=-0.40   END
+  ATOM O2P  TYPE=O2     CHARge=-0.40   END
+  ATOM O5'  TYPE=OS     CHARge=-0.36   END
+ GROUP
+  ATOM C5'  TYPE=C2     CHARge=-0.070  END! rationalized
+  ATOM H5'  TYPE=H      CHARge=0.035   END! "
+  ATOM H5'' TYPE=H      CHARge=0.035   END! "
+ GROUP
+  ATOM C4'  TYPE=CH     CHARge=0.065   END! "
+  ATOM H4'  TYPE=H      CHARge=0.035   END!"
+  ATOM O4'  TYPE=OS     CHARge=-0.30   END
+  ATOM C1'  TYPE=CH     CHARge=0.165   END!"
+  ATOM H1'  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM N1   TYPE=NS     CHARge=-0.19   EXCL=( C4 )  END
+  ATOM C6   TYPE=CF     CHARge=0.155   EXCL=( N3 )  END
+  ATOM H6   TYPE=H      CHARge=0.035   END
+ GROUP
+  ATOM C2   TYPE=C      CHARge=0.35    EXCL=( C5 )  END
+  ATOM O2   TYPE=O      CHARge=-0.35   END
+ GROUP
+  ATOM N3   TYPE=NA     CHARge=-0.26   END
+  ATOM H3   TYPE=H      CHARge=0.26    END
+ GROUP
+  ATOM C4   TYPE=C      CHARge=0.30    END
+  ATOM O4   TYPE=O      CHARge=-0.30   END
+ GROUP
+  ATOM C5   TYPE=CS     CHARge=-0.035  END!  THESE CHARGES ?
+  ATOM C5A  TYPE=C3     CHARge=-0.070  END!"
+  ATOM H51  TYPE=H      CHARge=0.035   END!"
+  ATOM H52  TYPE=H      CHARge=0.035   END!"
+  ATOM H53  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM C2'  TYPE=CH     CHARge=0.115   END!"
+  ATOM H2'' TYPE=H      CHARge=0.035   END!"
+  ATOM O2'  TYPE=OH     CHARge=-0.40   END
+  ATOM H2'  TYPE=HO     CHARge=0.25    END
+ GROUP
+  ATOM C3'  TYPE=CH     CHARge=-0.035  END!"
+  ATOM H3'  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM O3'  TYPE=OS     CHARge=-0.36   END
+ 
+
+ BOND P O1P      BOND P O2P      BOND P O5'
+ BOND O5' C5'    BOND C5' C4'    BOND C4' O4'     BOND C4' C3'    BOND O4' C1'
+ BOND C1' N1     BOND C1' C2'    BOND N1 C2       BOND N1 C6      BOND C2 O2
+ BOND C2 N3      BOND N3 H3      BOND N3 C4       BOND C4 O4      BOND C4 C5
+ BOND C5 C5A     BOND C5 C6      BOND C2' C3'     BOND C3' O3' {* BOND O3' +P *}
+ BOND C2' O2'    BOND O2' H2'
+ BOND C1' H1'    BOND C2' H2''   BOND C3' H3'     BOND C4' H4'    BOND C5' H5'
+ BOND C5' H5''   BOND C6 H6      BOND C5A H51     BOND C5A H52    BOND C5A H53
+ 
+
+ DIHE C6   C5   C5A  H51
+ DIHE C6   C5   C5A  H52
+ DIHE C6   C5   C5A  H53
+ {* DIHE -O3' P O5' C5'      DIHE -O3' P O5' C5' *}
+ DIHE P O5' C5' C4'       DIHE O5' C5' C4' O4'      DIHE O5' C5' C4' C3'
+ {* DIHE C4' C3' O3' +P  DIHE C3' O3' +P +O5'      DIHE C3' O3' +P +O5' *}
+ DIHE O4'  C1'  N1   C2
+ ! N O T E:  SUGAR RING TERMS SET UP AS W. OLSON DOES IT
+ DIHE O4'  C1'  C2'  C3' ! O-C-C-C, twofold term
+ DIHE O4'  C1'  C2'  C3'
+ DIHE C1'  C2'  C3'  C4'
+ DIHE C2'  C3'  C4'  O4' ! O-C-C-C, twofold term
+ DIHE C2'  C3'  C4'  O4'
+ DIHE C3'  C4'  O4'  C1'
+ DIHE C4'  O4'  C1'  C2'
+ ! AND THE SPECIAL GAUCHE TERMS
+ DIHE C5'  C4'  C3'  O3'
+ DIHE O4'  C4'  C3'  O3'
+ DIHE O4'  C1'  C2'  O2'
+ DIHE C1'  C2'  C3'  O3'
+ DIHE C4'  C3'  C2'  O2'
+ DIHE O3'  C3'  C2'  O2'
+ DIHE C3'  C2'  O2'  H2'
+ ! SO THE ALLHYDROGEN TERMS
+ DIHE O4'  C4'  C3'  H3'
+ DIHE O4'  C1'  C2'  H2''
+ DIHE C4'  O4'  C1'  H1'
+ DIHE C1'  O4'  C4'  H4'
+ DIHE C3'  C4'  C5'  H5'
+ DIHE C3'  C4'  C5'  H5''
+
+
+
+
+
+ !IMPR C5'  O4'  C3'  C4'    IMPR O3'  C2'  C4'  C3'    IMPR N1   C2'  O4'  C1'
+ IMPR C1'  C2   C6   N1
+ IMPR O2   N1   N3   C2      IMPR H3   C2   C4   N3
+ IMPR O4   N3   C5   C4      IMPR C5A  C4   C6   C5     IMPR N1   C2   N3   C4
+ IMPR C2   N3   C4   C5      IMPR N3   C4   C5   C6     IMPR C4   C5   C6   N1
+ IMPR C5   C6   N1   C2      IMPR C6   N1   C2   N3
+ IMPR H6   N1   C5   C6
+ !IMPR C2'  C3'  C1'  O2'
+ 
+
+ DONO H3   N3
+ DONO H2'  O2'
+ 
+ ACCE O2   C2
+ ACCE O4   C4
+ ACCE O1P  P
+ ACCE O2P  P
+ ACCE O2' " "
+ ACCE O3' " "
+ ACCE O4' " "
+ ACCE O5' " "
+ 
+
+ {* IC -O3' P     O5'  C5'   1.6001  101.45  -39.25  119.00   1.4401  *}
+ {* IC -O3'  O5' *P   O1P    1.6001  101.45 -115.82  109.74   1.4802  *}
+ {* IC -O3'  O5' *P   O2P    1.6001  101.45  115.90  109.80   1.4801  *}
+ IC  P   O5'  C5'  C4'    1.5996  119.00 -151.39  110.04   1.5160
+ IC O5'  C5'  C4'  C3'    1.4401  108.83 -179.85  116.10   1.5284
+ IC C5'  C4'  C3'  O3'    1.5160  116.10   76.70  115.12   1.4212
+ {* IC C4'  C3'  O3'  +P     1.5284  111.92  159.13  119.05   1.6001  *}
+ {* IC C3'  O3'  +P   +O5'   1.4212  119.05  -98.86  101.45   1.5996  *}
+ IC O4'  C3'  *C4' C5'    1.4572  104.06 -120.04  116.10   1.5160
+ IC C2'  C4'  *C3' O3'    1.5284  100.16 -124.08  115.12   1.4212
+ IC C4'  C3'  C2'  C1'    1.5284  100.16   39.58  102.04   1.5251
+ IC C3'  C2'  C1'  N1     1.5284  101.97  144.39  113.71   1.4896
+ IC O4'  C1'  N1   C2     1.5251  113.71  -96.0   117.06   1.3746
+ IC C1'  C2   *N1  C6     1.4896  117.06 -179.96  122.08   1.3704
+ IC C2   N1   C6   C5     1.3746  122.08   -0.02  121.23   1.3432
+ IC C6   N1   C2   N3     1.3704  122.08    0.06  115.38   1.3813
+ IC N1   N3   *C2  O2     1.3746  115.38 -179.95  121.70   1.2191
+ IC N1   C2   N3   C4     1.3746  115.38   -0.07  126.46   1.3795
+ IC C5   N3   *C4  O4     1.4439  114.07  179.98  120.59   1.2327
+ IC C2   C4   *N3  H3     1.3813  126.46  180.00  116.77   1.0900
+ IC C4   C6   *C5  C5A    1.4439  120.78 -179.94  121.63   1.5000
+ IC C1'  C3'  *C2' O2'    1.5284  102.04 -114.67  110.81   1.4212 !INFERENCE
+ IC H2'  O2'  C2'  C3'    0.9600  114.97  148.63  111.92   1.5284 !GUESS
+ 
+
+ ! the all hydrogen part (NOT TOO CAREFULLY DONE /LN)
+ IC O4'  C2'  *C1' H1'    0.0     0.0     -115.0  0.0      0.0
+ IC C1'  C3'  *C2' H2''   0.0     0.0      115.0  0.0      0.0
+ IC C2'  C4'  *C3' H3'    0.0     0.0      115.0  0.0      0.0
+ IC C3'  O4'  *C4' H4'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5''   0.0     0.0      115.0  0.0      0.0
+ 
+ ! THE BASE:
+ IC N1   C5   *C6  H6     0.0     0.0      180.0  0.0      0.0
+ IC C6   C5   C5A  H51    0.0     0.0       90.0  0.0      0.0
+ IC C6   C5   C5A  H52    0.0     0.0      -30.0  0.0      0.0
+ IC C6   C5   C5A  H53    0.0     0.0     -150.0  0.0      0.0
+ 
+END {* THY *}
+ 
+!============================================================================
+RESIdue ACL
+ GROUP
+  ATOM P    TYPE=P      CHARge=1.00    END
+  ATOM O1P  TYPE=O2     CHARge=-0.40   END
+  ATOM O2P  TYPE=O2     CHARge=-0.40   END
+  ATOM O5'  TYPE=OS     CHARge=-0.36   END
+ GROUP
+  ATOM C5'  TYPE=CU     CHARge=-0.017  END!"
+  ATOM C8   TYPE=CY     CHARge=-0.017  END!"
+  ATOM H5'  TYPE=H      CHARge=0.034   END!"
+ GROUP
+  ATOM C4'  TYPE=CH     CHARge=0.065   END! "
+  ATOM H4'  TYPE=H      CHARge=0.035   END!"
+  ATOM O4'  TYPE=OS     CHARge=-0.30   END
+  ATOM C1'  TYPE=CH     CHARge=0.165   END!"
+  ATOM H1'  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM N9   TYPE=NS     CHARge=-0.19   END
+  ATOM C4   TYPE=CB     CHARge=0.19    EXCL=( N1 )  END
+ GROUP
+  ATOM N3   TYPE=NC     CHARge=-0.26   EXCL=( C6 )  END
+  ATOM C2   TYPE=CE     CHARge=0.225   EXCL=( C5 )  END !"
+  ATOM H2   TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM N1   TYPE=NC     CHARge=-0.28   END
+  ATOM C6   TYPE=CA     CHARge=0.28    END
+ GROUP
+  ATOM N6   TYPE=N2     CHARGE=-0.42   END!
+  ATOM H61  TYPE=H2     CHARge=0.21    END!
+  ATOM H62  TYPE=H2     CHARge=0.21    END!
+ GROUP
+  ATOM C5   TYPE=CB     CHARge=0.25    END
+  ATOM N7   TYPE=NB     CHARge=-0.25   END
+ 
+
+ GROUP
+  ATOM C2'  TYPE=CH     CHARge=0.115   END!"
+  ATOM H2'' TYPE=H      CHARge=0.035   END!"
+  ATOM O2'  TYPE=OH     CHARge=-0.40   END
+  ATOM H2'  TYPE=HO     CHARge=0.25    END
+ GROUP
+  ATOM C3'  TYPE=CH     CHARge=-0.035  END!"
+  ATOM H3'  TYPE=H      CHARge=0.035   END!"
+ GROUP
+  ATOM O3'  TYPE=OS     CHARge=-0.36   END
+ 
+
+ BOND P O1P     BOND P O2P     BOND P O5'
+ BOND O5' C5'   BOND C5' C4'   BOND C4' O4'    BOND C4' C3'  BOND O4' C1'
+ BOND C1' N9    BOND C1' C2'   BOND N9 C4      BOND N9 C8    BOND C4 N3
+ BOND C4 C5     BOND N3 C2     BOND C2 N1      BOND N1 C6    BOND C6 N6
+ BOND N6 H61    BOND N6 H62    BOND C6 C5      BOND C5 N7    BOND N7 C8
+ BOND C2' C3'   BOND C2' O2'   BOND O2' H2'    BOND C3' O3'  {* BOND O3'+P *}
+ BOND C1' H1'   BOND C2' H2''  BOND C3' H3'    BOND C4' H4'  BOND C5' H5'
+ BOND C8 H8     BOND C2 H2     BOND C8  C5'    
+
+{* DIHE -O3' P O5' C5'    DIHE -O3' P O5' C5'  *}
+ DIHE P O5' C5' C4'     DIHE O5' C5' C4' O4'    DIHE O5' C5' C4' C3'
+ {* DIHE C4' C3' O3' +P  DIHE C3' O3' +P +O5'    DIHE C3' O3' +P  +O5'  *}
+ DIHE O4' C1' N9 C4     DIHE C5 C6 N6 H61
+ ! N O T E:  SUGAR RING TERMS SET UP AS W. OLSON DOES IT
+ DIHE O4'  C1'  C2'  C3' ! O-C-C-C, twofold term
+ DIHE O4'  C1'  C2'  C3'
+ DIHE C1'  C2'  C3'  C4'
+ DIHE C2'  C3'  C4'  O4' ! O-C-C-C, twofold term
+ DIHE C2'  C3'  C4'  O4'
+ DIHE C3'  C4'  O4'  C1'
+ DIHE C4'  O4'  C1'  C2'
+ ! AND THE SPECIAL GAUCHE TERMS
+ DIHE C5'  C4'  C3'  O3'
+ DIHE O4'  C4'  C3'  O3'
+ DIHE O4'  C1'  C2'  O2'
+ DIHE C1'  C2'  C3'  O3'
+ DIHE C4'  C3'  C2'  O2'
+ DIHE O3'  C3'  C2'  O2'
+ DIHE C3'  C2'  O2'  H2'
+ ! SO THE ALLHYDROGEN TERMS
+ DIHE O4'  C4'  C3'  H3'
+ DIHE O4'  C1'  C2'  H2''
+ DIHE C4'  O4'  C1'  H1'
+ DIHE C1'  O4'  C4'  H4'
+ DIHE C3'  C4'  C5'  H5'
+ !DIHE C3'  C4'  C5'  H5''
+ ! Dihedrals to keep the two purine rings parallel:
+ DIHE C8   C4   C5   N1      DIHE C8   C5   C4   C2
+ DIHE N3   C4   C5   N7      DIHE C6   C5   C4   N9
+ 
+
+! The ring-spanning impropers have been left out.
+ !IMPR C5'  O4'  C3'  C4'    IMPR O3'  C2'  C4'  C3'    IMPR N9   C2'  O4'  C1'
+ IMPR C1'  C4   C8   N9
+ IMPR N9   C4   C5   N7      IMPR C4   C5   N7   C8     IMPR C5   N7   C8   N9
+ IMPR N7   C8   N9   C4      IMPR C8   N9   C4   C5     IMPR N6   N1   C5   C6
+ IMPR H62  C6   H61  N6      IMPR C4   N3   C2   N1     IMPR N3   C2   N1   C6
+ IMPR C2   N1   C6   C5      IMPR N1   C6   C5   C4     IMPR C6   C5   C4   N3
+ IMPR C5   C4   N3   C2      IMPR C5'  N7   N9   C8
+ IMPR H2   N1   N3   C2      IMPR C5'  N9   C5   N7
+ 
+!IMPR C2'  C3'  C1'  O2'
+ 
+ DONO H61  N6
+ DONO H62  N6
+ DONO H2'  O2'
+ DONO H7   N7 
+ 
+
+ ACCE N3 " "
+ ACCE N1 " "
+ ACCE O1P  P
+ ACCE O2P  P
+ ACCE O2' " "
+ ACCE O3' " "
+ ACCE O4' " "
+ ACCE O5' " "
+ 
+ {* IC -O3' P     O5'  C5'   1.6001  101.45  -39.25  119.00   1.4401 *}
+ {* IC -O3'  O5' *P   O1P    1.6001  101.45 -115.82  109.74   1.4802 *}
+ {* IC -O3'  O5' *P   O2P    1.6001  101.45  115.90  109.80   1.4801 *}
+ IC  P   O5'  C5'  C4'    1.5996  119.00 -151.39  110.04   1.5160
+ IC O5'  C5'  C4'  C3'    1.4401  108.83 -179.85  116.10   1.5284
+ IC C5'  C4'  C3'  O3'    1.5160  116.10   76.70  115.12   1.4212
+ {* IC C4'  C3'  O3'  +P     1.5284  111.92  159.13  119.05   1.6001 *}
+ {* IC C3'  O3'  +P   +O5'   1.4212  119.05  -98.86  101.45   1.5996 *}
+ IC O4'  C3'  *C4' C5'    1.4572  104.06 -120.04  116.10   1.5160
+ IC C2'  C4'  *C3' O3'    1.5284  100.16 -124.08  115.12   1.4212
+ IC C4'  C3'  C2'  C1'    1.5284  100.16   39.58  102.04   1.5251
+ IC C3'  C2'  C1'  N9     1.5284  101.97  144.39  113.71   1.4896
+ IC O4'  C1'  N9   C4     1.5251  113.71  -96.00  125.97   1.3703
+ IC C1'  C4   *N9  C8     1.4896  125.97 -179.94  105.00   1.3768
+ IC C4   N9   C8   N7     1.3703  105.00   -0.07  113.93   1.2970
+ IC C8   N9   C4   C5     1.3768  105.00    0.06  106.60   1.3650
+ IC N9   C5   *C4  N3     1.3703  106.60 -179.93  126.69   1.3486
+ IC C5   C4   N3   C2     1.3650  126.69   -0.04  111.18   1.3130
+ IC C4   N3   C2   N1     1.3486  111.18   -0.02  128.64   1.3399
+ IC N3   C2   N1   C6     1.3130  128.64    0.06  118.95   1.3456
+ IC C5   N1   *C6  N6     1.4034  117.43 -179.96  119.06   1.3410
+ IC N1   C6   N6   H61    1.3456  119.06  179.96  120.00   1.0100
+ IC H61  C6   *N6  H62    1.0100  120.00  180.00  120.00   1.0100
+ IC C1'  C3'  *C2' O2'    1.5284  102.04 -114.67  110.81   1.4212 !INFERENCE
+ IC H2'  O2'  C2'  C3'    0.9600  114.97  148.63  111.92   1.5284 !GUESS
+ 
+
+! the all hydrogen part (NOT TOO CAREFULLY DONE /LN)
+ IC O4'  C2'  *C1' H1'    0.0     0.0     -115.0  0.0      0.0
+ IC C1'  C3'  *C2' H2''   0.0     0.0      115.0  0.0      0.0
+ IC C2'  C4'  *C3' H3'    0.0     0.0      115.0  0.0      0.0
+ IC C3'  O4'  *C4' H4'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5'    0.0     0.0     -115.0  0.0      0.0
+ IC C4'  O5'  *C5' H5''   0.0     0.0      115.0  0.0      0.0
+ ! THE BASE:
+ IC N9   N7   *C8   H8    0.0     0.0      180.0  0.0      0.0
+ IC N1   N3   *C2   H2    0.0     0.0      180.0  0.0      0.0
+ 
+END {* ACL *}
+ 
+
+  
+ 
+ 
+
+!============================================================================
+ 
+PRESidue DEOX    ! Patch to make DEOXYribose of the ribose
+  DELETE ATOM O2'   END
+ GROUP
+  MODIFY ATOM C2'  TYPE=C2   CHARGE=-0.07    END
+  MODIFY ATOM H2'  TYPE=H    CHARGE=0.035   END
+  MODIFY ATOM H2'' TYPE=H    CHARGE=0.035   END
+ ADD BOND C2' H2'
+ ADD ANGLE C1' C2' H2'
+ ADD ANGLE C3' C2' H2'
+ ADD ANGLE H2' C2' H2''
+ ADD DIHEDRAL O4' C1' C2' H2'
+ ADD IC C1' C3' *C2' H2' 0.0 0.0 -115.0 0.0 0.0
+END {DEOX}
+ 
+!---------------------------------------------------------------------
+ 
+PRESidue 5TER        ! 5-terminus (without phosphate)
+ !                   ! should be used as "FIRST  5TER  TAIL + * END"
+ GROUp               ! i.e. to be patched to the first RNA residue
+  ADD ATOM +H5T  TYPE=HO    CHARGE=0.25    END   !H
+  MODIFY ATOM +O5'  TYPE=OH  CHARGE=-0.40  END   !H
+  MODIFY ATOM +C5'  TYPE=C2  CHARGE=0.08   END   !H
+  DELETE ATOM +P   END
+  DELETE ATOM +O1P END
+  DELETE ATOM +O2P END
+ !
+ ADD BOND +H5T   +O5'
+ ADD ANGLe +H5T   +O5'  +C5'
+ ADD DIHEdral +H5T   +O5'  +C5'  +C4'
+ ADD DONOr +H5T   +O5'
+ ADD IC +H5T  +O5'   +C5'  +C4'   1.0000  110.00  180.00  110.04   1.5160
+END {5TER}
+ 
+!------------------------------------------------------------------
+ 
+PRESidue 5PHO           ! 5-terminus (with phosphate)
+ !                      ! should be used as "FIRST  5PHO  TAIL + * END"
+ GROUp                  ! i.e. to be patched to the first RNA residue
+  ADD ATOM +H5T   TYPE=HO    CHARGE=0.15    END
+  ADD ATOM +O5T   TYPE=OH    CHARGE=-0.15   END
+        !PERHAPS ONE SHOULD CHANGE THE P CHARGE AS WELL????
+  ADD BOND +H5T  +O5T
+  ADD BOND +O5T  +P
+  ADD ANGLe +H5T  +O5T  +P
+  ADD ANGLe +O5'  +P  +O5T
+  ADD ANGLe +O5T  +P  +O1P
+  ADD ANGLe +O5T  +P  +O2P
+  ADD DIHEdral +O5'  +P   +O5T   +H5T
+  ADD DIHEdral +C5'  +O5'  +P    +O5T
+  ADD DONOr +H5T  +O5T
+  ADD IC +H5T +O5T +P +O5'   1.0000  115.00  180.00   101.45   1.6001 !GUESS
+  ADD IC +C5' +O5' +P +O5T   1.4461  119.00  -39.52   101.45   1.6001 !GUESS
+  ADD IC +O5T +O5' *+P +O1P  1.6001  101.45 -115.82   109.74   1.4802 !INFEREN.
+  ADD IC +O5T +O5' *+P +O2P  1.6001  101.45  115.90   109.80   1.4801 !INFEREN.
+END {5PHO}
+ 
+!------------------------------------------------------------------
+ 
+
+PRESidue 3TER               ! 3-terminus (without phosphate)
+                            ! should be used as "LAST 3TER  HEAD - * END"
+ GROUp                      ! i.e. to be patched to the last RNA residue
+  MODIFY ATOM -C3'    TYPE=CH    CHARGE=0.115   END
+  MODIFY ATOM -H3'    TYPE=H     CHARGE=0.035   END
+  MODIFY ATOM -O3'    TYPE=OH    CHARGE=-0.40   END
+  ADD    ATOM -H3T    TYPE=HO    CHARGE=0.25    END
+ !
+ ADD BOND -O3'  -H3T
+ ADD ANGLe -C3'  -O3'  -H3T
+ ADD DIHEdral -C4'  -C3'  -O3'  -H3T
+ ADD DONOr -H3T  -O3'
+ ADD IC -H3T  -O3'   -C3'  -C4'   0.9600  114.97  148.63  111.92   1.5284
+END {3TER}
+ 
+!------------------------------------------------------------------
+ 
+
+PRESidue NUC         ! patch for nucleic acid backbone
+                     ! should be used as "LINK NUC  HEAD - *  TAIL + *  END"
+                     ! i.e. it links the previous RNA residue (-) with
+                     ! the current one (+)
+ GROUp
+  MODIFY ATOM -O3' END   !
+  MODIFY ATOM +P   END   !
+  MODIFY ATOM +O1P END   ! this should correctly define the electrostatic
+  MODIFY ATOM +O2P END   ! group boundary
+  MODIFY ATOM +O5' END   !
+ ADD BOND -O3' +P
+ ADD ANGLE -C3' -O3' +P
+ ADD ANGLE -O3' +P  +O1P
+ ADD ANGLE -O3' +P  +O2P
+ ADD ANGLE -O3' +P  +O5'
+ ADD DIHEdral -O3' +P  +O5'  +C5' !\ double
+ ADD DIHEdral -O3' +P  +O5'  +C5' !/ dihedral
+ !ADD DIHEdral -C4' -C3' -O3'  +P
+ ADD DIHEdral -C3' -O3' +P   +O5' !\ double
+ ADD DIHEdral -C3' -O3' +P   +O5' !/ dihedral
+ IC -O3' +P  +O5' +C5'    1.6001  101.45  -39.25  119.00   1.4401
+ IC -O3' +O5' *+P +O1P    1.6001  101.45 -115.82  109.74   1.4802
+ IC -O3' +O5' *+P +O2P    1.6001  101.45  115.90  109.80   1.4801
+ IC -C4' -C3' -O3' +P     1.5284  111.92  159.13  119.05   1.6001
+ IC -C3' -O3'  +P  +O5'   1.4212  119.05  -98.86  101.45   1.5996
+END {NUC}
+ 
+!------------------------------------------------------------------
+
+PRESidue FC          ! patch for fully charged phosphate group
+ GROUP
+  MODIFY ATOM  O3'   CHARGE=-0.46     END
+  MODIFY ATOM  P     CHARGE=1.36      END
+  MODIFY ATOM  O1P   CHARGE=-0.72     END
+  MODIFY ATOM  O2P   CHARGE=-0.72     END
+  MODIFY ATOM  O5'   CHARGE=-0.46     END
+END {FC}
+ 
+!------------------------------------------------------------------
+ 
+ 
+!------------------------------------------------------------------
+ 
+
+
+!------------------------------------------------------------------
+
+

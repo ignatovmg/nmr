@@ -1,0 +1,320 @@
+assign ((resid 2 and name H2'' and segid SEG1)
+     or (resid 1 and name H2'' and segid SEG2))
+       ((resid 2 and name H1' and segid SEG1)
+     or (resid 1 and name H1' and segid SEG2))
+   8110.000000   0.2
+
+assign ((resid 2 and name H2' and segid SEG1)
+     or (resid 10 and name H2'' and segid SEG1))
+       ((resid 2 and name H3' and segid SEG1)
+     or (resid 10 and name H3' and segid SEG1))
+   7160.000000   0.2
+
+assign ((resid 3 and name H2' and segid SEG1)
+     or (resid 8 and name H2' and segid SEG2))
+       ((resid 3 and name H3' and segid SEG1)
+     or (resid 8 and name H3' and segid SEG2))
+   5800.000000   0.2
+
+assign ((resid 3 and name H3' and segid SEG1)
+     or (resid 8 and name H3' and segid SEG2))
+       ((resid 4 and name H8 and segid SEG1)
+     or (resid 9 and name H8 and segid SEG2))
+   204.000000   0.2
+
+assign ((resid 3 and name H51 and segid SEG1)
+     or (resid 3 and name H52 and segid SEG1)
+     or (resid 3 and name H53 and segid SEG1))
+       ((resid 2 and name H1' and segid SEG1)
+     or (resid 2 and name H1' and segid SEG1)
+     or (resid 2 and name H1' and segid SEG1))
+   473.000000   0.2
+
+assign ((resid 3 and name H51 and segid SEG1)
+     or (resid 3 and name H52 and segid SEG1)
+     or (resid 3 and name H53 and segid SEG1))
+       ((resid 2 and name H3' and segid SEG1)
+     or (resid 2 and name H3' and segid SEG1)
+     or (resid 2 and name H3' and segid SEG1))
+   286.000000   0.2
+
+assign ((resid 3 and name H51 and segid SEG1)
+     or (resid 3 and name H52 and segid SEG1)
+     or (resid 3 and name H53 and segid SEG1))
+       ((resid 2 and name H8 and segid SEG1)
+     or (resid 2 and name H8 and segid SEG1)
+     or (resid 2 and name H8 and segid SEG1))
+   1080.000000   0.2
+
+assign ((resid 3 and name H51 and segid SEG1)
+     or (resid 3 and name H52 and segid SEG1)
+     or (resid 3 and name H53 and segid SEG1))
+       ((resid 3 and name H6 and segid SEG1)
+     or (resid 3 and name H6 and segid SEG1)
+     or (resid 3 and name H6 and segid SEG1))
+   3230.000000   0.2
+
+assign ((resid 3 and name H51 and segid SEG1)
+     or (resid 3 and name H52 and segid SEG1)
+     or (resid 3 and name H53 and segid SEG1))
+       ((resid 4 and name H2' and segid SEG1)
+     or (resid 4 and name H2' and segid SEG1)
+     or (resid 4 and name H2' and segid SEG1))
+   1290.000000   0.2
+
+assign ((resid 3 and name H51 and segid SEG1)
+     or (resid 3 and name H52 and segid SEG1)
+     or (resid 3 and name H53 and segid SEG1))
+       ((resid 4 and name H2'' and segid SEG1)
+     or (resid 4 and name H2'' and segid SEG1)
+     or (resid 4 and name H2'' and segid SEG1))
+   1470.000000   0.2
+
+assign ((resid 4 and name H2'' and segid SEG1)
+     or (resid 8 and name H2'' and segid SEG1))
+       ((resid 4 and name H1' and segid SEG1)
+     or (resid 8 and name H1' and segid SEG1))
+   8680.000000   0.2
+
+assign ((resid 4 and name H2' and segid SEG1)
+     or (resid 9 and name H2' and segid SEG2))
+       ((resid 4 and name H3' and segid SEG1)
+     or (resid 9 and name H3' and segid SEG2))
+   8150.000000   0.2
+
+assign ((resid 4 and name H3' and segid SEG1)
+     or (resid 9 and name H3' and segid SEG2))
+       ((resid 4 and name H8 and segid SEG1)
+     or (resid 9 and name H8 and segid SEG2))
+   922.000000   0.2
+
+assign ((resid 6 and name H3' and segid SEG1)
+     or (resid 7 and name H3' and segid SEG1))
+       ((resid 7 and name H6 and segid SEG1)
+     or (resid 7 and name H6 and segid SEG1))
+   1590.000000   0.2
+
+assign ((resid 9 and name H51 and segid SEG1)
+     or (resid 9 and name H52 and segid SEG1)
+     or (resid 9 and name H53 and segid SEG1))
+       ((resid 8 and name H1' and segid SEG1)
+     or (resid 8 and name H1' and segid SEG1)
+     or (resid 8 and name H1' and segid SEG1))
+   309.000000   0.2
+
+assign ((resid 9 and name H51 and segid SEG1)
+     or (resid 9 and name H52 and segid SEG1)
+     or (resid 9 and name H53 and segid SEG1))
+       ((resid 8 and name H2' and segid SEG1)
+     or (resid 8 and name H2' and segid SEG1)
+     or (resid 8 and name H2' and segid SEG1))
+   1220.000000   0.2
+
+assign ((resid 9 and name H51 and segid SEG1)
+     or (resid 9 and name H52 and segid SEG1)
+     or (resid 9 and name H53 and segid SEG1))
+       ((resid 8 and name H2'' and segid SEG1)
+     or (resid 8 and name H2'' and segid SEG1)
+     or (resid 8 and name H2'' and segid SEG1))
+   939.000000   0.2
+
+assign ((resid 9 and name H51 and segid SEG1)
+     or (resid 9 and name H52 and segid SEG1)
+     or (resid 9 and name H53 and segid SEG1))
+       ((resid 8 and name H3' and segid SEG1)
+     or (resid 8 and name H3' and segid SEG1)
+     or (resid 8 and name H3' and segid SEG1))
+   344.000000   0.2
+
+assign ((resid 9 and name H51 and segid SEG1)
+     or (resid 9 and name H52 and segid SEG1)
+     or (resid 9 and name H53 and segid SEG1))
+       ((resid 8 and name H8 and segid SEG1)
+     or (resid 8 and name H8 and segid SEG1)
+     or (resid 8 and name H8 and segid SEG1))
+   1230.000000   0.2
+
+assign ((resid 9 and name H51 and segid SEG1)
+     or (resid 9 and name H52 and segid SEG1)
+     or (resid 9 and name H53 and segid SEG1))
+       ((resid 9 and name H6 and segid SEG1)
+     or (resid 9 and name H6 and segid SEG1)
+     or (resid 9 and name H6 and segid SEG1))
+   3030.000000   0.2
+
+assign ((resid 10 and name H2' and segid SEG1)
+     or (resid 1 and name H2' and segid SEG2))
+       ((resid 11 and name H6 and segid SEG1)
+     or (resid 2 and name H6 and segid SEG2))
+   1700.000000   0.2
+
+assign ((resid 11 and name H2' and segid SEG1)
+     or (resid 11 and name H2' and segid SEG1))
+       ((resid 11 and name H5 and segid SEG1)
+     or (resid 11 and name H5 and segid SEG1))
+   323.000000   0.2
+
+assign ((resid 4 and name H2'' and segid SEG2)
+     or (resid 1 and name H2'' and segid SEG1))
+       ((resid 4 and name H1' and segid SEG2)
+     or (resid 1 and name H1' and segid SEG1))
+   7440.000000   0.2
+
+assign ((resid 4 and name H2'' and segid SEG2)
+     or (resid 1 and name H2' and segid SEG1))
+       ((resid 4 and name H1' and segid SEG2)
+     or (resid 4 and name H1' and segid SEG2))
+   2830.000000   0.2
+
+assign ((resid 4 and name H51 and segid SEG2)
+     or (resid 4 and name H52 and segid SEG2)
+     or (resid 4 and name H53 and segid SEG2))
+       ((resid 3 and name H1' and segid SEG2)
+     or (resid 3 and name H1' and segid SEG2)
+     or (resid 3 and name H1' and segid SEG2))
+   266.000000   0.2
+
+assign ((resid 4 and name H51 and segid SEG2)
+     or (resid 4 and name H52 and segid SEG2)
+     or (resid 4 and name H53 and segid SEG2))
+       ((resid 3 and name H2'' and segid SEG2)
+     or (resid 3 and name H2'' and segid SEG2)
+     or (resid 3 and name H2'' and segid SEG2))
+   952.000000   0.2
+
+assign ((resid 4 and name H51 and segid SEG2)
+     or (resid 4 and name H52 and segid SEG2)
+     or (resid 4 and name H53 and segid SEG2))
+       ((resid 3 and name H3' and segid SEG2)
+     or (resid 3 and name H3' and segid SEG2)
+     or (resid 3 and name H3' and segid SEG2))
+   270.000000   0.2
+
+assign ((resid 4 and name H51 and segid SEG2)
+     or (resid 4 and name H52 and segid SEG2)
+     or (resid 4 and name H53 and segid SEG2))
+       ((resid 3 and name H8 and segid SEG2)
+     or (resid 3 and name H8 and segid SEG2)
+     or (resid 3 and name H8 and segid SEG2))
+   1150.000000   0.2
+
+assign ((resid 4 and name H51 and segid SEG2)
+     or (resid 4 and name H52 and segid SEG2)
+     or (resid 4 and name H53 and segid SEG2))
+       ((resid 4 and name H6 and segid SEG2)
+     or (resid 4 and name H6 and segid SEG2)
+     or (resid 4 and name H6 and segid SEG2))
+   2960.000000   0.2
+
+assign ((resid 6 and name H2'' and segid SEG2)
+     or (resid 5 and name H2' and segid SEG2))
+       ((resid 6 and name H6 and segid SEG2)
+     or (resid 6 and name H6 and segid SEG2))
+   2940.000000   0.2
+
+assign ((resid 6 and name H51 and segid SEG2)
+     or (resid 6 and name H52 and segid SEG2)
+     or (resid 6 and name H53 and segid SEG2))
+       ((resid 5 and name H2' and segid SEG2)
+     or (resid 5 and name H2' and segid SEG2)
+     or (resid 5 and name H2' and segid SEG2))
+   718.000000   0.2
+
+assign ((resid 6 and name H51 and segid SEG2)
+     or (resid 6 and name H52 and segid SEG2)
+     or (resid 6 and name H53 and segid SEG2))
+       ((resid 5 and name H3' and segid SEG2)
+     or (resid 5 and name H3' and segid SEG2)
+     or (resid 5 and name H3' and segid SEG2))
+   263.000000   0.2
+
+assign ((resid 6 and name H51 and segid SEG2)
+     or (resid 6 and name H52 and segid SEG2)
+     or (resid 6 and name H53 and segid SEG2))
+       ((resid 5 and name H8 and segid SEG2)
+     or (resid 5 and name H8 and segid SEG2)
+     or (resid 5 and name H8 and segid SEG2))
+   1270.000000   0.2
+
+assign ((resid 6 and name H51 and segid SEG2)
+     or (resid 6 and name H52 and segid SEG2)
+     or (resid 6 and name H53 and segid SEG2))
+       ((resid 6 and name H6 and segid SEG2)
+     or (resid 6 and name H6 and segid SEG2)
+     or (resid 6 and name H6 and segid SEG2))
+   2850.000000   0.2
+
+assign ((resid 7 and name H2' and segid SEG2)
+     or (resid 2 and name H2'' and segid SEG2))
+       ((resid 7 and name H3' and segid SEG2)
+     or (resid 2 and name H3' and segid SEG2))
+   5270.000000   0.2
+
+assign ((resid 7 and name H3' and segid SEG2)
+     or (resid 8 and name H3' and segid SEG2))
+       ((resid 8 and name H6 and segid SEG2)
+     or (resid 8 and name H6 and segid SEG2))
+   737.000000   0.2
+
+assign ((resid 8 and name H2'' and segid SEG2)
+     or (resid 3 and name H2'' and segid SEG1))
+       ((resid 8 and name H3' and segid SEG2)
+     or (resid 3 and name H3' and segid SEG1))
+   8400.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 7 and name H1' and segid SEG2)
+     or (resid 7 and name H1' and segid SEG2)
+     or (resid 7 and name H1' and segid SEG2))
+   434.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 7 and name H2' and segid SEG2)
+     or (resid 7 and name H2' and segid SEG2)
+     or (resid 7 and name H2' and segid SEG2))
+   1480.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 7 and name H2'' and segid SEG2)
+     or (resid 7 and name H2'' and segid SEG2)
+     or (resid 7 and name H2'' and segid SEG2))
+   1440.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 7 and name H3' and segid SEG2)
+     or (resid 7 and name H3' and segid SEG2)
+     or (resid 7 and name H3' and segid SEG2))
+   590.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 7 and name H8 and segid SEG2)
+     or (resid 7 and name H8 and segid SEG2)
+     or (resid 7 and name H8 and segid SEG2))
+   1120.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 8 and name H2' and segid SEG2)
+     or (resid 8 and name H2' and segid SEG2)
+     or (resid 8 and name H2' and segid SEG2))
+   259.000000   0.2
+
+assign ((resid 8 and name H51 and segid SEG2)
+     or (resid 8 and name H52 and segid SEG2)
+     or (resid 8 and name H53 and segid SEG2))
+       ((resid 8 and name H6 and segid SEG2)
+     or (resid 8 and name H6 and segid SEG2)
+     or (resid 8 and name H6 and segid SEG2))
+   3040.000000   0.2
+

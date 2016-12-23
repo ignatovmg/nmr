@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # experiment
-NOESY=data/noesy.csv
+NOESY=data/Cyclo-dA/useful/out
 
 # path to complexes
-PDBS=data/RUN2
+PDBS=data/Cyclo-dA/useful
 
 # preprocess data
 python src/dataprep.py ${PDBS}

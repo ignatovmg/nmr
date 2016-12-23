@@ -1,0 +1,478 @@
+ X-PLOR(online) Version 3.851
+
+ Author: Axel T. Brunger
+ X-PLOR(online): Copyright 1996 by Yale University
+ X-PLOR: Copyright 1987 by Harvard U., 1988-1996 by Yale U.
+
+ User: tanyazal     on: sgi             at: 09-Sep-10 17:22:00
+ X-PLOR>remarks   build  the platinum  structure bonded to the guanosines 
+ X-PLOR> 
+ X-PLOR>rtf  @ c_dA_topol_2.top  end 
+ ASSFIL: file c_dA_topol_2.top opened.
+ RTFRDR>remark   Nucleic Acid  A L L  HYDROGEN TOPOLOGY FILE CREATION RUN 
+ RTFRDR>remark   This file is the fault of MP and LN (1984). 
+ RTFRDR>remark 
+ RTFRDR>remark   Further modification by M.E. (1988-89).  Full charge/residue (-1) 
+ RTFRDR>remark   to use EPS =80.  God knows what happens with H-Bonds 
+ RTFRDR>remark   All residues have been explicitely edited for DNA, no patches 
+ RTFRDR>remark   necessary, except for NUC.  CY1 and GU1 are 5'-end CYT and GUA 
+ RTFRDR>remark   residues without phospahte and with net charge of -0.5. CY4 and 
+ RTFRDR>remark   GU4 are 3'-end CYT and GUA residues with charge of -0.5. 
+ RTFRDR>remark   EXG is propano deoxyguanosine, ADH is protonated ADE (pH < 5.8) 
+ RTFRDR>remark   RESIDUE TOPOLOGY FILE FOR RNA/DNA USING ALL HYDROGENS. 
+ RTFRDR>remark   SOME HINTS TAKEN FROM GELIN AND ROSSKY KARPLUS RAHMAN PAPER. 
+ RTFRDR>remark   H-BOND CHARGES FOR R_DIEL & EPS=1.0 
+ RTFRDR>remark   Sugar dihedrals adapted from W.Olson JACS (1982) 
+ RTFRDR>remark   planarity of hydrogens on bases is now maintained by impropers 
+ RTFRDR>remark    instead of dihedrals, and all impropers governing the planes 
+ RTFRDR>remark    have their force constants increased to 80 (G.M. CLORE 
+ RTFRDR>remark    16/5/85) 
+ RTFRDR> 
+ RTFRDR> set echo=false end 
+ ASSFIL: file c_dA_param.par opened.
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> end 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR>segment 
+ SEGMENT>   name="SEG1" 
+ SEGMENT>   SETUP=TRUE 
+ SEGMENT>   chain 
+ CHAIN> 
+ CHAIN>LINK NUC  HEAD - *  TAIL + *  END 
+ CHAIN>FIRST  5ter  TAIL + * END 
+ CHAIN>LAST 3TER  HEAD - * END 
+ CHAIN>SET ECHO=TRUE END 
+ CHAIN> 
+ CHAIN>      sequence 
+ SEQUENCE>     CYT GUA THY ADE CYT ACL CYT ADE THY GUA CYT 
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ %GENRES-ERR: bond C8    H8    not found for topology residue ACL 
+ %GENRES-ERR: angle N9    C8    H8    not found in topology residue ACL 
+ %GENRES-ERR: angle N7    C8    H8    not found in topology residue ACL 
+ %GENRES-ERR: angle H8    C8    C5'   not found in topology residue ACL 
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ SEQUence-element (terminate with END) =      end {* end seq *} 
+ MAPIC: Atom numbers being modified
+ CHAIN>    end {* chain *} 
+ SEGMENT>  end {* segment *} 
+ SEGMNT:    11 residues were inserted into segment "SEG1"
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        354(MAXA=       36000)  NBOND=        381(MAXB=       36000)
+ NTHETA=       682(MAXT=       50000)  NGRP=         112(MAXGRP=     36000)
+ NPHI=         339(MAXP=       60000)  NIMPHI=       155(MAXIMP=     24000)  
+ NDON=          36(MAXPAD=     10000)  NACC=          90(MAXPAD=     10000)
+ NNB=           33(MAXNB=       4000) 
+ X-PLOR> 
+ X-PLOR>segment 
+ SEGMENT>   name="SEG2" 
+ SEGMENT>   SETUP=TRUE 
+ SEGMENT>   chain 
+ CHAIN> 
+ CHAIN> 
+ CHAIN>LINK NUC  HEAD - *  TAIL + *  END 
+ CHAIN>FIRST  5ter  TAIL + * END 
+ CHAIN>LAST 3TER  HEAD - * END 
+ CHAIN>SET ECHO=TRUE END 
+ CHAIN> 
+ CHAIN>      sequence 
+ SEQUENCE>     GUA CYT ADE THY GUA THY GUA THY ADE CYT GUA 
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ MAPIC: Atom numbers being modified
+ SEQUence-element (terminate with END) =      end {* end seq *} 
+ MAPIC: Atom numbers being modified
+ CHAIN>    end {* chain *} 
+ SEGMENT>  end {* segment *} 
+ SEGMNT:    11 residues were inserted into segment "SEG2"
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        716(MAXA=       36000)  NBOND=        770(MAXB=       36000)
+ NTHETA=      1378(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         685(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          72(MAXPAD=     10000)  NACC=         182(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR> 
+ X-PLOR>SEGMENT 
+ SEGMENT>  NAME= SEG3 
+ SEGMENT> ! SETUP = TRUE   ! generate internal coordinates 
+ SEGMENT>  CHAIN 
+ CHAIN>    sequence 
+ SEQUENCE>    AAA 
+ %GENRES-ERR: residue AAA  not found in topology file
+ SEQUence-element (terminate with END) =    end 
+ CHAIN> end 
+ SEGMENT>end 
+ SEGMNT:     1 residues were inserted into segment "SEG3"
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        716(MAXA=       36000)  NBOND=        770(MAXB=       36000)
+ NTHETA=      1378(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         685(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          72(MAXPAD=     10000)  NACC=         182(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR> 
+ X-PLOR>{* now apply DNA patches to all residues *} 
+ X-PLOR>{* ===================================== *} 
+ X-PLOR> 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    1.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     29 atoms have been selected out of    716
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        715(MAXA=       36000)  NBOND=        769(MAXB=       36000)
+ NTHETA=      1377(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         682(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          71(MAXPAD=     10000)  NACC=         181(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    2.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     34 atoms have been selected out of    715
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        714(MAXA=       36000)  NBOND=        768(MAXB=       36000)
+ NTHETA=      1376(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         679(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          70(MAXPAD=     10000)  NACC=         180(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    3.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    714
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        713(MAXA=       36000)  NBOND=        767(MAXB=       36000)
+ NTHETA=      1375(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         676(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          69(MAXPAD=     10000)  NACC=         179(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    4.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    713
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        712(MAXA=       36000)  NBOND=        766(MAXB=       36000)
+ NTHETA=      1374(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         673(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          68(MAXPAD=     10000)  NACC=         178(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    5.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     31 atoms have been selected out of    712
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        711(MAXA=       36000)  NBOND=        765(MAXB=       36000)
+ NTHETA=      1373(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         670(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          67(MAXPAD=     10000)  NACC=         177(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    6.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     31 atoms have been selected out of    711
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        710(MAXA=       36000)  NBOND=        764(MAXB=       36000)
+ NTHETA=      1372(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         667(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          66(MAXPAD=     10000)  NACC=         176(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    7.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     31 atoms have been selected out of    710
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        709(MAXA=       36000)  NBOND=        763(MAXB=       36000)
+ NTHETA=      1371(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         664(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          65(MAXPAD=     10000)  NACC=         175(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    8.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    709
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        708(MAXA=       36000)  NBOND=        762(MAXB=       36000)
+ NTHETA=      1370(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         661(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          64(MAXPAD=     10000)  NACC=         174(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    9.00000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    708
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        707(MAXA=       36000)  NBOND=        761(MAXB=       36000)
+ NTHETA=      1369(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         658(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          63(MAXPAD=     10000)  NACC=         173(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    10.0000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     34 atoms have been selected out of    707
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        706(MAXA=       36000)  NBOND=        760(MAXB=       36000)
+ NTHETA=      1368(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         655(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          62(MAXPAD=     10000)  NACC=         172(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    11.0000     (real)
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ SELRPN:     32 atoms have been selected out of    706
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        705(MAXA=       36000)  NBOND=        759(MAXB=       36000)
+ NTHETA=      1367(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         652(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          61(MAXPAD=     10000)  NACC=         171(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR-clause=loop main 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end 
+ X-PLOR>end loop main 
+ X-PLOR> 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    1.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     32 atoms have been selected out of    705
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        704(MAXA=       36000)  NBOND=        758(MAXB=       36000)
+ NTHETA=      1366(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         649(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          60(MAXPAD=     10000)  NACC=         170(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    2.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     31 atoms have been selected out of    704
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        703(MAXA=       36000)  NBOND=        757(MAXB=       36000)
+ NTHETA=      1365(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         646(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          59(MAXPAD=     10000)  NACC=         169(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    3.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    703
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        702(MAXA=       36000)  NBOND=        756(MAXB=       36000)
+ NTHETA=      1364(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         643(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          58(MAXPAD=     10000)  NACC=         168(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    4.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    702
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        701(MAXA=       36000)  NBOND=        755(MAXB=       36000)
+ NTHETA=      1363(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         640(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          57(MAXPAD=     10000)  NACC=         167(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    5.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     34 atoms have been selected out of    701
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        700(MAXA=       36000)  NBOND=        754(MAXB=       36000)
+ NTHETA=      1362(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         637(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          56(MAXPAD=     10000)  NACC=         166(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    6.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    700
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        699(MAXA=       36000)  NBOND=        753(MAXB=       36000)
+ NTHETA=      1361(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         634(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          55(MAXPAD=     10000)  NACC=         165(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    7.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     34 atoms have been selected out of    699
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        698(MAXA=       36000)  NBOND=        752(MAXB=       36000)
+ NTHETA=      1360(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         631(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          54(MAXPAD=     10000)  NACC=         164(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    8.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    698
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        697(MAXA=       36000)  NBOND=        751(MAXB=       36000)
+ NTHETA=      1359(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         628(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          53(MAXPAD=     10000)  NACC=         163(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    9.00000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     33 atoms have been selected out of    697
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        696(MAXA=       36000)  NBOND=        750(MAXB=       36000)
+ NTHETA=      1358(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         625(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          52(MAXPAD=     10000)  NACC=         162(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    10.0000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     31 atoms have been selected out of    696
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        695(MAXA=       36000)  NBOND=        749(MAXB=       36000)
+ NTHETA=      1357(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         622(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          51(MAXPAD=     10000)  NACC=         161(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR LOOP: symbol 1 set to    11.0000     (real)
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ SELRPN:     35 atoms have been selected out of    695
+ MAPIC: Atom numbers being modified
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        694(MAXA=       36000)  NBOND=        748(MAXB=       36000)
+ NTHETA=      1356(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         619(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          50(MAXPAD=     10000)  NACC=         160(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ X-PLOR>end loop main2 
+ X-PLOR>for $1 in ( 1 2 3 4 5 6 7 8 9 10 11) 
+ FOR-clause=loop main2 
+ X-PLOR>   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end 
+ X-PLOR>end loop main2 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR>write psf output=cyclo_dA_new.psf end 
+ ASSFIL: file cyclo_dA_new.psf opened.
+ X-PLOR> 
+ X-PLOR>coor @S_cyclo_dA.pdb end 
+ ASSFIL: file S_cyclo_dA.pdb opened.
+ COOR>ATOM      1  H5T CYT     1      -0.808  -8.873  -2.080  1.00  0.00      SEG1     P 
+ COOR>ATOM      4  O5' CYT     1       0.270  -7.725  -1.830  1.00  0.00      SEG1     O 
+ %READC-ERR: atom SEG2 11   GUA  H3Y  not found in molecular structure
+ %READC-ERR: still      1 missing coordinates (in selected subset)
+ X-PLOR> end 
+ %X-PLOR-ERR: "END" not allowed. "STOP" terminates program
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR>write coor output=S_cyclo_dA_xplor_dynam_fnl.pdb end 
+ ASSFIL: file S_cyclo_dA_xplor_dynam_fnl.pdb opened.
+ X-PLOR> 
+ X-PLOR>stop 
+ CSTACK: size=    40000 used=     1481 current=        0
+ HEAP:   maximum use=    64382 current use=        0
+ X-PLOR: total CPU time=      0.7199 s
+ X-PLOR: entry time at 17:22:00 09-Sep-10
+ X-PLOR: exit time at 17:22:02 09-Sep-10

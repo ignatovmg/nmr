@@ -1,0 +1,11 @@
+#Running: /usr/msi/980/irix6m3/biosym_exe/insightII
+#Log Created: Thu Sep  9 15:24:15 2010
+#
+#Insight II Version 98.0 - Molecular Modeling System
+m:Get Molecule PDB User S_ccl_dA.pdb S_CCL_DA -Heteroatom -Reference_Object
+m:Color Molecule Atoms S_CCL_DA Specified By_Atom
+m:Builder
+m:Hybridization Atom Auto -Lone_Pairs "S_CCL_DA:11:O3'"
+m:Hybridization Atom Auto -Lone_Pairs "S_CCL_DA:11B:O3'"
+m:Put Molecule PDB S_CCL_DA S_ccl_dA_for_expl -Transformed -Displayed -Insight_Style
+c:Selection Subset "" Sel_End

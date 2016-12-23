@@ -1,0 +1,3387 @@
+ X-PLOR(online) Version 3.851
+
+ Author: Axel T. Brunger
+ X-PLOR(online): Copyright 1996 by Yale University
+ X-PLOR: Copyright 1987 by Harvard U., 1988-1996 by Yale U.
+
+ User: tanyazal     on: sgi             at: 22-Apr-10 13:51:06
+ X-PLOR>structure @cyclo_dA.psf end 
+ ASSFIL: file cyclo_dA.psf opened.
+ STRUcture>PSF 
+ REMARKS FILENAME="cyclo_dA.psf"
+ REMARKS  NUCLEIC ACID PARAMETER FILE CREATION RUN
+ REMARKS  >>>NO WARRANTY EXPRESSED OR IMPLIED<<<
+ REMARKS
+ REMARKS  ALL HYDROGEN NUCLEIC ACID PARAMETER FILE.
+ REMARKS  DERIVED FROM PARMDNA8. LN and MP 1984
+ REMARKS  H-bond wells made 0.5 kcal deeper
+ REMARKS  to improve basepair energies 8/20/84/ln
+ REMARKS  H stretch & bend constants from URACIL normal mode fit.
+ REMARKS  Magnesium (fudge) and spermine included.
+ REMARKS  all references to water removed, ATB, 3-JAN-85
+ REMARKS  improper force constants for c1', h's and c5a in base planes
+ REMARKS  increased to 80 to ensure planarity (GMC 16/5/85)
+ REMARKS DATE:20-Apr-10  15:36:23       created by user: tanyazal
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        695(MAXA=       36000)  NBOND=        749(MAXB=       36000)
+ NTHETA=      1358(MAXT=       50000)  NGRP=         226(MAXGRP=     36000)
+ NPHI=         619(MAXP=       60000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          50(MAXPAD=     10000)  NACC=         160(MAXPAD=     10000)
+ NNB=           66(MAXNB=       4000) 
+ STRUcture> end 
+ X-PLOR>coor @cyclo_dA_bck_vol_80.pdb 
+ ASSFIL: file cyclo_dA_bck_vol_80.pdb opened.
+ COOR>REMARK FILENAME="cyclo_dA_bck_vol_80.pdb" 
+ COOR>REMARK  NUCLEIC ACID PARAMETER FILE CREATION RUN 
+ COOR>REMARK  >>>NO WARRANTY EXPRESSED OR IMPLIED<<< 
+ COOR>REMARK  ALL HYDROGEN NUCLEIC ACID PARAMETER FILE. 
+ COOR>REMARK  DERIVED FROM PARMDNA8. LN and MP 1984 
+ COOR>REMARK  H-bond wells made 0.5 kcal deeper 
+ COOR>REMARK  to improve basepair energies 8/20/84/ln 
+ COOR>REMARK  H stretch & bend constants from URACIL normal mode fit. 
+ COOR>REMARK  Magnesium (fudge) and spermine included. 
+ COOR>REMARK  all references to water removed, ATB, 3-JAN-85 
+ COOR>REMARK  improper force constants for c1', h's and c5a in base planes 
+ COOR>REMARK  increased to 80 to ensure planarity (GMC 16/5/85) 
+ COOR>REMARK DATE:22-Apr-10  15:27:46       created by user: tanyazal 
+ COOR>ATOM      1  H5T CYT     1      -9.724  -5.986 -16.513  1.00  0.00      SEG1 
+ COOR>ATOM      2  O5' CYT     1      -8.261  -6.648 -16.437  1.00  0.00      SEG1 
+ X-PLOR>parameter                        {* Set energy parameter *} 
+ PARRDR>	@c_dA_param.par 
+ ASSFIL: file c_dA_param.par opened.
+ PARRDR>remark  NUCLEIC ACID PARAMETER FILE CREATION RUN 
+ PARRDR>remark  >>>NO WARRANTY EXPRESSED OR IMPLIED<<< 
+ PARRDR>remark 
+ PARRDR>remark  ALL HYDROGEN NUCLEIC ACID PARAMETER FILE. 
+ PARRDR>remark  DERIVED FROM PARMDNA8. LN and MP 1984 
+ PARRDR>remark  H-bond wells made 0.5 kcal deeper 
+ PARRDR>remark  to improve basepair energies 8/20/84/ln 
+ PARRDR>remark  H stretch & bend constants from URACIL normal mode fit. 
+ PARRDR>remark  Magnesium (fudge) and spermine included. 
+ PARRDR>remark  all references to water removed, ATB, 3-JAN-85 
+ PARRDR>remark  improper force constants for c1', h's and c5a in base planes 
+ PARRDR>remark  increased to 80 to ensure planarity (GMC 16/5/85) 
+ PARRDR>set echo=false end 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR> 
+ PARRDR>	nbonds 
+ NBDSET>	atom nbxmod -3 tolerance 0.5 
+ NBDSET>	repel 0.75 rcon 4.0 rexp 2 cutnb 4.5 
+ NBDSET>      end	 
+ PARRDR>end 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR> 
+ X-PLOR>noe 
+ NOE> 
+ NOE>  reset 
+ NOE>  nres=1000 
+ NOE: allocating space for    1000 restraints.
+ NOE> 
+ NOE> 
+ NOE>  classification aaf300 
+ NOE>    @ch_c_dA_80.pks 
+ ASSFIL: file ch_c_dA_80.pks opened.
+ NOE>assign (resid 1 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   278.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   49.600000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   873.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1780.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   187.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   289.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   76.400000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   128.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   8160.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   141.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   647.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   311.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   523.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   69.100000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   79.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   93.100000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1730.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   215.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1330.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   296.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   117.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   71.400000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   61.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   5980.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   89.300000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   407.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   445.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   232.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   173.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1120.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   48.600000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   348.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   4880.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1130.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   2640.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1990.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   629.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   805.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H5' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   327.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   59.200000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   84.300000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   145.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1040.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   2260.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   547.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   438.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1380.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   98.600000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   119.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   7300.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   3070.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   932.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   238.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   553.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   253.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   595.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   52.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   40.700000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   61.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   83.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   52.400000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   4650.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1360.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1570.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   192.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   2420.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   786.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   161.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   284.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   59.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   90.100000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1020.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1300.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   87.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1000.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   256.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   446.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   820.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   83.800000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   61.300000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   368.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   73.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   57.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   139.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   3350.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1230.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   577.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   115.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   964.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   94.300000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   525.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   795.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 1 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   27.800000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   61.400000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   102.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   4500.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1070.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   114.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   600.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   296.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   65.600000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 2 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   26.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H2 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   48.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   103.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   154.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   4980.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1610.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1180.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   206.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1240.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   544.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   255.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   587.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   104.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   30.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H2 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   33.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   82.700000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   101.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1130.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1190.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   480.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   268.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 4 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   37.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   125.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   55.700000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   4980.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1330.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1060.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1190.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   543.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   233.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   603.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   65.600000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   55.800000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   21.200000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   95.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   220.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   6750.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1410.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1760.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   182.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   420.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   469.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   93.100000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   39.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   55.800000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   61.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   92.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   8060.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1020.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   265.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   499.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   225.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   598.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   62.100000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   74.800000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   94.500000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   5900.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1790.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   420.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   653.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   98.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   126.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   143.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   6180.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   70.700000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   516.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1340.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   619.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   279.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   103.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   771.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H2 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   42.900000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   123.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   70.400000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   5690.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1350.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   2060.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   169.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   576.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   159.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   181.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 10 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   97.400000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   95.700000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   1070.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   2360.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   131.000000   0.2   0.2 
+ NOE> 
+ NOE>assign (resid 11 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=   117.000000   0.2   0.2 
+ NOE> 
+ NOE>    @ch_c_dA_80.ovl 
+ ASSFIL: file ch_c_dA_80.ovl opened.
+ NOE>assign  ( resid 2 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 2 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 10 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 9 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 7 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H51 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H52 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 9 and name H53 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 1 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 1 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 4 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 6 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 2 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 3 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 3 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H51 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H52 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE>assign  ( resid 8 and name H53 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>        ( resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Distance=400  0.2  0.2 
+ NOE> 
+ NOE> 
+ NOE>  potential  acro300 biharmonic 
+ NOE>  print threshhold= 0.05 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +++++++++++++++++++++++++++++++ CLASS AAF3 +++++++++++++++++++++++++++++++++++
+ for this class: SCALe=   1.000 AVERage=R-6    POTEntial=biharmonic 
+                 TEMPerature= 300.000
+ 
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H1' 
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   3.437 NOE=***** (- 0.20/+ 0.20) Delta= 274.563  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H1' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.693 NOE=49.60 (- 0.20/+ 0.20) Delta=  44.907  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 1    CYT  H3' 
+ R<average>=   2.705 NOE=***** (- 0.20/+ 0.20) Delta= 870.295  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   2.345 NOE=***** (- 0.20/+ 0.20) Delta=1777.655  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.765 NOE=***** (- 0.20/+ 0.20) Delta= 183.235  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.283 NOE=***** (- 0.20/+ 0.20) Delta= 285.717  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H1' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.578 NOE=76.40 (- 0.20/+ 0.20) Delta=  71.822  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H1' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.151 NOE=***** (- 0.20/+ 0.20) Delta= 123.849  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H2''
+ R<average>=   1.767 NOE=***** (- 0.20/+ 0.20) Delta=8158.233  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.417 NOE=***** (- 0.20/+ 0.20) Delta= 136.583  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   3.159 NOE=***** (- 0.20/+ 0.20) Delta= 643.841  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.518 NOE=***** (- 0.20/+ 0.20) Delta= 307.482  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   2.914 NOE=***** (- 0.20/+ 0.20) Delta= 520.086  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H3' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.711 NOE=69.10 (- 0.20/+ 0.20) Delta=  64.389  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H1' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.300 NOE=79.00 (- 0.20/+ 0.20) Delta=  74.700  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   3.390 NOE=93.10 (- 0.20/+ 0.20) Delta=  89.710  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   2.424 NOE=***** (- 0.20/+ 0.20) Delta=1727.576  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   3.111 NOE=***** (- 0.20/+ 0.20) Delta= 211.889  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 3    THY  H1' 
+ R<average>=   2.546 NOE=***** (- 0.20/+ 0.20) Delta=1327.454  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.146 NOE=***** (- 0.20/+ 0.20) Delta= 291.854  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H3' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.089 NOE=***** (- 0.20/+ 0.20) Delta= 112.911  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   3.509 NOE=71.40 (- 0.20/+ 0.20) Delta=  67.891  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H1' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   4.740 NOE=61.50 (- 0.20/+ 0.20) Delta=  56.760  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   1.943 NOE=***** (- 0.20/+ 0.20) Delta=5978.057  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   3.995 NOE=89.30 (- 0.20/+ 0.20) Delta=  85.305  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   3.268 NOE=***** (- 0.20/+ 0.20) Delta= 403.732  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H3' 
+ R<average>=   3.466 NOE=***** (- 0.20/+ 0.20) Delta= 441.534  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   2.779 NOE=***** (- 0.20/+ 0.20) Delta= 229.221  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   3.475 NOE=***** (- 0.20/+ 0.20) Delta= 169.525  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   2.624 NOE=***** (- 0.20/+ 0.20) Delta=1117.376  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H1' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   5.134 NOE=48.60 (- 0.20/+ 0.20) Delta=  43.466  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   3.608 NOE=***** (- 0.20/+ 0.20) Delta= 344.392  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H2''
+ R<average>=   2.011 NOE=***** (- 0.20/+ 0.20) Delta=4877.989  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H3' 
+ R<average>=   2.675 NOE=***** (- 0.20/+ 0.20) Delta=1127.325  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   2.296 NOE=***** (- 0.20/+ 0.20) Delta=2637.704  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   2.328 NOE=***** (- 0.20/+ 0.20) Delta=1987.672  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H3' 
+ R<average>=   3.003 NOE=***** (- 0.20/+ 0.20) Delta= 625.997  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   2.919 NOE=***** (- 0.20/+ 0.20) Delta= 802.081  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   4.035 NOE=***** (- 0.20/+ 0.20) Delta= 322.965  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H3' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   4.919 NOE=59.20 (- 0.20/+ 0.20) Delta=  54.281  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H5  
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   3.334 NOE=84.30 (- 0.20/+ 0.20) Delta=  80.966  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.838 NOE=***** (- 0.20/+ 0.20) Delta= 141.162  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 7    CYT  H3' 
+ R<average>=   2.754 NOE=***** (- 0.20/+ 0.20) Delta=1037.246  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   2.252 NOE=***** (- 0.20/+ 0.20) Delta=2257.748  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.592 NOE=***** (- 0.20/+ 0.20) Delta= 543.408  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.209 NOE=***** (- 0.20/+ 0.20) Delta= 434.791  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H5  
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   2.535 NOE=***** (- 0.20/+ 0.20) Delta=1377.465  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.065 NOE=98.60 (- 0.20/+ 0.20) Delta=  94.535  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H1' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   3.971 NOE=***** (- 0.20/+ 0.20) Delta= 115.029  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   1.872 NOE=***** (- 0.20/+ 0.20) Delta=7298.128  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   2.247 NOE=***** (- 0.20/+ 0.20) Delta=3067.753  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   2.778 NOE=***** (- 0.20/+ 0.20) Delta= 929.222  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   3.704 NOE=***** (- 0.20/+ 0.20) Delta= 234.296  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   3.437 NOE=***** (- 0.20/+ 0.20) Delta= 549.563  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.606 NOE=***** (- 0.20/+ 0.20) Delta= 249.394  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.908 NOE=***** (- 0.20/+ 0.20) Delta= 592.092  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H3' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.731 NOE=52.90 (- 0.20/+ 0.20) Delta=  48.169  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H3' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.782 NOE=40.70 (- 0.20/+ 0.20) Delta=  35.918  E(NOE)=9613.968
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H2  
+ R<average>=   4.331 NOE=61.50 (- 0.20/+ 0.20) Delta=  57.169  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.426 NOE=83.00 (- 0.20/+ 0.20) Delta=  78.574  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.680 NOE=52.40 (- 0.20/+ 0.20) Delta=  47.720  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H2''
+ R<average>=   2.044 NOE=***** (- 0.20/+ 0.20) Delta=4647.956  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H3' 
+ R<average>=   2.556 NOE=***** (- 0.20/+ 0.20) Delta=1357.444  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.492 NOE=***** (- 0.20/+ 0.20) Delta=1567.508  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   3.614 NOE=***** (- 0.20/+ 0.20) Delta= 188.386  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   2.308 NOE=***** (- 0.20/+ 0.20) Delta=2417.692  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 9    THY  H3' 
+ R<average>=   2.849 NOE=***** (- 0.20/+ 0.20) Delta= 783.151  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.525 NOE=***** (- 0.20/+ 0.20) Delta= 156.475  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   3.346 NOE=***** (- 0.20/+ 0.20) Delta= 280.654  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H1' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.474 NOE=59.50 (- 0.20/+ 0.20) Delta=  55.026  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H1' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   4.034 NOE=90.10 (- 0.20/+ 0.20) Delta=  86.066  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H3' 
+ R<average>=   2.530 NOE=***** (- 0.20/+ 0.20) Delta=1017.470  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   2.580 NOE=***** (- 0.20/+ 0.20) Delta=1297.420  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   4.984 NOE=87.50 (- 0.20/+ 0.20) Delta=  82.516  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H1' 
+ R<average>=   2.689 NOE=***** (- 0.20/+ 0.20) Delta= 997.311  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   3.770 NOE=***** (- 0.20/+ 0.20) Delta= 252.230  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   4.080 NOE=***** (- 0.20/+ 0.20) Delta= 441.920  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   2.596 NOE=***** (- 0.20/+ 0.20) Delta= 817.404  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H3' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.200 NOE=83.80 (- 0.20/+ 0.20) Delta=  79.600  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H1' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   4.418 NOE=61.30 (- 0.20/+ 0.20) Delta=  56.882  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H3' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.965 NOE=***** (- 0.20/+ 0.20) Delta= 364.035  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H5  
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.642 NOE=73.50 (- 0.20/+ 0.20) Delta=  68.858  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H1' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   4.498 NOE=57.50 (- 0.20/+ 0.20) Delta=  53.002  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H1' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   4.042 NOE=***** (- 0.20/+ 0.20) Delta= 134.958  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H2''
+ R<average>=   2.165 NOE=***** (- 0.20/+ 0.20) Delta=3347.835  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H3' 
+ R<average>=   2.633 NOE=***** (- 0.20/+ 0.20) Delta=1227.367  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   2.983 NOE=***** (- 0.20/+ 0.20) Delta= 574.017  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   4.729 NOE=***** (- 0.20/+ 0.20) Delta= 110.271  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 1    GUA  H3' 
+ R<average>=   2.723 NOE=***** (- 0.20/+ 0.20) Delta= 961.277  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   4.291 NOE=94.30 (- 0.20/+ 0.20) Delta=  90.009  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   3.886 NOE=***** (- 0.20/+ 0.20) Delta= 521.114  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   2.567 NOE=***** (- 0.20/+ 0.20) Delta= 792.433  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H3' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   5.491 NOE=27.80 (- 0.20/+ 0.20) Delta=  22.309  E(NOE)=3708.773
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H1' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   4.677 NOE=61.40 (- 0.20/+ 0.20) Delta=  56.723  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.045 NOE=***** (- 0.20/+ 0.20) Delta=  97.955  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H2''
+ R<average>=   2.055 NOE=***** (- 0.20/+ 0.20) Delta=4497.945  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H3' 
+ R<average>=   2.706 NOE=***** (- 0.20/+ 0.20) Delta=1067.294  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.022 NOE=***** (- 0.20/+ 0.20) Delta= 109.978  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   3.032 NOE=***** (- 0.20/+ 0.20) Delta= 596.968  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   3.304 NOE=***** (- 0.20/+ 0.20) Delta= 292.696  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H3' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   4.647 NOE=65.60 (- 0.20/+ 0.20) Delta=  60.953  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H5  
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   5.481 NOE=26.00 (- 0.20/+ 0.20) Delta=  20.519  E(NOE)=3137.600
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H2  
+ R<average>=   4.543 NOE=48.00 (- 0.20/+ 0.20) Delta=  43.457  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.043 NOE=***** (- 0.20/+ 0.20) Delta=  98.957  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H1' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.791 NOE=***** (- 0.20/+ 0.20) Delta= 150.209  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   1.992 NOE=***** (- 0.20/+ 0.20) Delta=4978.008  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   2.441 NOE=***** (- 0.20/+ 0.20) Delta=1607.559  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   2.574 NOE=***** (- 0.20/+ 0.20) Delta=1177.426  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.622 NOE=***** (- 0.20/+ 0.20) Delta= 202.378  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   2.595 NOE=***** (- 0.20/+ 0.20) Delta=1237.405  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   3.115 NOE=***** (- 0.20/+ 0.20) Delta= 540.885  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   3.709 NOE=***** (- 0.20/+ 0.20) Delta= 251.291  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.945 NOE=***** (- 0.20/+ 0.20) Delta= 584.055  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H3' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.354 NOE=***** (- 0.20/+ 0.20) Delta=  99.646  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H3' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   5.458 NOE=30.90 (- 0.20/+ 0.20) Delta=  25.442  E(NOE)=4823.659
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H2  
+ R<average>=   4.783 NOE=33.90 (- 0.20/+ 0.20) Delta=  29.117  E(NOE)=6317.712
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   4.170 NOE=82.70 (- 0.20/+ 0.20) Delta=  78.530  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.181 NOE=***** (- 0.20/+ 0.20) Delta=  96.819  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 4    THY  H3' 
+ R<average>=   2.626 NOE=***** (- 0.20/+ 0.20) Delta=1127.374  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.602 NOE=***** (- 0.20/+ 0.20) Delta=1187.398  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   3.220 NOE=***** (- 0.20/+ 0.20) Delta= 476.780  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2''
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.765 NOE=***** (- 0.20/+ 0.20) Delta= 264.235  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H3' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   5.333 NOE=37.90 (- 0.20/+ 0.20) Delta=  32.567  E(NOE)=7903.689
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H2  
+ R<average>=   3.874 NOE=***** (- 0.20/+ 0.20) Delta= 121.126  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H1' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.605 NOE=55.70 (- 0.20/+ 0.20) Delta=  51.095  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H2''
+ R<average>=   1.972 NOE=***** (- 0.20/+ 0.20) Delta=4978.028  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   2.503 NOE=***** (- 0.20/+ 0.20) Delta=1327.497  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   2.595 NOE=***** (- 0.20/+ 0.20) Delta=1057.405  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   2.603 NOE=***** (- 0.20/+ 0.20) Delta=1187.397  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   3.097 NOE=***** (- 0.20/+ 0.20) Delta= 539.903  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   3.793 NOE=***** (- 0.20/+ 0.20) Delta= 229.207  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   2.922 NOE=***** (- 0.20/+ 0.20) Delta= 600.078  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H3' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.964 NOE=65.60 (- 0.20/+ 0.20) Delta=  60.636  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H3' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.510 NOE=55.80 (- 0.20/+ 0.20) Delta=  51.290  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H1' 
+ set-j-atoms
+          SEG1 6    ACL  H2  
+ R<average>=   5.261 NOE=21.20 (- 0.20/+ 0.20) Delta=  15.939  E(NOE)=1893.228
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H1' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.092 NOE=95.90 (- 0.20/+ 0.20) Delta=  91.808  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H1' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.517 NOE=***** (- 0.20/+ 0.20) Delta= 216.483  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H2''
+ R<average>=   1.932 NOE=***** (- 0.20/+ 0.20) Delta=6748.068  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H3' 
+ R<average>=   2.481 NOE=***** (- 0.20/+ 0.20) Delta=1407.519  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   2.460 NOE=***** (- 0.20/+ 0.20) Delta=1757.540  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.716 NOE=***** (- 0.20/+ 0.20) Delta= 178.284  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 6    THY  H3' 
+ R<average>=   3.262 NOE=***** (- 0.20/+ 0.20) Delta= 416.738  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.088 NOE=***** (- 0.20/+ 0.20) Delta= 465.912  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H3' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.350 NOE=93.10 (- 0.20/+ 0.20) Delta=  88.750  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H3' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.828 NOE=39.90 (- 0.20/+ 0.20) Delta=  35.072  E(NOE)=9166.064
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H1' 
+ set-j-atoms
+          SEG1 6    ACL  H2  
+ R<average>=   4.375 NOE=55.80 (- 0.20/+ 0.20) Delta=  51.425  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H1' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.712 NOE=61.00 (- 0.20/+ 0.20) Delta=  56.288  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H1' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   4.160 NOE=92.50 (- 0.20/+ 0.20) Delta=  88.340  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   1.805 NOE=***** (- 0.20/+ 0.20) Delta=8058.195  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   2.651 NOE=***** (- 0.20/+ 0.20) Delta=1017.349  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.596 NOE=***** (- 0.20/+ 0.20) Delta= 261.404  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   3.028 NOE=***** (- 0.20/+ 0.20) Delta= 495.972  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.275 NOE=***** (- 0.20/+ 0.20) Delta= 220.725  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.894 NOE=***** (- 0.20/+ 0.20) Delta= 595.106  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H3' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.434 NOE=62.10 (- 0.20/+ 0.20) Delta=  57.666  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H1' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   4.400 NOE=74.80 (- 0.20/+ 0.20) Delta=  70.400  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.228 NOE=94.50 (- 0.20/+ 0.20) Delta=  90.272  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H2''
+ R<average>=   1.948 NOE=***** (- 0.20/+ 0.20) Delta=5898.052  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.428 NOE=***** (- 0.20/+ 0.20) Delta=1787.572  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.385 NOE=***** (- 0.20/+ 0.20) Delta= 416.615  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   2.909 NOE=***** (- 0.20/+ 0.20) Delta= 650.091  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.074 NOE=98.90 (- 0.20/+ 0.20) Delta=  94.826  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H1' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   3.926 NOE=***** (- 0.20/+ 0.20) Delta= 122.074  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   4.528 NOE=***** (- 0.20/+ 0.20) Delta= 138.472  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H2''
+ R<average>=   1.952 NOE=***** (- 0.20/+ 0.20) Delta=6178.048  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   4.511 NOE=70.70 (- 0.20/+ 0.20) Delta=  66.189  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   3.038 NOE=***** (- 0.20/+ 0.20) Delta= 512.962  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   2.591 NOE=***** (- 0.20/+ 0.20) Delta=1337.409  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H3' 
+ R<average>=   3.212 NOE=***** (- 0.20/+ 0.20) Delta= 615.788  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   3.349 NOE=***** (- 0.20/+ 0.20) Delta= 275.651  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   4.200 NOE=***** (- 0.20/+ 0.20) Delta=  98.800  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   2.797 NOE=***** (- 0.20/+ 0.20) Delta= 768.203  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H2  
+ R<average>=   4.548 NOE=42.90 (- 0.20/+ 0.20) Delta=  38.352  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   4.597 NOE=***** (- 0.20/+ 0.20) Delta= 118.403  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.466 NOE=70.40 (- 0.20/+ 0.20) Delta=  65.934  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H2''
+ R<average>=   1.911 NOE=***** (- 0.20/+ 0.20) Delta=5688.089  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H3' 
+ R<average>=   2.521 NOE=***** (- 0.20/+ 0.20) Delta=1347.479  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   2.347 NOE=***** (- 0.20/+ 0.20) Delta=2057.653  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   3.663 NOE=***** (- 0.20/+ 0.20) Delta= 165.337  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2''
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   3.083 NOE=***** (- 0.20/+ 0.20) Delta= 572.917  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2''
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   3.663 NOE=***** (- 0.20/+ 0.20) Delta= 155.337  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H3' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   3.759 NOE=***** (- 0.20/+ 0.20) Delta= 177.241  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H5  
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.043 NOE=97.40 (- 0.20/+ 0.20) Delta=  93.357  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H1' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.104 NOE=95.70 (- 0.20/+ 0.20) Delta=  91.596  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   2.670 NOE=***** (- 0.20/+ 0.20) Delta=1067.330  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2''
+ set-j-atoms
+          SEG2 11   GUA  H1' 
+ R<average>=   2.207 NOE=***** (- 0.20/+ 0.20) Delta=2357.793  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2''
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.013 NOE=***** (- 0.20/+ 0.20) Delta= 126.987  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H3' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.202 NOE=***** (- 0.20/+ 0.20) Delta= 112.798  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   2.346 NOE=***** (- 0.20/+ 0.20) Delta= 397.654  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H3' 
+ R<average>=   3.562 NOE=***** (- 0.20/+ 0.20) Delta= 396.438  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 3    THY  H3' 
+ R<average>=   2.691 NOE=***** (- 0.20/+ 0.20) Delta= 397.309  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H3' 
+ R<average>=   3.722 NOE=***** (- 0.20/+ 0.20) Delta= 396.278  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H3' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   5.683 NOE=***** (- 0.20/+ 0.20) Delta= 394.317  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H3' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.759 NOE=***** (- 0.20/+ 0.20) Delta= 395.241  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.088 NOE=***** (- 0.20/+ 0.20) Delta= 395.912  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   2.916 NOE=***** (- 0.20/+ 0.20) Delta= 397.084  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   7.783 NOE=***** (- 0.20/+ 0.20) Delta= 392.217  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   3.344 NOE=***** (- 0.20/+ 0.20) Delta= 396.656  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   2.766 NOE=***** (- 0.20/+ 0.20) Delta= 397.234  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   3.575 NOE=***** (- 0.20/+ 0.20) Delta= 396.425  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 4    ADE  H2' 
+ R<average>=   7.585 NOE=***** (- 0.20/+ 0.20) Delta= 392.415  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 4    ADE  H2' 
+ R<average>=   8.507 NOE=***** (- 0.20/+ 0.20) Delta= 391.493  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 4    ADE  H2' 
+ R<average>=   3.670 NOE=***** (- 0.20/+ 0.20) Delta= 396.330  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   6.976 NOE=***** (- 0.20/+ 0.20) Delta= 393.024  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   8.220 NOE=***** (- 0.20/+ 0.20) Delta= 391.780  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   3.523 NOE=***** (- 0.20/+ 0.20) Delta= 396.477  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H1' 
+ R<average>=   2.547 NOE=***** (- 0.20/+ 0.20) Delta= 397.453  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   2.636 NOE=***** (- 0.20/+ 0.20) Delta= 397.364  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2  
+ set-j-atoms
+          SEG1 4    ADE  H3' 
+ R<average>=   7.790 NOE=***** (- 0.20/+ 0.20) Delta= 392.210  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H3' 
+ R<average>=   2.230 NOE=***** (- 0.20/+ 0.20) Delta= 397.770  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H3' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   5.154 NOE=***** (- 0.20/+ 0.20) Delta= 394.846  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H3' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   3.646 NOE=***** (- 0.20/+ 0.20) Delta= 396.354  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H3' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.756 NOE=***** (- 0.20/+ 0.20) Delta= 396.244  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H3' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.519 NOE=***** (- 0.20/+ 0.20) Delta= 396.481  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H2' 
+ R<average>=   4.953 NOE=***** (- 0.20/+ 0.20) Delta= 395.047  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H2' 
+ R<average>=   3.177 NOE=***** (- 0.20/+ 0.20) Delta= 396.823  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H2' 
+ R<average>=   4.742 NOE=***** (- 0.20/+ 0.20) Delta= 395.258  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   5.273 NOE=***** (- 0.20/+ 0.20) Delta= 394.727  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   2.737 NOE=***** (- 0.20/+ 0.20) Delta= 397.263  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   5.230 NOE=***** (- 0.20/+ 0.20) Delta= 394.770  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.371 NOE=***** (- 0.20/+ 0.20) Delta= 395.629  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.332 NOE=***** (- 0.20/+ 0.20) Delta= 396.668  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   5.012 NOE=***** (- 0.20/+ 0.20) Delta= 394.988  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.531 NOE=***** (- 0.20/+ 0.20) Delta= 395.469  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.749 NOE=***** (- 0.20/+ 0.20) Delta= 397.251  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   3.912 NOE=***** (- 0.20/+ 0.20) Delta= 396.088  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.560 NOE=***** (- 0.20/+ 0.20) Delta= 396.440  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   3.343 NOE=***** (- 0.20/+ 0.20) Delta= 396.657  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2''
+ set-j-atoms
+          SEG2 4    THY  H1' 
+ R<average>=   2.590 NOE=***** (- 0.20/+ 0.20) Delta= 397.410  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 1    CYT  H1' 
+ R<average>=   2.475 NOE=***** (- 0.20/+ 0.20) Delta= 397.525  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   5.231 NOE=***** (- 0.20/+ 0.20) Delta= 394.769  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   5.084 NOE=***** (- 0.20/+ 0.20) Delta= 394.916  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   2.964 NOE=***** (- 0.20/+ 0.20) Delta= 397.036  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   5.514 NOE=***** (- 0.20/+ 0.20) Delta= 394.486  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.372 NOE=***** (- 0.20/+ 0.20) Delta= 395.628  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   3.685 NOE=***** (- 0.20/+ 0.20) Delta= 396.315  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.560 NOE=***** (- 0.20/+ 0.20) Delta= 396.440  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.819 NOE=***** (- 0.20/+ 0.20) Delta= 396.181  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.039 NOE=***** (- 0.20/+ 0.20) Delta= 396.961  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.996 NOE=***** (- 0.20/+ 0.20) Delta= 396.004  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.498 NOE=***** (- 0.20/+ 0.20) Delta= 395.502  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   5.784 NOE=***** (- 0.20/+ 0.20) Delta= 394.216  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   5.123 NOE=***** (- 0.20/+ 0.20) Delta= 394.877  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   3.361 NOE=***** (- 0.20/+ 0.20) Delta= 396.639  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.065 NOE=***** (- 0.20/+ 0.20) Delta= 396.935  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.114 NOE=***** (- 0.20/+ 0.20) Delta= 395.886  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.684 NOE=***** (- 0.20/+ 0.20) Delta= 396.316  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   3.422 NOE=***** (- 0.20/+ 0.20) Delta= 396.578  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 2    CYT  H3' 
+ R<average>=   2.510 NOE=***** (- 0.20/+ 0.20) Delta= 397.490  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H3' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   5.562 NOE=***** (- 0.20/+ 0.20) Delta= 394.438  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H3' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.848 NOE=***** (- 0.20/+ 0.20) Delta= 396.152  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 8    THY  H3' 
+ R<average>=   2.692 NOE=***** (- 0.20/+ 0.20) Delta= 397.308  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 3    THY  H3' 
+ R<average>=   2.720 NOE=***** (- 0.20/+ 0.20) Delta= 397.280  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   5.175 NOE=***** (- 0.20/+ 0.20) Delta= 394.825  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   6.704 NOE=***** (- 0.20/+ 0.20) Delta= 393.296  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   5.656 NOE=***** (- 0.20/+ 0.20) Delta= 394.344  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H2' 
+ R<average>=   3.316 NOE=***** (- 0.20/+ 0.20) Delta= 396.684  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H2' 
+ R<average>=   4.800 NOE=***** (- 0.20/+ 0.20) Delta= 395.200  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H2' 
+ R<average>=   3.756 NOE=***** (- 0.20/+ 0.20) Delta= 396.244  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   2.791 NOE=***** (- 0.20/+ 0.20) Delta= 397.209  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   4.999 NOE=***** (- 0.20/+ 0.20) Delta= 395.001  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   4.535 NOE=***** (- 0.20/+ 0.20) Delta= 395.465  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   3.758 NOE=***** (- 0.20/+ 0.20) Delta= 396.242  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   6.093 NOE=***** (- 0.20/+ 0.20) Delta= 393.907  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   5.821 NOE=***** (- 0.20/+ 0.20) Delta= 394.179  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.390 NOE=***** (- 0.20/+ 0.20) Delta= 395.610  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.795 NOE=***** (- 0.20/+ 0.20) Delta= 395.205  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.405 NOE=***** (- 0.20/+ 0.20) Delta= 396.595  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.834 NOE=***** (- 0.20/+ 0.20) Delta= 397.166  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.771 NOE=***** (- 0.20/+ 0.20) Delta= 396.229  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.736 NOE=***** (- 0.20/+ 0.20) Delta= 396.264  E(NOE)=********
+
+ NOEPRI: RMS diff. =1510.361,  #(violat.> 0.1)=   271 of    271 NOEs
+ NOEPRI: RMS diff. class AAF3 =1510.361,  #(viol.> 0.1)=   271 of    271 NOEs
+ NOE>end 
+ X-PLOR> 
+ %NEXTF-ERR: EOF or ERROR encountered on input:
+   
+ ^
+ CSTACK: size=    40000 used=      145 current=        0
+ HEAP:   maximum use=    75368 current use=        0
+ X-PLOR: total CPU time=      0.7420 s
+ X-PLOR: entry time at 13:51:06 22-Apr-10
+ X-PLOR: exit time at 13:51:07 22-Apr-10

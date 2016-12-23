@@ -1,0 +1,85 @@
+# !/usr/sbin/perl -w
+
+print STDOUT "Enter pdb filename: ";
+$peaksfile=<STDIN>;
+
+ouvert_files ();
+
+for $i(0..$#coor){
+    if    ( $coor[$i][2] eq "1H5'"){ $coor[$i][2]= "H5'";}
+    elsif ( $coor[$i][2] eq "2H5'"){ $coor[$i][2]= "H5''";}
+    elsif ( $coor[$i][2] eq "1H2'"){ $coor[$i][2]= "H2''";}
+    elsif ( $coor[$i][2] eq "2H2'"){ $coor[$i][2]= "H2'";}
+    elsif ( $coor[$i][2] eq "C5M") { $coor[$i][2]= "C5A";}
+    elsif ( $coor[$i][2] eq "1H5M"){ $coor[$i][2]= "H51";}
+    elsif ( $coor[$i][2] eq "2H5M"){ $coor[$i][2]= "H52";}
+    elsif ( $coor[$i][2] eq "3H5M"){ $coor[$i][2]= "H53";}
+    elsif ( $coor[$i][2] eq "1H2") { $coor[$i][2]= "H21";}
+    elsif ( $coor[$i][2] eq "2H2") { $coor[$i][2]= "H22";}
+    elsif ( $coor[$i][2] eq "1H4") { $coor[$i][2]= "H41";}
+    elsif ( $coor[$i][2] eq "2H4") { $coor[$i][2]= "H42";}
+    elsif ( $coor[$i][2] eq "1H6") { $coor[$i][2]= "H61";}
+    elsif ( $coor[$i][2] eq "2H6") { $coor[$i][2]= "H62";}
+    if    ( $coor[$i][3] eq "C"){ $coor[$i][3]= "CYT";}
+    elsif ( $coor[$i][3] eq "T"){ $coor[$i][3]= "THY";}
+    elsif ( $coor[$i][3] eq "A"){ $coor[$i][3]= "ADE";}
+    elsif ( $coor[$i][3] eq "G"){ $coor[$i][3]= "GUA";}
+    if    ( $coor[$i][4] =~/B/){
+            push @{$coor[$i]},"SEG2";
+            $coor[$i][4]= $`;}
+    else  {push @{$coor[$i]},"SEG1";}}
+
+#for $i(0..$#coor){
+#   print "@{$coor[$i]}\n";}
+
+
+print "Enter Desired new Filename: ";
+
+$ovlp = <STDIN>;
+open  (OUT, ">$ovlp")||die "can't open overlaped: $!";
+for $i(0..$#coor){
+     print OUT "ATOM";
+     @q=split (//,$coor[$i][1]);
+     $a=@q;
+         if ($a==1){ print OUT "      $coor[$i][1]";}
+         elsif ($a==2){print OUT "     $coor[$i][1]";}
+         elsif ($a==3){print OUT "    $coor[$i][1]";}
+     @q=split (//,$coor[$i][2]);
+     $a=@q;
+         if ($a==1){ print OUT   "   $coor[$i][2]  ";}
+         elsif ($a==2){ print OUT   "   $coor[$i][2] ";}
+         elsif ($a==3){print OUT "   $coor[$i][2]";}
+         elsif ($a==4){print OUT "  $coor[$i][2]";}
+     print OUT   " $coor[$i][3]";
+         if ($coor[$i][4]<10){print OUT "     $coor[$i][4]";}
+         else {print OUT "    $coor[$i][4]";}
+     @q=split (//,$coor[$i][5]);
+     $a=@q;
+         if ($a==5){ print OUT   "       $coor[$i][5]";}
+         elsif ($a==6){ print OUT  "      $coor[$i][5]";}
+         elsif ($a==7){ print OUT  "     $coor[$i][5]";}
+     @q=split (//,$coor[$i][6]);
+     $a=@q;
+         if ($a==5){ print OUT   "   $coor[$i][6]";}
+         elsif ($a==6){ print OUT  "  $coor[$i][6]";}
+         elsif ($a==7){ print OUT  " $coor[$i][6]";}
+     @q=split (//,$coor[$i][7]);
+     $a=@q;
+         if ($a==5){ print OUT   "   $coor[$i][7]";}
+         elsif ($a==6){ print OUT  "  $coor[$i][7]";}
+         elsif ($a==7){ print OUT  " $coor[$i][7]";}
+     print OUT  "  $coor[$i][8]  $coor[$i][9]      $coor[$i][10]\n";}
+
+
+
+sub ouvert_files
+{
+  open (TAM, "$peaksfile") || die "can't open Peaks file: $!";
+ 
+  while (defined ($line = <TAM>)){
+     @m=split (/\s+/,$line);
+     push @coor,[@m];}
+  close (TAM) ||  die "can't close  tlist.txt: $!";}
+
+
+ 

@@ -1,0 +1,69 @@
+remarks 	This program is used to calculate the Optimal Correlation Time
+remarks		using the Grid Search method. Taken from Xplor manual file:
+remarks		taugrid.inp. Modified 7/10/01 Raphael
+
+structure @cyclo_dA.psf end 		{*Read structure file *}
+coor @c_dA_final_dnm.pdb 
+			{* Read Coordinates *}
+
+	relaxation
+		nrestraints  4000
+
+  {* ============================== Specify the physical parameters of the system *}
+
+        group           DMSO            {* A group of spectra DMSO is defined *}
+        unresolved      DMSO
+                methyl                  {* Methyl protons are unresolved *}
+        end
+        average  3                      {* R-3 average to methyl groups *}
+        omega   DMSO    600.0e6
+ 
+
+  {* ============================== Specify the physical parameters of the system *}
+
+   classification      D260             {* Define a classification, D260 *}
+        @C_dA_80_pks.txt
+	@C_dA_80_ovl.txt
+
+        clgroup         D260     DMSO    {* which belongs to the group DMSO *}
+        taumix          D260     0.08     {* Mixing time in s. *}
+        minint          D260     0.05    {* Minimum measurable intensity *}
+
+
+
+
+        cutoff          {* Cutoff used for gradient and relaxation matrix *}
+                mode all value 6.5
+        end
+
+        potential parabola              {* Error estimates are not used *}
+        iexp    0.1666666667            {* Dev = I_cal^iexp - I_obs^iexp *}
+end
+
+	set display c_da_80_tau.disp end
+
+	eval  ($tau = 0.5e-9)
+	while ($tau < 15.0e-9) loop tau
+
+		relax
+	          taucorrel       DMSO
+       		     model rigid
+		     isotropic	$tau   
+                  end
+
+        calibrate                       {* Calculate spectrum and turn automatic rescaling on *}
+                quality 0.33 automatic on reference all group class
+        end
+
+        print threshold 9999 end        {* Print R value of initial structure *}
+
+ 	end
+
+	display  $tau $RNMR
+
+	eval  ($tau = $tau + 0.25e-9)
+	end loop tau
+
+stop 
+
+ 

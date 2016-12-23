@@ -1,0 +1,71 @@
+# !/usr/sbin/perl -w
+  use POSIX;
+
+print "How many mixing time do you have?\n";
+$mix=<STDIN>;
+
+@names=filesnames();
+
+foreach $file (@names){
+        @struct=open_file ($file);}
+
+@can_use=cr_stract (@struct);
+
+
+print "Enter Desired Distanses Filename: ";
+$distance = <STDIN>;
+open (OUT, ">$distance")||die "can't open xplor_format: $!";
+
+
+for $i(0..$#can_use){
+        @temp_array=qw();
+        push @temp_array,$can_use[$i][2];
+        for $k(($i+1)..$#can_use){
+             if ($can_use[$i][1] eq $can_use[$k][1]){
+             push @temp_array,$can_use[$k][2];
+             @{$can_use[$k]}=qw();}}
+             $sum=0;
+             for $j(0..$#temp_array){ $sum=$sum+$temp_array[$j]; }
+             $avv=$sum/($#temp_array+1);
+             $dev=0;
+             for $j(0..$#temp_array){ $dev=$dev+($temp_array[$j]-$avv)**2; }
+             $err=(POSIX::sqrt($dev))/($#temp_array+1);
+             if ($err<0.9) { $err=1.2;}
+             if ($#temp_array==0){$err=1.8;}
+             $var=$err/2;
+             if ( $can_use[$i][1]=~/^assign/){
+                   print OUT $can_use[$i][1];}
+             if ( $avv!=" "){
+                   printf OUT "%10.2f %10.2f %10.2f\n",$avv,$var,$var;}}
+
+
+sub filesnames {
+        for $i(0..($mix-1)){
+             $b=$i+1;
+             print  "Enter  file #$b name. \n";
+             $fl_name[$i]=<STDIN>;}
+        return @fl_name;}
+
+sub open_file {
+        open (TAM, "$_[0]") || die "can't open Peaks file: $!";
+        while (defined ($line = <TAM>)){
+             push @tempo, [$line];}
+        close (TAM)||die "can't close file: $!";
+return @tempo;}
+
+sub cr_stract{
+        my (@final,@temp_line);
+        $b=1;
+        for $i($b..$#_){
+             if ($_[$i][0]=~/^assign/){
+                  $k=0;
+                  until ($_[($i+$k)][0]=~/0.02/){
+                       push @temp_line,$_[($i+$k)][0];
+                       $template=join /""/,(@temp_line);
+                       $k++;}
+                  $n="\n";
+                  @distanses_and_errors=split (/\s+/,$_[($i+$k)][0]);
+                  push @final,[$n,$template,$distanses_and_errors[1]];}
+         @temp_line=qw();
+         $b=$i+$k;}
+return @final;}

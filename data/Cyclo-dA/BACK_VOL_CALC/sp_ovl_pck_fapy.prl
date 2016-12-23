@@ -1,0 +1,49 @@
+# !/usr/sbin/perl -w
+print  "Enter  file name. \n";
+$filename=<STDIN>;
+open_file();
+
+close (FROM)||die "can't close : $!";
+
+for $i(0..$#temp_array){
+  if ($temp_array[$i][0]=~/assign/){
+      $n=$i+1;
+      $m=0;     
+      until ($temp_array[$n][0] =~ /www/){
+           $m=$m+1;    
+           $n=$n+1;}
+      $number=$m/2;
+      for $j($i..($i+$number-1)){
+       @new1=split (/\s+/,$temp_array[$j][0]);
+       @new2=split (/\s+/,$temp_array[($j+$number)][0]);
+
+       push @final,[ @new1];
+       push @final,[ @new2];}}}
+      
+@stop=qw{end};
+push @final,[@stop]; 
+
+print "Enter Desired Overlap-corr Filename: ";
+$ovlp = <STDIN>;
+open  (OUT2, ">$ovlp")||die "can't open overlaped: $!";
+
+$k=0;
+while ($final[$k][0] ne "end"){
+     if ( $final[$k][0] eq "assign"){
+        print OUT2 "assign  ( resid $final[$k][2] and name $final[$k][5] and segid $final[$k][8]\n";
+        print OUT2 "        ( resid $final[$k+1][2] and name $final[$k+1][5] and segid $final[$k+1][8]\n";}
+       elsif ( $final[$k][1] eq "or"){
+        print OUT2 "assign  ( resid $final[$k][3] and name $final[$k][6] and segid $final[$k][9]\n";
+        print OUT2 "        ( resid $final[$k+1][3] and name $final[$k+1][6] and segid $final[$k+1][9]\n";}
+      print OUT2 "400  0.2  0.2\n";
+      print OUT2 "\n";
+$k=$k+2;}
+
+close (OUT2)||die "can't close xplor_format: $!";
+
+
+sub open_file {
+       open (FROM, "$filename") || die "can't open Peaks file: $!";
+             while (defined ($line = <FROM>)){
+             push @temp_array,[$line];}}
+#	     close (FROM)||die "can't close : $!";

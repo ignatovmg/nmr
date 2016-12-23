@@ -1,0 +1,499 @@
+assign  (resid 2 and name H2''  and segid SEG1)
+        (resid 2 and name H1'  and segid SEG1)
+      2.35       0.60       0.60
+assign  (resid 1 and name H2''  and segid SEG2)
+        (resid 1 and name H1'  and segid SEG2)
+      2.35       0.60       0.60
+assign  (resid 2 and name H2'  and segid SEG1)
+        (resid 2 and name H3'  and segid SEG1)
+      2.30       0.60       0.60
+assign  (resid 10 and name H2''  and segid SEG1)
+        (resid 10 and name H3'  and segid SEG1)
+      3.35       0.60       0.60
+assign  (resid 3 and name H2'  and segid SEG1)
+        (resid 3 and name H3'  and segid SEG1)
+      2.49       0.60       0.60
+assign  (resid 8 and name H2'  and segid SEG2)
+        (resid 8 and name H3'  and segid SEG2)
+      2.80       0.60       0.60
+assign  (resid 3 and name H3'  and segid SEG1)
+        (resid 4 and name H8  and segid SEG1)
+      5.88       0.60       0.60
+assign  (resid 8 and name H3'  and segid SEG2)
+        (resid 9 and name H8  and segid SEG2)
+      4.92       0.60       0.60
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 2 and name H1'  and segid SEG1)
+      5.76       0.60       0.60
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 2 and name H1'  and segid SEG1)
+      3.93       0.60       0.60
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 2 and name H1'  and segid SEG1)
+      7.70       0.60       0.60
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 2 and name H3'  and segid SEG1)
+      6.44       0.60       0.60
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 2 and name H3'  and segid SEG1)
+      4.63       0.60       0.60
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 2 and name H3'  and segid SEG1)
+      8.18       0.60       0.60
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 2 and name H4'  and segid SEG1)
+      8.17       0.90       0.90
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 2 and name H4'  and segid SEG1)
+      5.98       0.90       0.90
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 2 and name H4'  and segid SEG1)
+     10.04       0.90       0.90
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 2 and name H8  and segid SEG1)
+      4.04       0.60       0.60
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 2 and name H8  and segid SEG1)
+      3.01       0.60       0.60
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 2 and name H8  and segid SEG1)
+      8.05       0.60       0.60
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 3 and name H2'  and segid SEG1)
+      6.44       0.90       0.90
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 3 and name H2'  and segid SEG1)
+      5.51       0.90       0.90
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 3 and name H2'  and segid SEG1)
+      4.20       0.90       0.90
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 3 and name H6  and segid SEG1)
+      3.82       0.60       0.60
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 3 and name H6  and segid SEG1)
+      2.73       0.60       0.60
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 3 and name H6  and segid SEG1)
+      3.97       0.60       0.60
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 4 and name H2'  and segid SEG1)
+      7.50       0.60       0.60
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 4 and name H2'  and segid SEG1)
+      8.10       0.60       0.60
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 4 and name H2'  and segid SEG1)
+      3.33       0.60       0.60
+assign  (resid 3 and name H51  and segid SEG1)
+        (resid 4 and name H2''  and segid SEG1)
+      7.30       0.60       0.60
+assign  (resid 3 and name H52  and segid SEG1)
+        (resid 4 and name H2''  and segid SEG1)
+      8.23       0.60       0.60
+assign  (resid 3 and name H53  and segid SEG1)
+        (resid 4 and name H2''  and segid SEG1)
+      3.60       0.60       0.60
+assign  (resid 4 and name H2''  and segid SEG1)
+        (resid 4 and name H1'  and segid SEG1)
+      2.56       0.60       0.60
+assign  (resid 8 and name H2''  and segid SEG1)
+        (resid 8 and name H1'  and segid SEG1)
+      2.32       0.60       0.60
+assign  (resid 4 and name H2'  and segid SEG1)
+        (resid 4 and name H3'  and segid SEG1)
+      2.44       0.60       0.60
+assign  (resid 9 and name H2'  and segid SEG2)
+        (resid 9 and name H3'  and segid SEG2)
+      2.29       0.60       0.60
+assign  (resid 4 and name H3'  and segid SEG1)
+        (resid 4 and name H8  and segid SEG1)
+      5.12       0.60       0.60
+assign  (resid 9 and name H3'  and segid SEG2)
+        (resid 9 and name H8  and segid SEG2)
+      3.75       0.60       0.60
+assign  (resid 6 and name H3'  and segid SEG1)
+        (resid 7 and name H6  and segid SEG1)
+      3.66       0.60       0.60
+assign  (resid 7 and name H3'  and segid SEG1)
+        (resid 7 and name H6  and segid SEG1)
+      3.73       0.60       0.60
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 8 and name H1'  and segid SEG1)
+      5.45       0.60       0.60
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 8 and name H1'  and segid SEG1)
+      4.35       0.60       0.60
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 8 and name H1'  and segid SEG1)
+      5.37       0.60       0.60
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 8 and name H2'  and segid SEG1)
+      4.14       0.60       0.60
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 8 and name H2'  and segid SEG1)
+      2.70       0.60       0.60
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 8 and name H2'  and segid SEG1)
+      3.85       0.60       0.60
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 8 and name H2''  and segid SEG1)
+      4.49       0.60       0.60
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 8 and name H2''  and segid SEG1)
+      2.76       0.60       0.60
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 8 and name H2''  and segid SEG1)
+      4.20       0.60       0.60
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 8 and name H3'  and segid SEG1)
+      5.80       0.60       0.60
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 8 and name H3'  and segid SEG1)
+      4.47       0.60       0.60
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 8 and name H3'  and segid SEG1)
+      5.26       0.60       0.60
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 8 and name H4'  and segid SEG1)
+      7.11       0.90       0.90
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 8 and name H4'  and segid SEG1)
+      5.58       0.90       0.90
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 8 and name H4'  and segid SEG1)
+      6.87       0.90       0.90
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 8 and name H8  and segid SEG1)
+      3.69       0.60       0.60
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 8 and name H8  and segid SEG1)
+      3.05       0.60       0.60
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 8 and name H8  and segid SEG1)
+      4.17       0.60       0.60
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 9 and name H1'  and segid SEG1)
+      5.65       0.90       0.90
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 9 and name H1'  and segid SEG1)
+      5.28       0.90       0.90
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 9 and name H1'  and segid SEG1)
+      5.41       0.90       0.90
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 9 and name H2'  and segid SEG1)
+      5.22       0.90       0.90
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 9 and name H2'  and segid SEG1)
+      4.48       0.90       0.90
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 9 and name H2'  and segid SEG1)
+      4.60       0.90       0.90
+assign  (resid 9 and name H51  and segid SEG1)
+        (resid 9 and name H6  and segid SEG1)
+      3.63       0.60       0.60
+assign  (resid 9 and name H52  and segid SEG1)
+        (resid 9 and name H6  and segid SEG1)
+      2.53       0.60       0.60
+assign  (resid 9 and name H53  and segid SEG1)
+        (resid 9 and name H6  and segid SEG1)
+      2.99       0.60       0.60
+assign  (resid 10 and name H2'  and segid SEG1)
+        (resid 11 and name H6  and segid SEG1)
+      3.61       0.60       0.60
+assign  (resid 1 and name H2'  and segid SEG2)
+        (resid 2 and name H6  and segid SEG2)
+      3.85       0.60       0.60
+assign  (resid 11 and name H2''  and segid SEG1)
+        (resid 11 and name H5  and segid SEG1)
+      5.04       0.90       0.90
+assign  (resid 11 and name H2'  and segid SEG1)
+        (resid 11 and name H5  and segid SEG1)
+      4.11       0.60       0.60
+assign  (resid 4 and name H2''  and segid SEG2)
+        (resid 4 and name H1'  and segid SEG2)
+      2.53       0.60       0.60
+assign  (resid 1 and name H2''  and segid SEG1)
+        (resid 1 and name H1'  and segid SEG1)
+      2.73       0.60       0.60
+assign  (resid 4 and name H2'  and segid SEG2)
+        (resid 4 and name H1'  and segid SEG2)
+      3.09       0.90       0.90
+assign  (resid 1 and name H2'  and segid SEG1)
+        (resid 1 and name H1'  and segid SEG1)
+      3.09       0.90       0.90
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 3 and name H1'  and segid SEG2)
+      5.66       0.60       0.60
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 3 and name H1'  and segid SEG2)
+      5.44       0.60       0.60
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 3 and name H1'  and segid SEG2)
+      4.35       0.60       0.60
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 3 and name H2'  and segid SEG2)
+      3.77       0.90       0.90
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 3 and name H2'  and segid SEG2)
+      3.46       0.90       0.90
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 3 and name H2'  and segid SEG2)
+      2.08       0.90       0.90
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 3 and name H2''  and segid SEG2)
+      4.74       0.60       0.60
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 3 and name H2''  and segid SEG2)
+      4.77       0.60       0.60
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 3 and name H2''  and segid SEG2)
+      3.10       0.60       0.60
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 3 and name H3'  and segid SEG2)
+      5.95       0.60       0.60
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 3 and name H3'  and segid SEG2)
+      5.84       0.60       0.60
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 3 and name H3'  and segid SEG2)
+      4.37       0.60       0.60
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 3 and name H4'  and segid SEG2)
+      7.74       0.90       0.90
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 3 and name H4'  and segid SEG2)
+      7.39       0.90       0.90
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 3 and name H4'  and segid SEG2)
+      6.06       0.90       0.90
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 3 and name H8  and segid SEG2)
+      4.79       0.60       0.60
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 3 and name H8  and segid SEG2)
+      3.85       0.60       0.60
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 3 and name H8  and segid SEG2)
+      3.33       0.60       0.60
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 4 and name H2'  and segid SEG2)
+      4.64       0.90       0.90
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 4 and name H2'  and segid SEG2)
+      5.22       0.90       0.90
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 4 and name H2'  and segid SEG2)
+      4.83       0.90       0.90
+assign  (resid 4 and name H51  and segid SEG2)
+        (resid 4 and name H6  and segid SEG2)
+      3.15       0.60       0.60
+assign  (resid 4 and name H52  and segid SEG2)
+        (resid 4 and name H6  and segid SEG2)
+      3.48       0.60       0.60
+assign  (resid 4 and name H53  and segid SEG2)
+        (resid 4 and name H6  and segid SEG2)
+      2.77       0.60       0.60
+assign  (resid 6 and name H2''  and segid SEG2)
+        (resid 6 and name H6  and segid SEG2)
+      3.81       0.60       0.60
+assign  (resid 5 and name H2'  and segid SEG2)
+        (resid 6 and name H6  and segid SEG2)
+      3.71       0.60       0.60
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 5 and name H1'  and segid SEG2)
+      5.63       0.90       0.90
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 5 and name H1'  and segid SEG2)
+      5.51       0.90       0.90
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 5 and name H1'  and segid SEG2)
+      4.03       0.90       0.90
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 5 and name H2'  and segid SEG2)
+      3.99       0.60       0.60
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 5 and name H2'  and segid SEG2)
+      4.12       0.60       0.60
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 5 and name H2'  and segid SEG2)
+      2.69       0.60       0.60
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 5 and name H2''  and segid SEG2)
+      3.80       0.90       0.90
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 5 and name H2''  and segid SEG2)
+      3.92       0.90       0.90
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 5 and name H2''  and segid SEG2)
+      2.87       0.90       0.90
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 5 and name H3'  and segid SEG2)
+      5.20       0.60       0.60
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 5 and name H3'  and segid SEG2)
+      5.66       0.60       0.60
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 5 and name H3'  and segid SEG2)
+      4.05       0.60       0.60
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 5 and name H4'  and segid SEG2)
+      7.12       0.90       0.90
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 5 and name H4'  and segid SEG2)
+      7.13       0.90       0.90
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 5 and name H4'  and segid SEG2)
+      5.23       0.90       0.90
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 5 and name H8  and segid SEG2)
+      5.22       0.60       0.60
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 5 and name H8  and segid SEG2)
+      4.64       0.60       0.60
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 5 and name H8  and segid SEG2)
+      2.83       0.60       0.60
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 6 and name H2'  and segid SEG2)
+      4.45       0.90       0.90
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 6 and name H2'  and segid SEG2)
+      4.84       0.90       0.90
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 6 and name H2'  and segid SEG2)
+      5.36       0.90       0.90
+assign  (resid 6 and name H51  and segid SEG2)
+        (resid 6 and name H6  and segid SEG2)
+      2.59       0.60       0.60
+assign  (resid 6 and name H52  and segid SEG2)
+        (resid 6 and name H6  and segid SEG2)
+      3.30       0.60       0.60
+assign  (resid 6 and name H53  and segid SEG2)
+        (resid 6 and name H6  and segid SEG2)
+      3.56       0.60       0.60
+assign  (resid 7 and name H2'  and segid SEG2)
+        (resid 7 and name H3'  and segid SEG2)
+      2.74       0.60       0.60
+assign  (resid 2 and name H2''  and segid SEG2)
+        (resid 2 and name H3'  and segid SEG2)
+      2.70       0.60       0.60
+assign  (resid 7 and name H3'  and segid SEG2)
+        (resid 8 and name H6  and segid SEG2)
+      5.49       0.60       0.60
+assign  (resid 8 and name H3'  and segid SEG2)
+        (resid 8 and name H6  and segid SEG2)
+      3.77       0.60       0.60
+assign  (resid 8 and name H2''  and segid SEG2)
+        (resid 8 and name H3'  and segid SEG2)
+      2.99       0.60       0.60
+assign  (resid 3 and name H2''  and segid SEG1)
+        (resid 3 and name H3'  and segid SEG1)
+      2.78       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 7 and name H1'  and segid SEG2)
+      4.74       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 7 and name H1'  and segid SEG2)
+      5.64       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 7 and name H1'  and segid SEG2)
+      4.84       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 7 and name H2'  and segid SEG2)
+      2.87       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 7 and name H2'  and segid SEG2)
+      3.88       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 7 and name H2'  and segid SEG2)
+      3.12       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 7 and name H2''  and segid SEG2)
+      2.67       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 7 and name H2''  and segid SEG2)
+      4.10       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 7 and name H2''  and segid SEG2)
+      3.62       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 7 and name H3'  and segid SEG2)
+      4.05       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 7 and name H3'  and segid SEG2)
+      5.58       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 7 and name H3'  and segid SEG2)
+      5.24       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 7 and name H4'  and segid SEG2)
+      5.88       0.90       0.90
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 7 and name H4'  and segid SEG2)
+      6.91       0.90       0.90
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 7 and name H4'  and segid SEG2)
+      6.14       0.90       0.90
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 7 and name H8  and segid SEG2)
+      4.05       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 7 and name H8  and segid SEG2)
+      4.11       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 7 and name H8  and segid SEG2)
+      3.08       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 8 and name H1'  and segid SEG2)
+      5.94       0.90       0.90
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 8 and name H1'  and segid SEG2)
+      5.77       0.90       0.90
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 8 and name H1'  and segid SEG2)
+      6.30       0.90       0.90
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 8 and name H2'  and segid SEG2)
+      3.83       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 8 and name H2'  and segid SEG2)
+      4.27       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 8 and name H2'  and segid SEG2)
+      4.68       0.60       0.60
+assign  (resid 8 and name H51  and segid SEG2)
+        (resid 8 and name H6  and segid SEG2)
+      2.65       0.60       0.60
+assign  (resid 8 and name H52  and segid SEG2)
+        (resid 8 and name H6  and segid SEG2)
+      3.23       0.60       0.60
+assign  (resid 8 and name H53  and segid SEG2)
+        (resid 8 and name H6  and segid SEG2)
+      3.17       0.60       0.60
+assign  (resid 7 and name H2'  and segid SEG1)
+        (resid 7 and name H4'  and segid SEG1)
+      4.01       0.90       0.90
+assign  (resid 7 and name H2''  and segid SEG1)
+        (resid 7 and name H4'  and segid SEG1)
+      3.83       0.90       0.90
+assign  (resid 2 and name H2'  and segid SEG2)
+        (resid 2 and name H4'  and segid SEG2)
+      3.65       0.90       0.90
+assign  (resid 2 and name H2''  and segid SEG2)
+        (resid 2 and name H4'  and segid SEG2)
+      3.50       0.90       0.90
+assign  (resid 5 and name H2''  and segid SEG2)
+        (resid 5 and name H3'  and segid SEG2)
+      2.86       0.60       0.60
+assign  (resid 1 and name H2'  and segid SEG1)
+        (resid 4 and name H1'  and segid SEG2)
+     22.20       0.90       0.90
+
+assign  (resid 7 and name H1'  and segid SEG2)
+        (resid 6 and name H2  and segid SEG1)
+      4.38       0.90       0.90
+assign  (resid 4 and name H2  and segid SEG1)
+        (resid 4 and name H3'  and segid SEG1)
+      7.79       0.90       0.90

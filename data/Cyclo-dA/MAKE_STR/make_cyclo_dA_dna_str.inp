@@ -1,0 +1,73 @@
+remarks   build  the platinum  structure bonded to the guanosines
+ 
+rtf  @ c_dA_topol_2.top  end
+ 
+parameter @c_dA_param.par end
+ 
+ 
+segment
+   name="SEG1"
+   SETUP=TRUE
+   chain
+
+LINK NUC  HEAD - *  TAIL + *  END
+FIRST  5ter  TAIL + * END
+LAST 3TER  HEAD - * END
+SET ECHO=TRUE END
+ 
+      sequence
+     CYT GUA THY ADE CYT ACL CYT ADE THY GUA CYT
+      end {* end seq *}
+    end {* chain *}
+  end {* segment *}
+
+segment
+   name="SEG2"
+   SETUP=TRUE
+   chain
+ 
+ 
+LINK NUC  HEAD - *  TAIL + *  END
+FIRST  5ter  TAIL + * END
+LAST 3TER  HEAD - * END
+SET ECHO=TRUE END
+ 
+      sequence
+     GUA CYT ADE THY GUA THY GUA THY ADE CYT GUA
+      end {* end seq *}
+    end {* chain *}
+  end {* segment *}
+ 
+SEGMENT
+  NAME= SEG3
+ ! SETUP = TRUE   ! generate internal coordinates
+  CHAIN
+    sequence
+    AAA
+    end
+ end
+end
+
+{* now apply DNA patches to all residues *}
+{* ===================================== *}
+ 
+for $1 in ( 1 2 3 4 5 6 7 8 9 10 11)
+loop main
+   patch DEOX  reference=NIL=( segid "SEG1" and resid $1 ) end
+end loop main
+
+for $1 in ( 1 2 3 4 5 6 7 8 9 10 11)
+loop main2
+   patch DEOX  reference=NIL=( segid "SEG2" and resid $1 ) end
+end loop main2
+
+
+
+write psf output=cyclo_dA_new.psf end
+
+coor @S_cyclo_dA.pdb end
+
+
+write coor output=S_cyclo_dA_xplor_dynam_fnl.pdb end
+
+stop

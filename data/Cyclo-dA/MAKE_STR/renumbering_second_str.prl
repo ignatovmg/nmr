@@ -1,0 +1,101 @@
+# !/usr/sbin/perl -w
+
+print STDOUT "Enter Peaks filename: ";
+$peaksfile=<STDIN>;
+ouvert_files ();
+sub ouvert_files
+{
+open (TAM, "$peaksfile") || die "can't open Peaks file: $!";
+while (defined ($line = <TAM>)){
+if ($line=~/ 22 /){
+$_=$line;
+$new=" 11 ";
+s/ 22 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 21 /){
+$_=$line;
+$new=" 10 ";
+s/ 21 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 20 /){
+$_=$line;
+$new="  9 ";
+s/ 20 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 19 /){
+$_=$line;
+$new="  8 ";
+s/ 19 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 18 /){
+$_=$line;
+$new="  7 ";
+s/ 18 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 17 /){
+$_=$line;
+$new="  6 ";
+s/ 17 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 16 /){
+$_=$line;
+$new="  5 ";
+s/ 16 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 15 /){
+$_=$line;
+$new="  4 ";
+s/ 15 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 14 /){
+$_=$line;
+$new="  3 ";
+s/ 14 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 13 /){
+$_=$line;
+$new="  2 ";
+s/ 13 /$new/;
+push @stop,[$_];}
+elsif ($line=~/ 12 /){
+$_=$line;
+$new="  1 ";
+s/ 12 /$new/;
+push @stop,[$_];}
+else {
+push @stop,[$line];}}}
+
+
+
+print "Enter Desired Name for corrected file: ";
+$ovlp = <STDIN>;
+
+open  (REG, ">$ovlp")||die "can't open file: $!";
+for $i(0..$#stop){
+print REG "@{$stop[$i]}";}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

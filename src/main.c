@@ -206,6 +206,40 @@ void my_fprint_matrix_stacked(FILE* f, double* m, int size)
 	}
 }
 
+void my_pprint_matrix(char* path, double* m, int size)
+{
+	FILE* file = fopen(path, "w");
+	my_fprint_matrix(file, m, size);
+	fclose(file);
+}
+
+#ifdef TEST
+// For tests only
+double best_k(char* path, double* m, int size)
+{
+	FILE* f = fopen(path, "r");
+	if (f == NULL)
+	{
+		printf("%s not found", path);
+		exit(0);
+	}
+	
+	int i, j;
+	double val;
+	double num = 0.0;
+	double den = 0.0;
+	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
+	{
+		num += val*m[i*size+j];
+		den += m[i*size+j]*m[i*size+j];
+	}
+	rewind(f);
+	double k = num/den;
+	
+	return k;
+}
+#endif
+
 double chi_score(char* path, double* m, int size)
 {
 	FILE* f = fopen(path, "r");
@@ -246,13 +280,13 @@ int main(int argc, char** argv)
 	int i, j, k;          
 /*
  * zero_freq_coef = J(0)*gamma^4*h^2/(4pi^2*10)
- * sing_freq_coef = 3./2.*J(1)*gamma^4*h^2/(4pi^2*10)
+ * sing_freq_coef = 3./2.*J(1*omega)*gamma^4*h^2/(4pi^2*10)
  * doub_freq_coef = 6.*J(2*omega)*gamma^4*h^2/(4pi^2*10)
 **/
 	double zero_freq_coef = 5.67426; // TODO: Decide about the constants
 	double doub_freq_coef = 3.0/2.0*5.67426/1.0047;  //
 	double sing_freq_coef = 6.0*5.67426/1.0196;  //
-	double mixing_time = 0.3;
+	double mixing_time = 0.300;
 	char* eq_groups_path = argv[1]; // path to equivalent proton groups
 	char* complex_path = argv[2]; // path to peptide
 	char* output_path = argv[3];
@@ -298,6 +332,13 @@ int main(int argc, char** argv)
 		rewind(f);
 	}
 	fclose(f);
+
+	// Print distance matrix
+	double* dist = calloc(size*size, sizeof(double));
+	for (int i = 0; i < size*size; i++)
+		dist[i] = pow(rx_mat[i], 1.0/6.0);
+	my_pprint_matrix("sandbox/distance", dist, size);
+	free(dist);
 	
 	// Read proton groups
 	proton_groups* eq_groups;
@@ -362,14 +403,8 @@ int main(int argc, char** argv)
 	double* grouped_in = calloc(eq_groups->N*eq_groups->N, sizeof(double));
 	collapse_groups(grouped_in, in, eq_groups);
 	
-	if (strcmp(complex_path, "./sandbox/refined/CIL_05734.dat") == 0){
-	FILE* comp_file = fopen("sandbox/computed_matrix", "w");
-	my_fprint_matrix(comp_file, grouped_in, eq_groups->N);
-	fclose(comp_file);
-	printf("asdfs\n");
-	}
-	
 	// Add line to output file
+	
 	FILE* output = fopen(output_path, "a");
 	fprintf(output, "%s\t", complex_path);
 	for (i = 0; i < argc-4; i++)
@@ -382,6 +417,14 @@ int main(int argc, char** argv)
 			fprintf(output, "%.1lf\n", chi);
 	}
 	fclose(output);
+	
+#ifdef TEST
+	double multip = best_k(argv[4], grouped_in, eq_groups->N);
+	for (int i = 0; i < eq_groups->N*eq_groups->N; i++)
+		grouped_in[i] = multip*grouped_in[i];	
+#endif
+
+	my_pprint_matrix("sandbox/computed_matrix", grouped_in, eq_groups->N);
 	
 	// Free
 	free(proton_ids);

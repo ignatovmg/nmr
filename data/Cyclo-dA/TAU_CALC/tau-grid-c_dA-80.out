@@ -1,0 +1,4156 @@
+ X-PLOR(online) Version 3.851
+
+ Author: Axel T. Brunger
+ X-PLOR(online): Copyright 1996 by Yale University
+ X-PLOR: Copyright 1987 by Harvard U., 1988-1996 by Yale U.
+
+ User: tanyazal     on: linux           at: 20-Apr-10 19:32:39
+ X-PLOR>remarks 	This program is used to calculate the Optimal Correlation Time 
+ X-PLOR>remarks		using the Grid Search method. Taken from Xplor manual file: 
+ X-PLOR>remarks		taugrid.inp. Modified 7/10/01 Raphael 
+ X-PLOR> 
+ X-PLOR>structure @cyclo_dA.psf end 		{*Read structure file *} 
+ ASSFIL: file cyclo_dA.psf opened.
+ STRUcture>PSF 
+ REMARKS FILENAME="cyclo_dA.psf"
+ REMARKS  NUCLEIC ACID PARAMETER FILE CREATION RUN
+ REMARKS  >>>NO WARRANTY EXPRESSED OR IMPLIED<<<
+ REMARKS
+ REMARKS  ALL HYDROGEN NUCLEIC ACID PARAMETER FILE.
+ REMARKS  DERIVED FROM PARMDNA8. LN and MP 1984
+ REMARKS  H-bond wells made 0.5 kcal deeper
+ REMARKS  to improve basepair energies 8/20/84/ln
+ REMARKS  H stretch & bend constants from URACIL normal mode fit.
+ REMARKS  Magnesium (fudge) and spermine included.
+ REMARKS  all references to water removed, ATB, 3-JAN-85
+ REMARKS  improper force constants for c1', h's and c5a in base planes
+ REMARKS  increased to 80 to ensure planarity (GMC 16/5/85)
+ REMARKS DATE:20-Apr-10  15:36:23       created by user: tanyazal
+ XPLOR: current counts (number in parenthesis is maximum)
+ NATOM=        695(MAXA=       24000)  NBOND=        749(MAXB=       24000)
+ NTHETA=      1358(MAXT=       40000)  NGRP=         226(MAXGRP=     24000)
+ NPHI=         619(MAXP=       50000)  NIMPHI=       315(MAXIMP=     24000)  
+ NDON=          50(MAXPAD=      4000)  NACC=         160(MAXPAD=      4000)
+ NNB=           66(MAXNB=       3000) 
+ STRUcture> end 		{*Read structure file *} 
+ X-PLOR>coor @c_dA_final_dnm.pdb 
+ ASSFIL: file c_dA_final_dnm.pdb opened.
+ COOR>REMARK FILENAME="cyclo_dA_xplor_dynam_fnl.pdb" 
+ COOR>REMARK  NUCLEIC ACID PARAMETER FILE CREATION RUN 
+ COOR>REMARK  >>>NO WARRANTY EXPRESSED OR IMPLIED<<< 
+ COOR>REMARK  ALL HYDROGEN NUCLEIC ACID PARAMETER FILE. 
+ COOR>REMARK  DERIVED FROM PARMDNA8. LN and MP 1984 
+ COOR>REMARK  H-bond wells made 0.5 kcal deeper 
+ COOR>REMARK  to improve basepair energies 8/20/84/ln 
+ COOR>REMARK  H stretch & bend constants from URACIL normal mode fit. 
+ COOR>REMARK  Magnesium (fudge) and spermine included. 
+ COOR>REMARK  all references to water removed, ATB, 3-JAN-85 
+ COOR>REMARK  improper force constants for c1', h's and c5a in base planes 
+ COOR>REMARK  increased to 80 to ensure planarity (GMC 16/5/85) 
+ COOR>REMARK DATE:20-Apr-10  15:36:23       created by user: tanyazal 
+ COOR>ATOM      1  H5T CYT     1      -9.725  -5.986 -16.513  1.00  0.00      SEG1 
+ COOR>ATOM      2  O5' CYT     1      -8.261  -6.648 -16.437  1.00  0.00      SEG1 
+ X-PLOR>			{* Read Coordinates *} 
+ X-PLOR> 
+ X-PLOR>	relaxation 
+ RELAx>		nrestraints  4000 
+ RELAX: allocating space for    4000 intensities.
+ RELAx> 
+ RELAx>  {* ============================== Specify the physical parameters of the system *} 
+ RELAx> 
+ RELAx>        group           DMSO            {* A group of spectra DMSO is defined *} 
+ RELAx>        unresolved      DMSO 
+ EQUIvalent>                methyl                  {* Methyl protons are unresolved *} 
+ EQUIvalent>        end 
+ RELAx>        average  3                      {* R-3 average to methyl groups *} 
+ RELAx>        omega   DMSO    600.0e6 
+ RELAx> 
+ RELAx> 
+ RELAx>  {* ============================== Specify the physical parameters of the system *} 
+ RELAx> 
+ RELAx>   classification      D260             {* Define a classification, D260 *} 
+ RELAx>        @C_dA_80_pks.txt 
+ ASSFIL: file C_dA_80_pks.txt opened.
+ RELAx>assign (resid 1 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   278.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   49.600000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   873.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1780.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   187.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   289.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   76.400000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   128.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   8160.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   141.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   647.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   311.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   523.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   69.100000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   79.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   93.100000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1730.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   215.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1330.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   296.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   117.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   71.400000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   61.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   5980.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   89.300000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   407.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   445.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   232.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   173.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1120.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   48.600000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   348.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   4880.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1130.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   2640.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1990.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   629.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   805.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H5' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   327.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   59.200000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   84.300000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   145.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1040.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   2260.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   547.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   438.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1380.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   98.600000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   119.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   7300.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   3070.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   932.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   238.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   553.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   253.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   595.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   52.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   40.700000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   61.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   83.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   52.400000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   4650.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1360.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1570.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   192.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   2420.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   786.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   161.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   284.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   59.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   90.100000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1020.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1300.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   87.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1000.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   256.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   446.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2'' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   820.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   83.800000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H1' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   61.300000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H3' and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H6 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   368.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H5 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H8 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   73.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   57.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   139.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   3350.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1230.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   577.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   115.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   964.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   94.300000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   525.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   795.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 1 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   27.800000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   61.400000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   102.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   4500.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1070.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   114.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   600.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   296.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 2 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   65.600000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 2 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 1 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   26.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H2 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   48.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   103.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   154.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   4980.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1610.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1180.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   206.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1240.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   544.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   255.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   587.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   104.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 3 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   30.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 3 and name H2 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   33.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   82.700000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   101.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1130.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1190.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   480.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 4 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   268.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 4 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   37.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   125.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   55.700000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   4980.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1330.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1060.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1190.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   543.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   233.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   603.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 5 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   65.600000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 5 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   55.800000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   21.200000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   95.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   220.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   6750.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1410.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1760.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   182.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   420.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   469.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   93.100000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 6 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   39.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 6 and name H2 and segid SEG1) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   55.800000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   61.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   92.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   8060.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1020.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   265.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   499.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   225.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   598.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 7 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 7 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   62.100000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   74.800000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   94.500000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   5900.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1790.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 8 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   420.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 8 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   653.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   98.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   126.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   143.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   6180.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   70.700000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   516.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1340.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   619.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   279.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   103.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 9 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   771.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H2 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   42.900000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   123.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   70.400000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   5690.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1350.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   2060.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   169.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   576.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   159.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 10 and name H6 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   181.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 10 and name H5 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 9 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   97.400000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   95.700000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H2' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   1070.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H1' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   2360.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H2'' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   131.000000   0.2 
+ RELAxation> 
+ RELAxation>assign (resid 11 and name H3' and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ SELRPN>       (resid 11 and name H8 and segid SEG2) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   117.000000   0.2 
+ RELAxation> 
+ RELAxation>	@C_dA_80_ovl.txt 
+ ASSFIL: file C_dA_80_ovl.txt opened.
+ RELAxation>assign ((resid 2 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 10 and name H2'' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 2 and name H3' and segid SEG1) 
+ SELRPN>     or (resid 10 and name H3' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   2240.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 3 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H2' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 3 and name H3' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H3' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   1230.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 3 and name H3' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H3' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H8 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H8 and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   60.100000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 3 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 2 and name H8 and segid SEG1) 
+ SELRPN>     or (resid 2 and name H8 and segid SEG1) 
+ SELRPN>     or (resid 2 and name H8 and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   310.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 3 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 3 and name H6 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H6 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H6 and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   901.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 3 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 4 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 4 and name H2' and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   298.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 3 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 3 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H2'' and segid SEG1) 
+ SELRPN>     or (resid 4 and name H2'' and segid SEG1) 
+ SELRPN>     or (resid 4 and name H2'' and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   553.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H2'' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H2'' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H1' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H1' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   2430.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H2 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H2' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H3' and segid SEG1) 
+ SELRPN>     or (resid 9 and name H3' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   2900.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H3' and segid SEG1) 
+ SELRPN>     or (resid 9 and name H3' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H8 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H8 and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   194.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 6 and name H3' and segid SEG1) 
+ SELRPN>     or (resid 7 and name H3' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H6 and segid SEG1) 
+ SELRPN>     or (resid 7 and name H6 and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   526.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 9 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 8 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H2' and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   362.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 9 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 8 and name H2'' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H2'' and segid SEG1) 
+ SELRPN>     or (resid 8 and name H2'' and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   544.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 9 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 8 and name H8 and segid SEG1) 
+ SELRPN>     or (resid 8 and name H8 and segid SEG1) 
+ SELRPN>     or (resid 8 and name H8 and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   315.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 9 and name H51 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H52 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H53 and segid SEG1)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 9 and name H6 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H6 and segid SEG1) 
+ SELRPN>     or (resid 9 and name H6 and segid SEG1)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   804.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 10 and name H2' and segid SEG1) 
+ SELRPN>     or (resid 1 and name H2' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 11 and name H6 and segid SEG1) 
+ SELRPN>     or (resid 2 and name H6 and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   574.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 1 and name H2'' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H1' and segid SEG2) 
+ SELRPN>     or (resid 1 and name H1' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   2670.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 3 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 3 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 3 and name H2'' and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   867.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 3 and name H8 and segid SEG2) 
+ SELRPN>     or (resid 3 and name H8 and segid SEG2) 
+ SELRPN>     or (resid 3 and name H8 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   324.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 4 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 4 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 4 and name H6 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   814.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 6 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 5 and name H2' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 6 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H6 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   339.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 6 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 5 and name H8 and segid SEG2) 
+ SELRPN>     or (resid 5 and name H8 and segid SEG2) 
+ SELRPN>     or (resid 5 and name H8 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   348.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 6 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 6 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 6 and name H6 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   681.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 7 and name H2' and segid SEG2) 
+ SELRPN>     or (resid 2 and name H2'' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H3' and segid SEG2) 
+ SELRPN>     or (resid 2 and name H3' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   1810.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 7 and name H3' and segid SEG2) 
+ SELRPN>     or (resid 8 and name H3' and segid SEG2)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 8 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H6 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   157.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 3 and name H2'' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ SELRPN>       ((resid 8 and name H3' and segid SEG2) 
+ SELRPN>     or (resid 3 and name H3' and segid SEG1)) 
+ SELRPN:      2 atoms have been selected out of    695
+ Intensity=   1920.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H1' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H1' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H1' and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   67.900000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H2' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H2' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H2' and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   429.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H2'' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H2'' and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   564.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H3' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H3' and segid SEG2) 
+ SELRPN>     or (resid 7 and name H3' and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   123.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 7 and name H8 and segid SEG2) 
+ SELRPN>     or (resid 7 and name H8 and segid SEG2) 
+ SELRPN>     or (resid 7 and name H8 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   312.000000   0.2 
+ RELAxation> 
+ RELAxation>assign ((resid 8 and name H51 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H52 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H53 and segid SEG2)) 
+ SELRPN:      3 atoms have been selected out of    695
+ SELRPN>       ((resid 8 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H6 and segid SEG2) 
+ SELRPN>     or (resid 8 and name H6 and segid SEG2)) 
+ SELRPN:      1 atoms have been selected out of    695
+ Intensity=   930.000000   0.2 
+ RELAxation> 
+ RELAxation> 
+ RELAxation>        clgroup         D260     DMSO    {* which belongs to the group DMSO *} 
+ RELAx>        taumix          D260     0.08     {* Mixing time in s. *} 
+ RELAx>        minint          D260     0.05    {* Minimum measurable intensity *} 
+ RELAx> 
+ RELAx> 
+ RELAx> 
+ RELAx> 
+ RELAx>        cutoff          {* Cutoff used for gradient and relaxation matrix *} 
+ CUTOff>                mode all value 6.5 
+ CUTOff>        end 
+ RELAx> 
+ RELAx>        potential parabola              {* Error estimates are not used *} 
+ RELAx>        iexp    0.1666666667            {* Dev = I_cal^iexp - I_obs^iexp *} 
+ RELAx>end 
+ X-PLOR> 
+ X-PLOR>	set display c_da_80_tau.disp end 
+ ASSFIL: file c_da_80_tau.disp opened.
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = 0.5e-9) 
+ EVALUATE: symbol $TAU set to   0.500000E-09 (real)
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1283E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1036E+00 R.m.s. difference:    0.3967E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.5223E-01  0.2453E+00
+            0.2040E+04  0.4080E+04   11  0.8849E-01  0.3936E+00
+            0.1020E+04  0.2040E+04   30  0.6946E-01  0.3004E+00
+            0.5100E+03  0.1020E+04   40  0.1169E+00  0.4983E+00
+            0.2550E+03  0.5100E+03   31  0.1740E+00  0.5879E+00
+            0.1275E+03  0.2550E+03   26  0.1372E+00  0.4599E+00
+            0.6375E+02  0.1275E+03   42  0.7298E-01  0.2049E+00
+            0.3188E+02  0.6375E+02   23  0.1102E+00  0.2450E+00
+            0.1594E+02  0.3188E+02    4  0.8570E-01  0.1821E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1036E+00  0.3967E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.750000E-09 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1452E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9884E-01 R.m.s. difference:    0.3842E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.4503E-01  0.2141E+00
+            0.2040E+04  0.4080E+04   11  0.9097E-01  0.4015E+00
+            0.1020E+04  0.2040E+04   30  0.6629E-01  0.2917E+00
+            0.5100E+03  0.1020E+04   40  0.1113E+00  0.4793E+00
+            0.2550E+03  0.5100E+03   31  0.1652E+00  0.5699E+00
+            0.1275E+03  0.2550E+03   26  0.1315E+00  0.4470E+00
+            0.6375E+02  0.1275E+03   42  0.7038E-01  0.2010E+00
+            0.3188E+02  0.6375E+02   23  0.1043E+00  0.2358E+00
+            0.1594E+02  0.3188E+02    4  0.8309E-01  0.1724E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9884E-01  0.3842E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.100000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1552E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9523E-01 R.m.s. difference:    0.3757E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.3846E-01  0.1899E+00
+            0.2040E+04  0.4080E+04   11  0.9281E-01  0.4087E+00
+            0.1020E+04  0.2040E+04   30  0.6411E-01  0.2860E+00
+            0.5100E+03  0.1020E+04   40  0.1070E+00  0.4657E+00
+            0.2550E+03  0.5100E+03   31  0.1586E+00  0.5568E+00
+            0.1275E+03  0.2550E+03   26  0.1270E+00  0.4388E+00
+            0.6375E+02  0.1275E+03   42  0.6901E-01  0.1993E+00
+            0.3188E+02  0.6375E+02   23  0.9994E-01  0.2305E+00
+            0.1594E+02  0.3188E+02    4  0.8119E-01  0.1654E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9523E-01  0.3757E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.125000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1625E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9268E-01 R.m.s. difference:    0.3695E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.3352E-01  0.1724E+00
+            0.2040E+04  0.4080E+04   11  0.9430E-01  0.4155E+00
+            0.1020E+04  0.2040E+04   30  0.6288E-01  0.2821E+00
+            0.5100E+03  0.1020E+04   40  0.1034E+00  0.4549E+00
+            0.2550E+03  0.5100E+03   31  0.1553E+00  0.5464E+00
+            0.1275E+03  0.2550E+03   26  0.1233E+00  0.4331E+00
+            0.6375E+02  0.1275E+03   42  0.6789E-01  0.1989E+00
+            0.3188E+02  0.6375E+02   23  0.9642E-01  0.2275E+00
+            0.1594E+02  0.3188E+02    4  0.7966E-01  0.1601E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9268E-01  0.3695E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.150000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1682E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9085E-01 R.m.s. difference:    0.3648E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2994E-01  0.1621E+00
+            0.2040E+04  0.4080E+04   11  0.9555E-01  0.4222E+00
+            0.1020E+04  0.2040E+04   30  0.6201E-01  0.2793E+00
+            0.5100E+03  0.1020E+04   40  0.1003E+00  0.4459E+00
+            0.2550E+03  0.5100E+03   31  0.1531E+00  0.5376E+00
+            0.1275E+03  0.2550E+03   26  0.1201E+00  0.4289E+00
+            0.6375E+02  0.1275E+03   42  0.6773E-01  0.1993E+00
+            0.3188E+02  0.6375E+02   23  0.9434E-01  0.2262E+00
+            0.1594E+02  0.3188E+02    4  0.7838E-01  0.1562E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9085E-01  0.3648E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.175000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1731E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9005E-01 R.m.s. difference:    0.3613E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2953E-01  0.1592E+00
+            0.2040E+04  0.4080E+04   11  0.9690E-01  0.4288E+00
+            0.1020E+04  0.2040E+04   30  0.6148E-01  0.2775E+00
+            0.5100E+03  0.1020E+04   40  0.9753E-01  0.4383E+00
+            0.2550E+03  0.5100E+03   31  0.1517E+00  0.5299E+00
+            0.1275E+03  0.2550E+03   26  0.1189E+00  0.4258E+00
+            0.6375E+02  0.1275E+03   42  0.6814E-01  0.2002E+00
+            0.3188E+02  0.6375E+02   23  0.9515E-01  0.2261E+00
+            0.1594E+02  0.3188E+02    4  0.7725E-01  0.1533E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9005E-01  0.3613E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.200000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1772E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.8955E-01 R.m.s. difference:    0.3587E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.3028E-01  0.1631E+00
+            0.2040E+04  0.4080E+04   11  0.9843E-01  0.4352E+00
+            0.1020E+04  0.2040E+04   30  0.6102E-01  0.2764E+00
+            0.5100E+03  0.1020E+04   40  0.9500E-01  0.4316E+00
+            0.2550E+03  0.5100E+03   31  0.1503E+00  0.5230E+00
+            0.1275E+03  0.2550E+03   26  0.1183E+00  0.4234E+00
+            0.6375E+02  0.1275E+03   42  0.6853E-01  0.2017E+00
+            0.3188E+02  0.6375E+02   23  0.9659E-01  0.2270E+00
+            0.1594E+02  0.3188E+02    4  0.7625E-01  0.1515E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.8955E-01  0.3587E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.225000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1808E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.8929E-01 R.m.s. difference:    0.3568E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.3118E-01  0.1727E+00
+            0.2040E+04  0.4080E+04   11  0.9999E-01  0.4416E+00
+            0.1020E+04  0.2040E+04   30  0.6058E-01  0.2759E+00
+            0.5100E+03  0.1020E+04   40  0.9274E-01  0.4258E+00
+            0.2550E+03  0.5100E+03   31  0.1495E+00  0.5169E+00
+            0.1275E+03  0.2550E+03   26  0.1183E+00  0.4215E+00
+            0.6375E+02  0.1275E+03   42  0.6890E-01  0.2035E+00
+            0.3188E+02  0.6375E+02   23  0.9847E-01  0.2286E+00
+            0.1594E+02  0.3188E+02    4  0.7535E-01  0.1505E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.8929E-01  0.3568E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.250000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1840E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.8947E-01 R.m.s. difference:    0.3555E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.3358E-01  0.1865E+00
+            0.2040E+04  0.4080E+04   11  0.1021E+00  0.4479E+00
+            0.1020E+04  0.2040E+04   30  0.6015E-01  0.2760E+00
+            0.5100E+03  0.1020E+04   40  0.9140E-01  0.4206E+00
+            0.2550E+03  0.5100E+03   31  0.1489E+00  0.5112E+00
+            0.1275E+03  0.2550E+03   26  0.1188E+00  0.4201E+00
+            0.6375E+02  0.1275E+03   42  0.6923E-01  0.2056E+00
+            0.3188E+02  0.6375E+02   23  0.1003E+00  0.2308E+00
+            0.1594E+02  0.3188E+02    4  0.7452E-01  0.1503E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.8947E-01  0.3555E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.275000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1869E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.8976E-01 R.m.s. difference:    0.3547E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.3663E-01  0.2032E+00
+            0.2040E+04  0.4080E+04   11  0.1041E+00  0.4541E+00
+            0.1020E+04  0.2040E+04   30  0.5973E-01  0.2764E+00
+            0.5100E+03  0.1020E+04   40  0.9018E-01  0.4159E+00
+            0.2550E+03  0.5100E+03   31  0.1483E+00  0.5060E+00
+            0.1275E+03  0.2550E+03   26  0.1193E+00  0.4190E+00
+            0.6375E+02  0.1275E+03   42  0.6978E-01  0.2078E+00
+            0.3188E+02  0.6375E+02   23  0.1022E+00  0.2335E+00
+            0.1594E+02  0.3188E+02    4  0.7377E-01  0.1508E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.8976E-01  0.3547E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.300000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1895E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9022E-01 R.m.s. difference:    0.3543E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.4026E-01  0.2219E+00
+            0.2040E+04  0.4080E+04   11  0.1060E+00  0.4601E+00
+            0.1020E+04  0.2040E+04   30  0.5943E-01  0.2772E+00
+            0.5100E+03  0.1020E+04   40  0.8910E-01  0.4117E+00
+            0.2550E+03  0.5100E+03   31  0.1477E+00  0.5011E+00
+            0.1275E+03  0.2550E+03   26  0.1201E+00  0.4181E+00
+            0.6375E+02  0.1275E+03   42  0.7043E-01  0.2103E+00
+            0.3188E+02  0.6375E+02   23  0.1047E+00  0.2366E+00
+            0.1594E+02  0.3188E+02    4  0.7307E-01  0.1518E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9022E-01  0.3543E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.325000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1919E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9085E-01 R.m.s. difference:    0.3544E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.4470E-01  0.2417E+00
+            0.2040E+04  0.4080E+04   11  0.1077E+00  0.4661E+00
+            0.1020E+04  0.2040E+04   30  0.5950E-01  0.2783E+00
+            0.5100E+03  0.1020E+04   40  0.8807E-01  0.4079E+00
+            0.2550E+03  0.5100E+03   31  0.1470E+00  0.4966E+00
+            0.1275E+03  0.2550E+03   26  0.1207E+00  0.4174E+00
+            0.6375E+02  0.1275E+03   42  0.7141E-01  0.2129E+00
+            0.3188E+02  0.6375E+02   23  0.1071E+00  0.2400E+00
+            0.1594E+02  0.3188E+02    4  0.7243E-01  0.1535E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9085E-01  0.3544E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.350000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1941E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9165E-01 R.m.s. difference:    0.3547E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.4991E-01  0.2623E+00
+            0.2040E+04  0.4080E+04   11  0.1094E+00  0.4720E+00
+            0.1020E+04  0.2040E+04   30  0.5971E-01  0.2796E+00
+            0.5100E+03  0.1020E+04   40  0.8716E-01  0.4044E+00
+            0.2550E+03  0.5100E+03   31  0.1463E+00  0.4923E+00
+            0.1275E+03  0.2550E+03   26  0.1218E+00  0.4169E+00
+            0.6375E+02  0.1275E+03   42  0.7253E-01  0.2157E+00
+            0.3188E+02  0.6375E+02   23  0.1095E+00  0.2437E+00
+            0.1594E+02  0.3188E+02    4  0.7183E-01  0.1556E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9165E-01  0.3547E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.375000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1961E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9246E-01 R.m.s. difference:    0.3553E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.5526E-01  0.2831E+00
+            0.2040E+04  0.4080E+04   11  0.1109E+00  0.4777E+00
+            0.1020E+04  0.2040E+04   30  0.5991E-01  0.2811E+00
+            0.5100E+03  0.1020E+04   40  0.8642E-01  0.4012E+00
+            0.2550E+03  0.5100E+03   31  0.1456E+00  0.4882E+00
+            0.1275E+03  0.2550E+03   26  0.1228E+00  0.4164E+00
+            0.6375E+02  0.1275E+03   42  0.7361E-01  0.2185E+00
+            0.3188E+02  0.6375E+02   23  0.1118E+00  0.2475E+00
+            0.1594E+02  0.3188E+02    4  0.7127E-01  0.1581E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9246E-01  0.3553E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.400000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1980E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9332E-01 R.m.s. difference:    0.3562E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.6110E-01  0.3041E+00
+            0.2040E+04  0.4080E+04   11  0.1124E+00  0.4834E+00
+            0.1020E+04  0.2040E+04   30  0.6009E-01  0.2828E+00
+            0.5100E+03  0.1020E+04   40  0.8571E-01  0.3983E+00
+            0.2550E+03  0.5100E+03   31  0.1448E+00  0.4844E+00
+            0.1275E+03  0.2550E+03   26  0.1237E+00  0.4161E+00
+            0.6375E+02  0.1275E+03   42  0.7483E-01  0.2214E+00
+            0.3188E+02  0.6375E+02   23  0.1140E+00  0.2516E+00
+            0.1594E+02  0.3188E+02    4  0.7075E-01  0.1610E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9332E-01  0.3562E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.425000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.1997E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9421E-01 R.m.s. difference:    0.3573E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.6678E-01  0.3251E+00
+            0.2040E+04  0.4080E+04   11  0.1138E+00  0.4889E+00
+            0.1020E+04  0.2040E+04   30  0.6047E-01  0.2847E+00
+            0.5100E+03  0.1020E+04   40  0.8503E-01  0.3956E+00
+            0.2550E+03  0.5100E+03   31  0.1441E+00  0.4807E+00
+            0.1275E+03  0.2550E+03   26  0.1245E+00  0.4158E+00
+            0.6375E+02  0.1275E+03   42  0.7621E-01  0.2244E+00
+            0.3188E+02  0.6375E+02   23  0.1162E+00  0.2558E+00
+            0.1594E+02  0.3188E+02    4  0.7068E-01  0.1642E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9421E-01  0.3573E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.450000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2013E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9512E-01 R.m.s. difference:    0.3585E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.7230E-01  0.3459E+00
+            0.2040E+04  0.4080E+04   11  0.1151E+00  0.4944E+00
+            0.1020E+04  0.2040E+04   30  0.6084E-01  0.2867E+00
+            0.5100E+03  0.1020E+04   40  0.8445E-01  0.3931E+00
+            0.2550E+03  0.5100E+03   31  0.1433E+00  0.4771E+00
+            0.1275E+03  0.2550E+03   26  0.1252E+00  0.4155E+00
+            0.6375E+02  0.1275E+03   42  0.7754E-01  0.2274E+00
+            0.3188E+02  0.6375E+02   23  0.1184E+00  0.2600E+00
+            0.1594E+02  0.3188E+02    4  0.7336E-01  0.1676E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9512E-01  0.3585E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.475000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2029E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9599E-01 R.m.s. difference:    0.3599E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.7768E-01  0.3665E+00
+            0.2040E+04  0.4080E+04   11  0.1163E+00  0.4997E+00
+            0.1020E+04  0.2040E+04   30  0.6119E-01  0.2887E+00
+            0.5100E+03  0.1020E+04   40  0.8393E-01  0.3908E+00
+            0.2550E+03  0.5100E+03   31  0.1426E+00  0.4737E+00
+            0.1275E+03  0.2550E+03   26  0.1259E+00  0.4153E+00
+            0.6375E+02  0.1275E+03   42  0.7883E-01  0.2304E+00
+            0.3188E+02  0.6375E+02   23  0.1205E+00  0.2644E+00
+            0.1594E+02  0.3188E+02    4  0.7598E-01  0.1713E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9599E-01  0.3599E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.500000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2043E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9694E-01 R.m.s. difference:    0.3615E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.8292E-01  0.3868E+00
+            0.2040E+04  0.4080E+04   11  0.1175E+00  0.5049E+00
+            0.1020E+04  0.2040E+04   30  0.6168E-01  0.2909E+00
+            0.5100E+03  0.1020E+04   40  0.8370E-01  0.3886E+00
+            0.2550E+03  0.5100E+03   31  0.1418E+00  0.4705E+00
+            0.1275E+03  0.2550E+03   26  0.1264E+00  0.4151E+00
+            0.6375E+02  0.1275E+03   42  0.8019E-01  0.2335E+00
+            0.3188E+02  0.6375E+02   23  0.1227E+00  0.2688E+00
+            0.1594E+02  0.3188E+02    4  0.7855E-01  0.1752E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9694E-01  0.3615E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.525000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2056E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9792E-01 R.m.s. difference:    0.3631E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.8801E-01  0.4067E+00
+            0.2040E+04  0.4080E+04   11  0.1187E+00  0.5101E+00
+            0.1020E+04  0.2040E+04   30  0.6223E-01  0.2931E+00
+            0.5100E+03  0.1020E+04   40  0.8359E-01  0.3866E+00
+            0.2550E+03  0.5100E+03   31  0.1410E+00  0.4673E+00
+            0.1275E+03  0.2550E+03   26  0.1270E+00  0.4149E+00
+            0.6375E+02  0.1275E+03   42  0.8161E-01  0.2366E+00
+            0.3188E+02  0.6375E+02   23  0.1250E+00  0.2732E+00
+            0.1594E+02  0.3188E+02    4  0.8105E-01  0.1792E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9792E-01  0.3631E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.550000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2069E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9887E-01 R.m.s. difference:    0.3649E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.9298E-01  0.4264E+00
+            0.2040E+04  0.4080E+04   11  0.1197E+00  0.5151E+00
+            0.1020E+04  0.2040E+04   30  0.6281E-01  0.2954E+00
+            0.5100E+03  0.1020E+04   40  0.8348E-01  0.3847E+00
+            0.2550E+03  0.5100E+03   31  0.1402E+00  0.4642E+00
+            0.1275E+03  0.2550E+03   26  0.1274E+00  0.4147E+00
+            0.6375E+02  0.1275E+03   42  0.8303E-01  0.2397E+00
+            0.3188E+02  0.6375E+02   23  0.1273E+00  0.2777E+00
+            0.1594E+02  0.3188E+02    4  0.8351E-01  0.1834E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9887E-01  0.3649E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.575000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2081E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.9986E-01 R.m.s. difference:    0.3667E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.9782E-01  0.4457E+00
+            0.2040E+04  0.4080E+04   11  0.1208E+00  0.5200E+00
+            0.1020E+04  0.2040E+04   30  0.6355E-01  0.2977E+00
+            0.5100E+03  0.1020E+04   40  0.8336E-01  0.3829E+00
+            0.2550E+03  0.5100E+03   31  0.1395E+00  0.4613E+00
+            0.1275E+03  0.2550E+03   26  0.1280E+00  0.4145E+00
+            0.6375E+02  0.1275E+03   42  0.8443E-01  0.2428E+00
+            0.3188E+02  0.6375E+02   23  0.1297E+00  0.2822E+00
+            0.1594E+02  0.3188E+02    4  0.8591E-01  0.1877E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.9986E-01  0.3667E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.600000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2092E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1009E+00 R.m.s. difference:    0.3687E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1025E+00  0.4646E+00
+            0.2040E+04  0.4080E+04   11  0.1218E+00  0.5249E+00
+            0.1020E+04  0.2040E+04   30  0.6436E-01  0.3000E+00
+            0.5100E+03  0.1020E+04   40  0.8325E-01  0.3812E+00
+            0.2550E+03  0.5100E+03   31  0.1387E+00  0.4584E+00
+            0.1275E+03  0.2550E+03   26  0.1285E+00  0.4143E+00
+            0.6375E+02  0.1275E+03   42  0.8589E-01  0.2459E+00
+            0.3188E+02  0.6375E+02   23  0.1322E+00  0.2867E+00
+            0.1594E+02  0.3188E+02    4  0.8826E-01  0.1920E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1009E+00  0.3687E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.625000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2103E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1018E+00 R.m.s. difference:    0.3707E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1072E+00  0.4831E+00
+            0.2040E+04  0.4080E+04   11  0.1227E+00  0.5296E+00
+            0.1020E+04  0.2040E+04   30  0.6521E-01  0.3024E+00
+            0.5100E+03  0.1020E+04   40  0.8313E-01  0.3796E+00
+            0.2550E+03  0.5100E+03   31  0.1379E+00  0.4556E+00
+            0.1275E+03  0.2550E+03   26  0.1290E+00  0.4141E+00
+            0.6375E+02  0.1275E+03   42  0.8735E-01  0.2490E+00
+            0.3188E+02  0.6375E+02   23  0.1346E+00  0.2911E+00
+            0.1594E+02  0.3188E+02    4  0.9057E-01  0.1965E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1018E+00  0.3707E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.650000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2113E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1028E+00 R.m.s. difference:    0.3727E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1116E+00  0.5013E+00
+            0.2040E+04  0.4080E+04   11  0.1243E+00  0.5343E+00
+            0.1020E+04  0.2040E+04   30  0.6611E-01  0.3048E+00
+            0.5100E+03  0.1020E+04   40  0.8302E-01  0.3781E+00
+            0.2550E+03  0.5100E+03   31  0.1371E+00  0.4528E+00
+            0.1275E+03  0.2550E+03   26  0.1294E+00  0.4139E+00
+            0.6375E+02  0.1275E+03   42  0.8877E-01  0.2521E+00
+            0.3188E+02  0.6375E+02   23  0.1370E+00  0.2956E+00
+            0.1594E+02  0.3188E+02    4  0.9356E-01  0.2009E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1028E+00  0.3727E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.675000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2123E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1038E+00 R.m.s. difference:    0.3748E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1160E+00  0.5191E+00
+            0.2040E+04  0.4080E+04   11  0.1261E+00  0.5388E+00
+            0.1020E+04  0.2040E+04   30  0.6697E-01  0.3072E+00
+            0.5100E+03  0.1020E+04   40  0.8291E-01  0.3767E+00
+            0.2550E+03  0.5100E+03   31  0.1363E+00  0.4502E+00
+            0.1275E+03  0.2550E+03   26  0.1298E+00  0.4137E+00
+            0.6375E+02  0.1275E+03   42  0.9021E-01  0.2552E+00
+            0.3188E+02  0.6375E+02   23  0.1394E+00  0.3000E+00
+            0.1594E+02  0.3188E+02    4  0.9677E-01  0.2055E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1038E+00  0.3748E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.700000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2132E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1048E+00 R.m.s. difference:    0.3770E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1203E+00  0.5365E+00
+            0.2040E+04  0.4080E+04   11  0.1278E+00  0.5433E+00
+            0.1020E+04  0.2040E+04   30  0.6789E-01  0.3096E+00
+            0.5100E+03  0.1020E+04   40  0.8281E-01  0.3753E+00
+            0.2550E+03  0.5100E+03   31  0.1355E+00  0.4476E+00
+            0.1275E+03  0.2550E+03   26  0.1302E+00  0.4135E+00
+            0.6375E+02  0.1275E+03   42  0.9163E-01  0.2583E+00
+            0.3188E+02  0.6375E+02   23  0.1417E+00  0.3044E+00
+            0.1594E+02  0.3188E+02    4  0.9993E-01  0.2100E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1048E+00  0.3770E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.725000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2140E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1058E+00 R.m.s. difference:    0.3791E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1245E+00  0.5536E+00
+            0.2040E+04  0.4080E+04   11  0.1294E+00  0.5477E+00
+            0.1020E+04  0.2040E+04   30  0.6878E-01  0.3120E+00
+            0.5100E+03  0.1020E+04   40  0.8270E-01  0.3740E+00
+            0.2550E+03  0.5100E+03   31  0.1347E+00  0.4450E+00
+            0.1275E+03  0.2550E+03   26  0.1305E+00  0.4132E+00
+            0.6375E+02  0.1275E+03   42  0.9309E-01  0.2613E+00
+            0.3188E+02  0.6375E+02   23  0.1439E+00  0.3088E+00
+            0.1594E+02  0.3188E+02    4  0.1031E+00  0.2146E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1058E+00  0.3791E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.750000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2149E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1068E+00 R.m.s. difference:    0.3813E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1286E+00  0.5703E+00
+            0.2040E+04  0.4080E+04   11  0.1310E+00  0.5520E+00
+            0.1020E+04  0.2040E+04   30  0.6966E-01  0.3144E+00
+            0.5100E+03  0.1020E+04   40  0.8260E-01  0.3728E+00
+            0.2550E+03  0.5100E+03   31  0.1340E+00  0.4425E+00
+            0.1275E+03  0.2550E+03   26  0.1307E+00  0.4129E+00
+            0.6375E+02  0.1275E+03   42  0.9470E-01  0.2644E+00
+            0.3188E+02  0.6375E+02   23  0.1461E+00  0.3131E+00
+            0.1594E+02  0.3188E+02    4  0.1061E+00  0.2192E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1068E+00  0.3813E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.775000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2156E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1077E+00 R.m.s. difference:    0.3835E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1325E+00  0.5867E+00
+            0.2040E+04  0.4080E+04   11  0.1326E+00  0.5562E+00
+            0.1020E+04  0.2040E+04   30  0.7050E-01  0.3168E+00
+            0.5100E+03  0.1020E+04   40  0.8249E-01  0.3716E+00
+            0.2550E+03  0.5100E+03   31  0.1332E+00  0.4401E+00
+            0.1275E+03  0.2550E+03   26  0.1310E+00  0.4127E+00
+            0.6375E+02  0.1275E+03   42  0.9633E-01  0.2674E+00
+            0.3188E+02  0.6375E+02   23  0.1483E+00  0.3174E+00
+            0.1594E+02  0.3188E+02    4  0.1092E+00  0.2238E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1077E+00  0.3835E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.800000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2164E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1086E+00 R.m.s. difference:    0.3858E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1364E+00  0.6027E+00
+            0.2040E+04  0.4080E+04   11  0.1341E+00  0.5604E+00
+            0.1020E+04  0.2040E+04   30  0.7132E-01  0.3192E+00
+            0.5100E+03  0.1020E+04   40  0.8239E-01  0.3705E+00
+            0.2550E+03  0.5100E+03   31  0.1324E+00  0.4377E+00
+            0.1275E+03  0.2550E+03   26  0.1312E+00  0.4124E+00
+            0.6375E+02  0.1275E+03   42  0.9793E-01  0.2704E+00
+            0.3188E+02  0.6375E+02   23  0.1504E+00  0.3217E+00
+            0.1594E+02  0.3188E+02    4  0.1122E+00  0.2283E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1086E+00  0.3858E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.825000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2171E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1095E+00 R.m.s. difference:    0.3880E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1402E+00  0.6183E+00
+            0.2040E+04  0.4080E+04   11  0.1356E+00  0.5644E+00
+            0.1020E+04  0.2040E+04   30  0.7212E-01  0.3216E+00
+            0.5100E+03  0.1020E+04   40  0.8229E-01  0.3694E+00
+            0.2550E+03  0.5100E+03   31  0.1316E+00  0.4353E+00
+            0.1275E+03  0.2550E+03   26  0.1313E+00  0.4121E+00
+            0.6375E+02  0.1275E+03   42  0.9950E-01  0.2734E+00
+            0.3188E+02  0.6375E+02   23  0.1525E+00  0.3259E+00
+            0.1594E+02  0.3188E+02    4  0.1152E+00  0.2329E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1095E+00  0.3880E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.850000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2178E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1104E+00 R.m.s. difference:    0.3903E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1439E+00  0.6337E+00
+            0.2040E+04  0.4080E+04   11  0.1370E+00  0.5684E+00
+            0.1020E+04  0.2040E+04   30  0.7290E-01  0.3239E+00
+            0.5100E+03  0.1020E+04   40  0.8219E-01  0.3684E+00
+            0.2550E+03  0.5100E+03   31  0.1308E+00  0.4330E+00
+            0.1275E+03  0.2550E+03   26  0.1315E+00  0.4118E+00
+            0.6375E+02  0.1275E+03   42  0.1010E+00  0.2764E+00
+            0.3188E+02  0.6375E+02   23  0.1546E+00  0.3300E+00
+            0.1594E+02  0.3188E+02    4  0.1181E+00  0.2375E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1104E+00  0.3903E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.875000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2184E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1113E+00 R.m.s. difference:    0.3925E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1475E+00  0.6486E+00
+            0.2040E+04  0.4080E+04   11  0.1384E+00  0.5724E+00
+            0.1020E+04  0.2040E+04   30  0.7366E-01  0.3263E+00
+            0.5100E+03  0.1020E+04   40  0.8208E-01  0.3674E+00
+            0.2550E+03  0.5100E+03   31  0.1301E+00  0.4307E+00
+            0.1275E+03  0.2550E+03   26  0.1316E+00  0.4114E+00
+            0.6375E+02  0.1275E+03   42  0.1025E+00  0.2793E+00
+            0.3188E+02  0.6375E+02   23  0.1566E+00  0.3341E+00
+            0.1594E+02  0.3188E+02    4  0.1210E+00  0.2420E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1113E+00  0.3925E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.900000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2191E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1121E+00 R.m.s. difference:    0.3948E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1511E+00  0.6633E+00
+            0.2040E+04  0.4080E+04   11  0.1398E+00  0.5762E+00
+            0.1020E+04  0.2040E+04   30  0.7446E-01  0.3286E+00
+            0.5100E+03  0.1020E+04   40  0.8197E-01  0.3664E+00
+            0.2550E+03  0.5100E+03   31  0.1293E+00  0.4285E+00
+            0.1275E+03  0.2550E+03   26  0.1317E+00  0.4111E+00
+            0.6375E+02  0.1275E+03   42  0.1040E+00  0.2822E+00
+            0.3188E+02  0.6375E+02   23  0.1586E+00  0.3382E+00
+            0.1594E+02  0.3188E+02    4  0.1238E+00  0.2466E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1121E+00  0.3948E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.925000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2197E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1130E+00 R.m.s. difference:    0.3970E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1545E+00  0.6776E+00
+            0.2040E+04  0.4080E+04   11  0.1411E+00  0.5800E+00
+            0.1020E+04  0.2040E+04   30  0.7546E-01  0.3309E+00
+            0.5100E+03  0.1020E+04   40  0.8186E-01  0.3655E+00
+            0.2550E+03  0.5100E+03   31  0.1285E+00  0.4263E+00
+            0.1275E+03  0.2550E+03   26  0.1319E+00  0.4107E+00
+            0.6375E+02  0.1275E+03   42  0.1055E+00  0.2851E+00
+            0.3188E+02  0.6375E+02   23  0.1605E+00  0.3422E+00
+            0.1594E+02  0.3188E+02    4  0.1267E+00  0.2511E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1130E+00  0.3970E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.950000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2202E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1138E+00 R.m.s. difference:    0.3993E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1579E+00  0.6917E+00
+            0.2040E+04  0.4080E+04   11  0.1424E+00  0.5837E+00
+            0.1020E+04  0.2040E+04   30  0.7645E-01  0.3332E+00
+            0.5100E+03  0.1020E+04   40  0.8174E-01  0.3646E+00
+            0.2550E+03  0.5100E+03   31  0.1278E+00  0.4241E+00
+            0.1275E+03  0.2550E+03   26  0.1321E+00  0.4104E+00
+            0.6375E+02  0.1275E+03   42  0.1069E+00  0.2880E+00
+            0.3188E+02  0.6375E+02   23  0.1625E+00  0.3462E+00
+            0.1594E+02  0.3188E+02    4  0.1294E+00  0.2555E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1138E+00  0.3993E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.975000E-08 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2208E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1146E+00 R.m.s. difference:    0.4015E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1612E+00  0.7054E+00
+            0.2040E+04  0.4080E+04   11  0.1437E+00  0.5873E+00
+            0.1020E+04  0.2040E+04   30  0.7750E-01  0.3355E+00
+            0.5100E+03  0.1020E+04   40  0.8162E-01  0.3638E+00
+            0.2550E+03  0.5100E+03   31  0.1270E+00  0.4220E+00
+            0.1275E+03  0.2550E+03   26  0.1323E+00  0.4100E+00
+            0.6375E+02  0.1275E+03   42  0.1083E+00  0.2908E+00
+            0.3188E+02  0.6375E+02   23  0.1644E+00  0.3501E+00
+            0.1594E+02  0.3188E+02    4  0.1322E+00  0.2600E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1146E+00  0.4015E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.100000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2213E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1155E+00 R.m.s. difference:    0.4037E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1644E+00  0.7188E+00
+            0.2040E+04  0.4080E+04   11  0.1449E+00  0.5909E+00
+            0.1020E+04  0.2040E+04   30  0.7854E-01  0.3378E+00
+            0.5100E+03  0.1020E+04   40  0.8150E-01  0.3629E+00
+            0.2550E+03  0.5100E+03   31  0.1263E+00  0.4199E+00
+            0.1275E+03  0.2550E+03   26  0.1324E+00  0.4096E+00
+            0.6375E+02  0.1275E+03   42  0.1097E+00  0.2936E+00
+            0.3188E+02  0.6375E+02   23  0.1662E+00  0.3540E+00
+            0.1594E+02  0.3188E+02    4  0.1349E+00  0.2644E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1155E+00  0.4037E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.102500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2218E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1163E+00 R.m.s. difference:    0.4059E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1676E+00  0.7320E+00
+            0.2040E+04  0.4080E+04   11  0.1461E+00  0.5945E+00
+            0.1020E+04  0.2040E+04   30  0.7956E-01  0.3400E+00
+            0.5100E+03  0.1020E+04   40  0.8138E-01  0.3621E+00
+            0.2550E+03  0.5100E+03   31  0.1255E+00  0.4178E+00
+            0.1275E+03  0.2550E+03   26  0.1325E+00  0.4092E+00
+            0.6375E+02  0.1275E+03   42  0.1111E+00  0.2964E+00
+            0.3188E+02  0.6375E+02   23  0.1680E+00  0.3578E+00
+            0.1594E+02  0.3188E+02    4  0.1376E+00  0.2688E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1163E+00  0.4059E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.105000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2223E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1170E+00 R.m.s. difference:    0.4081E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1707E+00  0.7448E+00
+            0.2040E+04  0.4080E+04   11  0.1473E+00  0.5979E+00
+            0.1020E+04  0.2040E+04   30  0.8055E-01  0.3422E+00
+            0.5100E+03  0.1020E+04   40  0.8126E-01  0.3613E+00
+            0.2550E+03  0.5100E+03   31  0.1248E+00  0.4158E+00
+            0.1275E+03  0.2550E+03   26  0.1326E+00  0.4088E+00
+            0.6375E+02  0.1275E+03   42  0.1124E+00  0.2991E+00
+            0.3188E+02  0.6375E+02   23  0.1698E+00  0.3616E+00
+            0.1594E+02  0.3188E+02    4  0.1403E+00  0.2732E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1170E+00  0.4081E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.107500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2227E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1178E+00 R.m.s. difference:    0.4103E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1737E+00  0.7574E+00
+            0.2040E+04  0.4080E+04   11  0.1484E+00  0.6013E+00
+            0.1020E+04  0.2040E+04   30  0.8153E-01  0.3444E+00
+            0.5100E+03  0.1020E+04   40  0.8113E-01  0.3606E+00
+            0.2550E+03  0.5100E+03   31  0.1241E+00  0.4138E+00
+            0.1275E+03  0.2550E+03   26  0.1327E+00  0.4084E+00
+            0.6375E+02  0.1275E+03   42  0.1139E+00  0.3019E+00
+            0.3188E+02  0.6375E+02   23  0.1716E+00  0.3653E+00
+            0.1594E+02  0.3188E+02    4  0.1429E+00  0.2775E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1178E+00  0.4103E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.110000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2232E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1186E+00 R.m.s. difference:    0.4125E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1766E+00  0.7697E+00
+            0.2040E+04  0.4080E+04   11  0.1495E+00  0.6047E+00
+            0.1020E+04  0.2040E+04   30  0.8248E-01  0.3466E+00
+            0.5100E+03  0.1020E+04   40  0.8101E-01  0.3598E+00
+            0.2550E+03  0.5100E+03   31  0.1235E+00  0.4118E+00
+            0.1275E+03  0.2550E+03   26  0.1328E+00  0.4079E+00
+            0.6375E+02  0.1275E+03   42  0.1154E+00  0.3046E+00
+            0.3188E+02  0.6375E+02   23  0.1733E+00  0.3690E+00
+            0.1594E+02  0.3188E+02    4  0.1455E+00  0.2818E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1186E+00  0.4125E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.112500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2236E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1194E+00 R.m.s. difference:    0.4147E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1795E+00  0.7817E+00
+            0.2040E+04  0.4080E+04   11  0.1506E+00  0.6079E+00
+            0.1020E+04  0.2040E+04   30  0.8342E-01  0.3488E+00
+            0.5100E+03  0.1020E+04   40  0.8088E-01  0.3591E+00
+            0.2550E+03  0.5100E+03   31  0.1228E+00  0.4098E+00
+            0.1275E+03  0.2550E+03   26  0.1329E+00  0.4075E+00
+            0.6375E+02  0.1275E+03   42  0.1169E+00  0.3072E+00
+            0.3188E+02  0.6375E+02   23  0.1750E+00  0.3726E+00
+            0.1594E+02  0.3188E+02    4  0.1480E+00  0.2860E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1194E+00  0.4147E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.115000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2240E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1201E+00 R.m.s. difference:    0.4168E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1823E+00  0.7935E+00
+            0.2040E+04  0.4080E+04   11  0.1516E+00  0.6112E+00
+            0.1020E+04  0.2040E+04   30  0.8434E-01  0.3509E+00
+            0.5100E+03  0.1020E+04   40  0.8076E-01  0.3584E+00
+            0.2550E+03  0.5100E+03   31  0.1222E+00  0.4079E+00
+            0.1275E+03  0.2550E+03   26  0.1329E+00  0.4070E+00
+            0.6375E+02  0.1275E+03   42  0.1184E+00  0.3099E+00
+            0.3188E+02  0.6375E+02   23  0.1767E+00  0.3762E+00
+            0.1594E+02  0.3188E+02    4  0.1506E+00  0.2903E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1201E+00  0.4168E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.117500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2244E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1209E+00 R.m.s. difference:    0.4189E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1851E+00  0.8050E+00
+            0.2040E+04  0.4080E+04   11  0.1527E+00  0.6143E+00
+            0.1020E+04  0.2040E+04   30  0.8524E-01  0.3530E+00
+            0.5100E+03  0.1020E+04   40  0.8065E-01  0.3578E+00
+            0.2550E+03  0.5100E+03   31  0.1215E+00  0.4060E+00
+            0.1275E+03  0.2550E+03   26  0.1329E+00  0.4066E+00
+            0.6375E+02  0.1275E+03   42  0.1199E+00  0.3125E+00
+            0.3188E+02  0.6375E+02   23  0.1783E+00  0.3797E+00
+            0.1594E+02  0.3188E+02    4  0.1531E+00  0.2945E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1209E+00  0.4189E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.120000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2248E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1216E+00 R.m.s. difference:    0.4210E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1878E+00  0.8163E+00
+            0.2040E+04  0.4080E+04   11  0.1537E+00  0.6175E+00
+            0.1020E+04  0.2040E+04   30  0.8612E-01  0.3551E+00
+            0.5100E+03  0.1020E+04   40  0.8053E-01  0.3571E+00
+            0.2550E+03  0.5100E+03   31  0.1209E+00  0.4041E+00
+            0.1275E+03  0.2550E+03   26  0.1330E+00  0.4061E+00
+            0.6375E+02  0.1275E+03   42  0.1213E+00  0.3150E+00
+            0.3188E+02  0.6375E+02   23  0.1800E+00  0.3831E+00
+            0.1594E+02  0.3188E+02    4  0.1555E+00  0.2986E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1216E+00  0.4210E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.122500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2252E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1223E+00 R.m.s. difference:    0.4231E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1904E+00  0.8273E+00
+            0.2040E+04  0.4080E+04   11  0.1547E+00  0.6205E+00
+            0.1020E+04  0.2040E+04   30  0.8698E-01  0.3572E+00
+            0.5100E+03  0.1020E+04   40  0.8041E-01  0.3565E+00
+            0.2550E+03  0.5100E+03   31  0.1203E+00  0.4023E+00
+            0.1275E+03  0.2550E+03   26  0.1330E+00  0.4057E+00
+            0.6375E+02  0.1275E+03   42  0.1227E+00  0.3176E+00
+            0.3188E+02  0.6375E+02   23  0.1818E+00  0.3866E+00
+            0.1594E+02  0.3188E+02    4  0.1580E+00  0.3027E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1223E+00  0.4231E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.125000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2255E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1230E+00 R.m.s. difference:    0.4251E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1930E+00  0.8381E+00
+            0.2040E+04  0.4080E+04   11  0.1557E+00  0.6235E+00
+            0.1020E+04  0.2040E+04   30  0.8784E-01  0.3592E+00
+            0.5100E+03  0.1020E+04   40  0.8029E-01  0.3559E+00
+            0.2550E+03  0.5100E+03   31  0.1196E+00  0.4004E+00
+            0.1275E+03  0.2550E+03   26  0.1330E+00  0.4052E+00
+            0.6375E+02  0.1275E+03   42  0.1241E+00  0.3201E+00
+            0.3188E+02  0.6375E+02   23  0.1836E+00  0.3899E+00
+            0.1594E+02  0.3188E+02    4  0.1604E+00  0.3068E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1230E+00  0.4251E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.127500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2258E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1237E+00 R.m.s. difference:    0.4272E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1955E+00  0.8487E+00
+            0.2040E+04  0.4080E+04   11  0.1566E+00  0.6265E+00
+            0.1020E+04  0.2040E+04   30  0.8867E-01  0.3613E+00
+            0.5100E+03  0.1020E+04   40  0.8017E-01  0.3552E+00
+            0.2550E+03  0.5100E+03   31  0.1190E+00  0.3986E+00
+            0.1275E+03  0.2550E+03   26  0.1329E+00  0.4047E+00
+            0.6375E+02  0.1275E+03   42  0.1255E+00  0.3226E+00
+            0.3188E+02  0.6375E+02   23  0.1853E+00  0.3933E+00
+            0.1594E+02  0.3188E+02    4  0.1628E+00  0.3109E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1237E+00  0.4272E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.130000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2262E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1244E+00 R.m.s. difference:    0.4292E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.1980E+00  0.8590E+00
+            0.2040E+04  0.4080E+04   11  0.1575E+00  0.6294E+00
+            0.1020E+04  0.2040E+04   30  0.8949E-01  0.3633E+00
+            0.5100E+03  0.1020E+04   40  0.8007E-01  0.3547E+00
+            0.2550E+03  0.5100E+03   31  0.1184E+00  0.3968E+00
+            0.1275E+03  0.2550E+03   26  0.1329E+00  0.4042E+00
+            0.6375E+02  0.1275E+03   42  0.1268E+00  0.3251E+00
+            0.3188E+02  0.6375E+02   23  0.1870E+00  0.3966E+00
+            0.1594E+02  0.3188E+02    4  0.1652E+00  0.3149E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1244E+00  0.4292E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.132500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2265E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1250E+00 R.m.s. difference:    0.4312E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2004E+00  0.8691E+00
+            0.2040E+04  0.4080E+04   11  0.1584E+00  0.6323E+00
+            0.1020E+04  0.2040E+04   30  0.9030E-01  0.3653E+00
+            0.5100E+03  0.1020E+04   40  0.8000E-01  0.3541E+00
+            0.2550E+03  0.5100E+03   31  0.1178E+00  0.3951E+00
+            0.1275E+03  0.2550E+03   26  0.1329E+00  0.4037E+00
+            0.6375E+02  0.1275E+03   42  0.1281E+00  0.3275E+00
+            0.3188E+02  0.6375E+02   23  0.1887E+00  0.3998E+00
+            0.1594E+02  0.3188E+02    4  0.1675E+00  0.3189E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1250E+00  0.4312E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.135000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2268E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1257E+00 R.m.s. difference:    0.4331E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2028E+00  0.8790E+00
+            0.2040E+04  0.4080E+04   11  0.1593E+00  0.6351E+00
+            0.1020E+04  0.2040E+04   30  0.9109E-01  0.3672E+00
+            0.5100E+03  0.1020E+04   40  0.7994E-01  0.3535E+00
+            0.2550E+03  0.5100E+03   31  0.1172E+00  0.3933E+00
+            0.1275E+03  0.2550E+03   26  0.1328E+00  0.4032E+00
+            0.6375E+02  0.1275E+03   42  0.1294E+00  0.3299E+00
+            0.3188E+02  0.6375E+02   23  0.1904E+00  0.4030E+00
+            0.1594E+02  0.3188E+02    4  0.1698E+00  0.3228E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1257E+00  0.4331E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.137500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2270E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1263E+00 R.m.s. difference:    0.4351E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2051E+00  0.8887E+00
+            0.2040E+04  0.4080E+04   11  0.1602E+00  0.6379E+00
+            0.1020E+04  0.2040E+04   30  0.9187E-01  0.3692E+00
+            0.5100E+03  0.1020E+04   40  0.7987E-01  0.3530E+00
+            0.2550E+03  0.5100E+03   31  0.1166E+00  0.3916E+00
+            0.1275E+03  0.2550E+03   26  0.1328E+00  0.4027E+00
+            0.6375E+02  0.1275E+03   42  0.1307E+00  0.3323E+00
+            0.3188E+02  0.6375E+02   23  0.1920E+00  0.4061E+00
+            0.1594E+02  0.3188E+02    4  0.1721E+00  0.3267E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1263E+00  0.4351E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.140000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2273E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1269E+00 R.m.s. difference:    0.4370E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2074E+00  0.8982E+00
+            0.2040E+04  0.4080E+04   11  0.1611E+00  0.6407E+00
+            0.1020E+04  0.2040E+04   30  0.9264E-01  0.3711E+00
+            0.5100E+03  0.1020E+04   40  0.7981E-01  0.3524E+00
+            0.2550E+03  0.5100E+03   31  0.1159E+00  0.3899E+00
+            0.1275E+03  0.2550E+03   26  0.1327E+00  0.4022E+00
+            0.6375E+02  0.1275E+03   42  0.1320E+00  0.3346E+00
+            0.3188E+02  0.6375E+02   23  0.1936E+00  0.4092E+00
+            0.1594E+02  0.3188E+02    4  0.1744E+00  0.3306E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1269E+00  0.4370E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.142500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2276E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1276E+00 R.m.s. difference:    0.4389E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2096E+00  0.9075E+00
+            0.2040E+04  0.4080E+04   11  0.1619E+00  0.6434E+00
+            0.1020E+04  0.2040E+04   30  0.9340E-01  0.3730E+00
+            0.5100E+03  0.1020E+04   40  0.7975E-01  0.3519E+00
+            0.2550E+03  0.5100E+03   31  0.1153E+00  0.3882E+00
+            0.1275E+03  0.2550E+03   26  0.1327E+00  0.4017E+00
+            0.6375E+02  0.1275E+03   42  0.1333E+00  0.3370E+00
+            0.3188E+02  0.6375E+02   23  0.1952E+00  0.4123E+00
+            0.1594E+02  0.3188E+02    4  0.1766E+00  0.3344E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1276E+00  0.4389E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.145000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2278E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1282E+00 R.m.s. difference:    0.4408E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2117E+00  0.9166E+00
+            0.2040E+04  0.4080E+04   11  0.1627E+00  0.6460E+00
+            0.1020E+04  0.2040E+04   30  0.9414E-01  0.3749E+00
+            0.5100E+03  0.1020E+04   40  0.7969E-01  0.3514E+00
+            0.2550E+03  0.5100E+03   31  0.1147E+00  0.3865E+00
+            0.1275E+03  0.2550E+03   26  0.1326E+00  0.4012E+00
+            0.6375E+02  0.1275E+03   42  0.1346E+00  0.3393E+00
+            0.3188E+02  0.6375E+02   23  0.1968E+00  0.4153E+00
+            0.1594E+02  0.3188E+02    4  0.1789E+00  0.3382E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1282E+00  0.4408E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.147500E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as true
+ X-PLOR> 
+ X-PLOR>		relax 
+ RELAx>	          taucorrel       DMSO 
+ TAUCorrelation>       		     model rigid 
+ TAUCorrelation>		     isotropic	$tau 
+ TAUCorrelation>                  end 
+ RELAx> 
+ RELAx>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ CALIbrate>                quality 0.33 automatic on reference all group class 
+ CALIbrate>        end 
+ RELAX: intensities updated for calibration
+
+             class   N(reference)   N(all)  calibration 
+           ---------------------------------------------
+             D260              0       220  0.2281E+00
+           ---------------------------------------------
+ RELAx> 
+ RELAx>        print threshold 9999 end        {* Print R value of initial structure *} 
+ Class D260: R-factor:   0.1288E+00 R.m.s. difference:    0.4426E+00
+ RELAX: overall R-factor statistics 
+           ------------------------------------------------------
+             min. int.   max. int.    N   R-factor   r.m.s. diff 
+           ------------------------------------------------------
+            0.4080E+04  0.8160E+04   13  0.2139E+00  0.9255E+00
+            0.2040E+04  0.4080E+04   11  0.1635E+00  0.6486E+00
+            0.1020E+04  0.2040E+04   30  0.9487E-01  0.3768E+00
+            0.5100E+03  0.1020E+04   40  0.7963E-01  0.3509E+00
+            0.2550E+03  0.5100E+03   31  0.1141E+00  0.3849E+00
+            0.1275E+03  0.2550E+03   26  0.1325E+00  0.4007E+00
+            0.6375E+02  0.1275E+03   42  0.1359E+00  0.3415E+00
+            0.3188E+02  0.6375E+02   23  0.1983E+00  0.4183E+00
+            0.1594E+02  0.3188E+02    4  0.1811E+00  0.3420E+00
+           ------------------------------------------------------
+            0.0000E+00  0.8160E+04  220  0.1288E+00  0.4426E+00
+           ------------------------------------------------------
+ RELAx> 
+ RELAx> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ EVALUATE: symbol $TAU set to   0.150000E-07 (real)
+ X-PLOR>	end loop tau 
+ X-PLOR>	while ($tau < 15.0e-9) loop tau 
+ NEXTCD: condition evaluated as false
+ X-PLOR> 
+ X-PLOR>		relax 
+ X-PLOR>	          taucorrel       DMSO 
+ X-PLOR>       		     model rigid 
+ X-PLOR>		     isotropic	$tau 
+ X-PLOR>                  end 
+ X-PLOR> 
+ X-PLOR>        calibrate                       {* Calculate spectrum and turn automatic rescaling on *} 
+ X-PLOR>                quality 0.33 automatic on reference all group class 
+ X-PLOR>        end 
+ X-PLOR> 
+ X-PLOR>        print threshold 9999 end        {* Print R value of initial structure *} 
+ X-PLOR> 
+ X-PLOR> 	end 
+ X-PLOR> 
+ X-PLOR>	display  $tau $RNMR 
+ X-PLOR> 
+ X-PLOR>	eval  ($tau = $tau + 0.25e-9) 
+ X-PLOR>	end loop tau 
+ X-PLOR> 
+ X-PLOR>stop 
+ CSTACK: size=    40000 used=        0 current=        0
+ HEAP:   maximum use=   374617 current use=   230400
+ X-PLOR: total CPU time=     19.7000 s
+ X-PLOR: entry time at 19:32:39 20-Apr-10
+ X-PLOR: exit time at 19:32:59 20-Apr-10

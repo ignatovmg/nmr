@@ -1,0 +1,3354 @@
+========================================
+ set-i-atoms
+          SEG1 1    CYT  H1' 
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   3.694 NOE=***** (- 0.20/+ 0.20) Delta= 521.306  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H1' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.531 NOE=***** (- 0.20/+ 0.20) Delta= 156.469  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 1    CYT  H3' 
+ R<average>=   2.854 NOE=***** (- 0.20/+ 0.20) Delta=2127.146  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 1    CYT  H5  
+ R<average>=   4.166 NOE=***** (- 0.20/+ 0.20) Delta= 496.834  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   2.472 NOE=***** (- 0.20/+ 0.20) Delta=4347.528  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.649 NOE=***** (- 0.20/+ 0.20) Delta= 491.351  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 1    CYT  H3' 
+ R<average>=   3.131 NOE=***** (- 0.20/+ 0.20) Delta=1136.869  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   5.175 NOE=***** (- 0.20/+ 0.20) Delta= 231.825  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 2    GUA  H4' 
+ R<average>=   4.685 NOE=***** (- 0.20/+ 0.20) Delta= 142.315  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.400 NOE=***** (- 0.20/+ 0.20) Delta= 709.600  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H3' 
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   4.705 NOE=***** (- 0.20/+ 0.20) Delta= 202.295  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H3' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   5.657 NOE=78.10 (- 0.20/+ 0.20) Delta=  72.443  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H5  
+ set-j-atoms
+          SEG1 1    CYT  H6  
+ R<average>=   2.507 NOE=***** (- 0.20/+ 0.20) Delta=3047.493  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H6  
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   5.217 NOE=79.20 (- 0.20/+ 0.20) Delta=  73.983  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H1' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.648 NOE=***** (- 0.20/+ 0.20) Delta= 284.352  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H1' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   3.929 NOE=***** (- 0.20/+ 0.20) Delta= 428.071  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   3.526 NOE=***** (- 0.20/+ 0.20) Delta=1996.474  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H2''
+ R<average>=   1.762 NOE=***** (- 0.20/+ 0.20) Delta=9998.238  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H4' 
+ R<average>=   3.638 NOE=***** (- 0.20/+ 0.20) Delta= 607.362  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   2.619 NOE=***** (- 0.20/+ 0.20) Delta=2227.381  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.300 NOE=***** (- 0.20/+ 0.20) Delta= 611.700  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   3.183 NOE=***** (- 0.20/+ 0.20) Delta=2296.817  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 2    GUA  H4' 
+ R<average>=   3.807 NOE=***** (- 0.20/+ 0.20) Delta= 409.193  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.222 NOE=***** (- 0.20/+ 0.20) Delta=1136.778  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   2.859 NOE=***** (- 0.20/+ 0.20) Delta=1007.141  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H3' 
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   4.363 NOE=***** (- 0.20/+ 0.20) Delta= 527.637  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H3' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.794 NOE=***** (- 0.20/+ 0.20) Delta= 448.206  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H3' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.987 NOE=***** (- 0.20/+ 0.20) Delta= 156.013  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H4' 
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   3.263 NOE=***** (- 0.20/+ 0.20) Delta= 776.737  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H4' 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   5.732 NOE=***** (- 0.20/+ 0.20) Delta= 120.268  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H1' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   3.745 NOE=***** (- 0.20/+ 0.20) Delta= 437.255  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   3.979 NOE=***** (- 0.20/+ 0.20) Delta= 265.021  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H2  
+ R<average>=   4.805 NOE=95.60 (- 0.20/+ 0.20) Delta=  90.795  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 3    THY  H1' 
+ R<average>=   3.324 NOE=***** (- 0.20/+ 0.20) Delta=1346.676  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   2.929 NOE=***** (- 0.20/+ 0.20) Delta=1077.071  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   4.194 NOE=***** (- 0.20/+ 0.20) Delta= 428.806  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 3    THY  H1' 
+ R<average>=   2.446 NOE=***** (- 0.20/+ 0.20) Delta=3317.554  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   3.871 NOE=***** (- 0.20/+ 0.20) Delta= 548.129  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 4    ADE  H4' 
+ R<average>=   4.666 NOE=***** (- 0.20/+ 0.20) Delta=  96.334  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H3' 
+ set-j-atoms
+          SEG1 3    THY  H1' 
+ R<average>=   4.532 NOE=***** (- 0.20/+ 0.20) Delta= 486.468  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H3' 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   3.864 NOE=***** (- 0.20/+ 0.20) Delta= 521.136  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H6  
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   5.513 NOE=***** (- 0.20/+ 0.20) Delta= 152.487  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H6  
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   5.054 NOE=***** (- 0.20/+ 0.20) Delta= 136.946  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H2  
+ R<average>=   4.559 NOE=72.40 (- 0.20/+ 0.20) Delta=  67.841  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   4.212 NOE=***** (- 0.20/+ 0.20) Delta= 329.788  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H1' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   4.454 NOE=***** (- 0.20/+ 0.20) Delta= 364.546  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H2  
+ R<average>=   4.718 NOE=55.70 (- 0.20/+ 0.20) Delta=  50.982  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2  
+ set-j-atoms
+          SEG2 9    ADE  H2  
+ R<average>=   3.518 NOE=***** (- 0.20/+ 0.20) Delta= 297.482  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H1' 
+ R<average>=   3.041 NOE=***** (- 0.20/+ 0.20) Delta=1776.959  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   1.400 NOE=***** (- 0.20/+ 0.20) Delta=6988.600  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H4' 
+ R<average>=   3.477 NOE=***** (- 0.20/+ 0.20) Delta= 444.523  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   3.890 NOE=***** (- 0.20/+ 0.20) Delta= 665.110  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   3.193 NOE=***** (- 0.20/+ 0.20) Delta=1156.807  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H3' 
+ R<average>=   3.180 NOE=***** (- 0.20/+ 0.20) Delta=1836.820  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H4' 
+ R<average>=   4.056 NOE=***** (- 0.20/+ 0.20) Delta= 390.944  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   2.679 NOE=***** (- 0.20/+ 0.20) Delta= 926.321  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 5    CYT  H4' 
+ R<average>=   4.494 NOE=***** (- 0.20/+ 0.20) Delta= 130.506  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   3.040 NOE=***** (- 0.20/+ 0.20) Delta= 650.960  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   2.676 NOE=***** (- 0.20/+ 0.20) Delta=1347.324  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H3' 
+ set-j-atoms
+          SEG1 4    ADE  H1' 
+ R<average>=   3.942 NOE=***** (- 0.20/+ 0.20) Delta= 649.058  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H3' 
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   5.363 NOE=***** (- 0.20/+ 0.20) Delta= 141.637  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H3' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   3.348 NOE=***** (- 0.20/+ 0.20) Delta= 763.652  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H4' 
+ set-j-atoms
+          SEG1 4    ADE  H1' 
+ R<average>=   3.141 NOE=***** (- 0.20/+ 0.20) Delta=1006.859  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H4' 
+ set-j-atoms
+          SEG1 4    ADE  H3' 
+ R<average>=   2.655 NOE=***** (- 0.20/+ 0.20) Delta=2477.345  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H4' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   5.427 NOE=***** (- 0.20/+ 0.20) Delta= 129.573  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H2  
+ R<average>=   4.627 NOE=56.60 (- 0.20/+ 0.20) Delta=  51.973  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H1' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   4.141 NOE=***** (- 0.20/+ 0.20) Delta= 469.859  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H1' 
+ set-j-atoms
+          SEG1 6    ACL  H2  
+ R<average>=   5.656 NOE=***** (- 0.20/+ 0.20) Delta= 134.344  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   2.654 NOE=***** (- 0.20/+ 0.20) Delta=1537.346  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H2''
+ R<average>=   1.263 NOE=***** (- 0.20/+ 0.20) Delta=4458.737  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H3' 
+ R<average>=   2.435 NOE=***** (- 0.20/+ 0.20) Delta=2057.565  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H4' 
+ R<average>=   3.894 NOE=***** (- 0.20/+ 0.20) Delta= 403.106  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   3.249 NOE=***** (- 0.20/+ 0.20) Delta= 718.751  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   2.502 NOE=***** (- 0.20/+ 0.20) Delta= 751.498  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2' 
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   4.045 NOE=***** (- 0.20/+ 0.20) Delta= 520.955  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   2.376 NOE=***** (- 0.20/+ 0.20) Delta=2287.624  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H3' 
+ R<average>=   2.983 NOE=***** (- 0.20/+ 0.20) Delta=1617.017  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H4' 
+ R<average>=   4.010 NOE=***** (- 0.20/+ 0.20) Delta= 356.990  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H5  
+ R<average>=   4.023 NOE=***** (- 0.20/+ 0.20) Delta= 308.977  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   3.753 NOE=***** (- 0.20/+ 0.20) Delta=1916.247  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 6    ACL  H4' 
+ R<average>=   5.125 NOE=***** (- 0.20/+ 0.20) Delta= 132.875  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H2''
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   3.004 NOE=***** (- 0.20/+ 0.20) Delta= 898.996  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H3' 
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   3.568 NOE=***** (- 0.20/+ 0.20) Delta= 576.432  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H3' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   3.095 NOE=***** (- 0.20/+ 0.20) Delta=1076.905  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H3' 
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   4.636 NOE=***** (- 0.20/+ 0.20) Delta= 182.364  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H4' 
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   2.949 NOE=***** (- 0.20/+ 0.20) Delta=1057.051  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H4' 
+ set-j-atoms
+          SEG1 5    CYT  H3' 
+ R<average>=   2.559 NOE=***** (- 0.20/+ 0.20) Delta=3277.441  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H4' 
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   4.568 NOE=***** (- 0.20/+ 0.20) Delta= 200.432  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H4' 
+ set-j-atoms
+          SEG1 6    ACL  H4' 
+ R<average>=   5.347 NOE=49.60 (- 0.20/+ 0.20) Delta=  44.253  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H4' 
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   3.956 NOE=***** (- 0.20/+ 0.20) Delta= 402.044  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H5  
+ set-j-atoms
+          SEG1 4    ADE  H1' 
+ R<average>=   5.160 NOE=***** (- 0.20/+ 0.20) Delta= 126.840  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H5  
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   3.933 NOE=***** (- 0.20/+ 0.20) Delta= 257.067  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H5  
+ set-j-atoms
+          SEG1 5    CYT  H6  
+ R<average>=   2.700 NOE=***** (- 0.20/+ 0.20) Delta=2297.300  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 5    CYT  H6  
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   4.805 NOE=***** (- 0.20/+ 0.20) Delta= 166.195  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H1' 
+ set-j-atoms
+          SEG1 6    ACL  H2  
+ R<average>=   5.370 NOE=51.30 (- 0.20/+ 0.20) Delta=  45.930  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H1' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   4.500 NOE=***** (- 0.20/+ 0.20) Delta= 141.500  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H3' 
+ set-j-atoms
+          SEG1 6    ACL  H1' 
+ R<average>=   4.311 NOE=***** (- 0.20/+ 0.20) Delta= 250.689  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H3' 
+ set-j-atoms
+          SEG1 6    ACL  H4' 
+ R<average>=   2.859 NOE=***** (- 0.20/+ 0.20) Delta= 756.141  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H3' 
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   3.432 NOE=***** (- 0.20/+ 0.20) Delta= 367.568  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H3' 
+ set-j-atoms
+          SEG1 7    CYT  H5  
+ R<average>=   3.627 NOE=***** (- 0.20/+ 0.20) Delta= 750.373  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H4' 
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   5.060 NOE=***** (- 0.20/+ 0.20) Delta= 274.940  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H4' 
+ set-j-atoms
+          SEG1 6    ACL  H1' 
+ R<average>=   4.586 NOE=***** (- 0.20/+ 0.20) Delta= 144.414  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H4' 
+ set-j-atoms
+          SEG1 6    ACL  H5' 
+ R<average>=   2.665 NOE=***** (- 0.20/+ 0.20) Delta=2197.335  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H4' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   5.616 NOE=***** (- 0.20/+ 0.20) Delta= 140.384  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H5' 
+ set-j-atoms
+          SEG1 5    CYT  H1' 
+ R<average>=   2.526 NOE=***** (- 0.20/+ 0.20) Delta=2497.474  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H5' 
+ set-j-atoms
+          SEG1 6    ACL  H1' 
+ R<average>=   4.573 NOE=***** (- 0.20/+ 0.20) Delta= 120.427  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H1' 
+ set-j-atoms
+          SEG1 6    ACL  H2  
+ R<average>=   5.555 NOE=41.60 (- 0.20/+ 0.20) Delta=  36.045  E(NOE)=9681.979
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H1' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.534 NOE=***** (- 0.20/+ 0.20) Delta= 425.466  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.787 NOE=***** (- 0.20/+ 0.20) Delta= 443.213  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 7    CYT  H1' 
+ R<average>=   2.985 NOE=***** (- 0.20/+ 0.20) Delta=2507.015  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 7    CYT  H3' 
+ R<average>=   2.348 NOE=***** (- 0.20/+ 0.20) Delta=2267.652  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 7    CYT  H5  
+ R<average>=   3.487 NOE=***** (- 0.20/+ 0.20) Delta= 692.513  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   1.917 NOE=***** (- 0.20/+ 0.20) Delta= 842.083  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.248 NOE=***** (- 0.20/+ 0.20) Delta= 502.752  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 7    CYT  H1' 
+ R<average>=   2.286 NOE=***** (- 0.20/+ 0.20) Delta=2637.714  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 7    CYT  H3' 
+ R<average>=   3.399 NOE=***** (- 0.20/+ 0.20) Delta=1616.601  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 7    CYT  H5  
+ R<average>=   3.515 NOE=***** (- 0.20/+ 0.20) Delta= 836.485  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   2.746 NOE=***** (- 0.20/+ 0.20) Delta=1687.254  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 8    ADE  H4' 
+ R<average>=   5.137 NOE=69.10 (- 0.20/+ 0.20) Delta=  63.963  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H2''
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   2.837 NOE=***** (- 0.20/+ 0.20) Delta= 856.163  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H3' 
+ set-j-atoms
+          SEG1 7    CYT  H1' 
+ R<average>=   5.153 NOE=***** (- 0.20/+ 0.20) Delta= 391.847  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H3' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   5.680 NOE=***** (- 0.20/+ 0.20) Delta= 126.320  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H4' 
+ set-j-atoms
+          SEG1 6    ACL  H1' 
+ R<average>=   4.982 NOE=***** (- 0.20/+ 0.20) Delta=  97.018  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H4' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.897 NOE=***** (- 0.20/+ 0.20) Delta= 276.103  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H4' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   6.216 NOE=59.90 (- 0.20/+ 0.20) Delta=  53.684  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H5  
+ set-j-atoms
+          SEG1 6    ACL  H1' 
+ R<average>=   6.154 NOE=45.70 (- 0.20/+ 0.20) Delta=  39.546  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H5  
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   2.228 NOE=***** (- 0.20/+ 0.20) Delta=1797.772  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H5' 
+ set-j-atoms
+          SEG1 6    ACL  H1' 
+ R<average>=   3.344 NOE=***** (- 0.20/+ 0.20) Delta= 645.656  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H5' 
+ set-j-atoms
+          SEG1 6    ACL  H4' 
+ R<average>=   4.974 NOE=68.60 (- 0.20/+ 0.20) Delta=  63.626  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H5' 
+ set-j-atoms
+          SEG1 7    CYT  H5  
+ R<average>=   5.958 NOE=75.70 (- 0.20/+ 0.20) Delta=  69.742  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H6  
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   5.217 NOE=***** (- 0.20/+ 0.20) Delta=  96.783  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H2  
+ R<average>=   4.663 NOE=82.70 (- 0.20/+ 0.20) Delta=  78.037  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.320 NOE=***** (- 0.20/+ 0.20) Delta= 348.680  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H1' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.284 NOE=***** (- 0.20/+ 0.20) Delta= 409.716  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   3.095 NOE=***** (- 0.20/+ 0.20) Delta=2396.905  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   1.784 NOE=***** (- 0.20/+ 0.20) Delta=4998.216  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   2.250 NOE=***** (- 0.20/+ 0.20) Delta=3417.750  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H4' 
+ R<average>=   3.551 NOE=***** (- 0.20/+ 0.20) Delta= 534.449  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   2.514 NOE=***** (- 0.20/+ 0.20) Delta=2007.486  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   3.644 NOE=***** (- 0.20/+ 0.20) Delta= 709.356  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   3.059 NOE=***** (- 0.20/+ 0.20) Delta=1976.941  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H4' 
+ R<average>=   3.737 NOE=***** (- 0.20/+ 0.20) Delta= 383.263  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.801 NOE=***** (- 0.20/+ 0.20) Delta=1076.199  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.682 NOE=***** (- 0.20/+ 0.20) Delta=1067.318  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H3' 
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   4.263 NOE=***** (- 0.20/+ 0.20) Delta= 555.737  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H3' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.441 NOE=***** (- 0.20/+ 0.20) Delta= 427.559  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H3' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   5.130 NOE=***** (- 0.20/+ 0.20) Delta= 186.870  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H4' 
+ set-j-atoms
+          SEG1 7    CYT  H1' 
+ R<average>=   4.266 NOE=***** (- 0.20/+ 0.20) Delta= 166.734  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H4' 
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   3.196 NOE=***** (- 0.20/+ 0.20) Delta= 639.804  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H4' 
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   2.962 NOE=***** (- 0.20/+ 0.20) Delta=1727.038  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H4' 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   5.165 NOE=99.30 (- 0.20/+ 0.20) Delta=  94.135  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H4' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   6.417 NOE=33.60 (- 0.20/+ 0.20) Delta=  27.183  E(NOE)=5506.222
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H2  
+ R<average>=   4.217 NOE=***** (- 0.20/+ 0.20) Delta= 167.783  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   3.478 NOE=***** (- 0.20/+ 0.20) Delta= 435.522  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.453 NOE=***** (- 0.20/+ 0.20) Delta= 192.547  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H2  
+ R<average>=   5.409 NOE=52.50 (- 0.20/+ 0.20) Delta=  47.091  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   2.979 NOE=***** (- 0.20/+ 0.20) Delta=1477.021  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H2''
+ R<average>=   2.163 NOE=***** (- 0.20/+ 0.20) Delta=5627.837  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H3' 
+ R<average>=   2.182 NOE=***** (- 0.20/+ 0.20) Delta=2607.818  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.432 NOE=***** (- 0.20/+ 0.20) Delta=2237.568  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   3.457 NOE=***** (- 0.20/+ 0.20) Delta= 499.543  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   2.567 NOE=***** (- 0.20/+ 0.20) Delta=3017.433  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 9    THY  H3' 
+ R<average>=   2.571 NOE=***** (- 0.20/+ 0.20) Delta=2127.429  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.211 NOE=***** (- 0.20/+ 0.20) Delta= 493.789  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 10   GUA  H4' 
+ R<average>=   5.068 NOE=***** (- 0.20/+ 0.20) Delta= 109.932  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H2''
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   3.453 NOE=***** (- 0.20/+ 0.20) Delta= 601.547  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H3' 
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   4.126 NOE=***** (- 0.20/+ 0.20) Delta= 486.874  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H3' 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   4.379 NOE=***** (- 0.20/+ 0.20) Delta= 569.621  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H3' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   5.066 NOE=***** (- 0.20/+ 0.20) Delta= 114.934  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H6  
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   4.750 NOE=***** (- 0.20/+ 0.20) Delta= 181.250  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H6  
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.223 NOE=***** (- 0.20/+ 0.20) Delta= 154.777  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H1' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   5.274 NOE=***** (- 0.20/+ 0.20) Delta= 302.726  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H1' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.904 NOE=***** (- 0.20/+ 0.20) Delta= 518.096  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H2  
+ R<average>=   5.079 NOE=60.80 (- 0.20/+ 0.20) Delta=  55.721  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H1' 
+ R<average>=   3.608 NOE=***** (- 0.20/+ 0.20) Delta=1946.392  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H2''
+ R<average>=   1.777 NOE=***** (- 0.20/+ 0.20) Delta=********  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H3' 
+ R<average>=   2.457 NOE=***** (- 0.20/+ 0.20) Delta=2977.543  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H4' 
+ R<average>=   3.735 NOE=***** (- 0.20/+ 0.20) Delta= 414.265  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   2.551 NOE=***** (- 0.20/+ 0.20) Delta=2317.449  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   3.076 NOE=***** (- 0.20/+ 0.20) Delta= 709.924  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H1' 
+ R<average>=   2.222 NOE=***** (- 0.20/+ 0.20) Delta=5707.778  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H4' 
+ R<average>=   3.826 NOE=***** (- 0.20/+ 0.20) Delta= 543.174  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   3.680 NOE=***** (- 0.20/+ 0.20) Delta=1236.320  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   3.649 NOE=***** (- 0.20/+ 0.20) Delta= 799.351  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   2.672 NOE=***** (- 0.20/+ 0.20) Delta=1487.328  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H3' 
+ set-j-atoms
+          SEG1 10   GUA  H1' 
+ R<average>=   4.373 NOE=***** (- 0.20/+ 0.20) Delta= 420.627  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H3' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.475 NOE=***** (- 0.20/+ 0.20) Delta= 426.525  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H3' 
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   4.003 NOE=***** (- 0.20/+ 0.20) Delta= 541.997  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H3' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.748 NOE=***** (- 0.20/+ 0.20) Delta= 373.252  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H4' 
+ set-j-atoms
+          SEG1 10   GUA  H1' 
+ R<average>=   3.196 NOE=***** (- 0.20/+ 0.20) Delta= 965.804  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H4' 
+ set-j-atoms
+          SEG1 10   GUA  H3' 
+ R<average>=   2.723 NOE=***** (- 0.20/+ 0.20) Delta=2677.277  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H4' 
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   5.374 NOE=90.70 (- 0.20/+ 0.20) Delta=  85.326  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H1' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.823 NOE=***** (- 0.20/+ 0.20) Delta= 418.177  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H3' 
+ set-j-atoms
+          SEG1 11   CYT  H1' 
+ R<average>=   4.176 NOE=***** (- 0.20/+ 0.20) Delta= 402.824  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H3' 
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   5.549 NOE=94.10 (- 0.20/+ 0.20) Delta=  88.551  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H3' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.367 NOE=***** (- 0.20/+ 0.20) Delta= 842.633  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H5  
+ set-j-atoms
+          SEG1 10   GUA  H1' 
+ R<average>=   5.685 NOE=***** (- 0.20/+ 0.20) Delta= 197.315  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H5  
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   4.671 NOE=***** (- 0.20/+ 0.20) Delta= 199.329  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H5  
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   2.639 NOE=***** (- 0.20/+ 0.20) Delta=2577.361  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H6  
+ set-j-atoms
+          SEG1 10   GUA  H8  
+ R<average>=   5.639 NOE=***** (- 0.20/+ 0.20) Delta= 135.361  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H1' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   4.678 NOE=***** (- 0.20/+ 0.20) Delta= 188.322  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H1' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   3.874 NOE=***** (- 0.20/+ 0.20) Delta= 462.126  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H1' 
+ R<average>=   3.806 NOE=***** (- 0.20/+ 0.20) Delta=1736.194  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H2''
+ R<average>=   1.939 NOE=***** (- 0.20/+ 0.20) Delta=8098.061  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H3' 
+ R<average>=   2.569 NOE=***** (- 0.20/+ 0.20) Delta=2977.431  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   2.940 NOE=***** (- 0.20/+ 0.20) Delta=1457.060  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   3.278 NOE=***** (- 0.20/+ 0.20) Delta= 944.722  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 1    GUA  H3' 
+ R<average>=   3.257 NOE=***** (- 0.20/+ 0.20) Delta=1746.743  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   3.961 NOE=***** (- 0.20/+ 0.20) Delta= 591.039  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   3.195 NOE=***** (- 0.20/+ 0.20) Delta= 865.805  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   2.867 NOE=***** (- 0.20/+ 0.20) Delta=1367.133  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H3' 
+ set-j-atoms
+          SEG2 1    GUA  H1' 
+ R<average>=   4.376 NOE=***** (- 0.20/+ 0.20) Delta= 349.624  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H3' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   4.767 NOE=***** (- 0.20/+ 0.20) Delta= 194.233  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H3' 
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   5.252 NOE=***** (- 0.20/+ 0.20) Delta= 118.748  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H3' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   6.032 NOE=56.30 (- 0.20/+ 0.20) Delta=  50.268  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H4' 
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   5.427 NOE=72.20 (- 0.20/+ 0.20) Delta=  66.773  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H1' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   3.110 NOE=***** (- 0.20/+ 0.20) Delta= 660.890  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.182 NOE=***** (- 0.20/+ 0.20) Delta= 281.818  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H1' 
+ R<average>=   2.608 NOE=***** (- 0.20/+ 0.20) Delta=2237.392  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H2''
+ R<average>=   1.726 NOE=***** (- 0.20/+ 0.20) Delta=7038.274  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H3' 
+ R<average>=   2.507 NOE=***** (- 0.20/+ 0.20) Delta=3037.493  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   2.961 NOE=***** (- 0.20/+ 0.20) Delta=1007.039  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.421 NOE=***** (- 0.20/+ 0.20) Delta= 345.579  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 2    CYT  H1' 
+ R<average>=   2.128 NOE=***** (- 0.20/+ 0.20) Delta=2717.872  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 2    CYT  H5  
+ R<average>=   4.239 NOE=***** (- 0.20/+ 0.20) Delta= 425.761  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   3.575 NOE=***** (- 0.20/+ 0.20) Delta=1676.425  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 3    ADE  H4' 
+ R<average>=   5.536 NOE=80.80 (- 0.20/+ 0.20) Delta=  75.264  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   3.053 NOE=***** (- 0.20/+ 0.20) Delta= 628.947  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H3' 
+ set-j-atoms
+          SEG2 1    GUA  H1' 
+ R<average>=   5.500 NOE=***** (- 0.20/+ 0.20) Delta= 124.500  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H3' 
+ set-j-atoms
+          SEG2 2    CYT  H1' 
+ R<average>=   4.098 NOE=***** (- 0.20/+ 0.20) Delta= 729.902  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H3' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   4.959 NOE=***** (- 0.20/+ 0.20) Delta= 250.041  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H3' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   5.474 NOE=***** (- 0.20/+ 0.20) Delta= 118.526  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H5  
+ set-j-atoms
+          SEG2 1    GUA  H1' 
+ R<average>=   5.277 NOE=***** (- 0.20/+ 0.20) Delta= 206.723  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H5  
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   5.181 NOE=***** (- 0.20/+ 0.20) Delta=  97.819  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H5  
+ set-j-atoms
+          SEG2 2    CYT  H1' 
+ R<average>=   5.005 NOE=***** (- 0.20/+ 0.20) Delta= 397.995  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H5  
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   2.643 NOE=***** (- 0.20/+ 0.20) Delta=2627.357  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H6  
+ set-j-atoms
+          SEG2 1    GUA  H8  
+ R<average>=   5.285 NOE=70.60 (- 0.20/+ 0.20) Delta=  65.315  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H6  
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   5.323 NOE=87.70 (- 0.20/+ 0.20) Delta=  82.377  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H2  
+ R<average>=   4.596 NOE=80.90 (- 0.20/+ 0.20) Delta=  76.304  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.008 NOE=***** (- 0.20/+ 0.20) Delta= 317.992  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H1' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.567 NOE=***** (- 0.20/+ 0.20) Delta= 471.433  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   2.696 NOE=***** (- 0.20/+ 0.20) Delta=1737.304  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   1.894 NOE=***** (- 0.20/+ 0.20) Delta=5338.106  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   2.267 NOE=***** (- 0.20/+ 0.20) Delta=2527.733  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H4' 
+ R<average>=   4.043 NOE=***** (- 0.20/+ 0.20) Delta= 427.957  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   2.507 NOE=***** (- 0.20/+ 0.20) Delta=2057.493  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.440 NOE=***** (- 0.20/+ 0.20) Delta= 665.560  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   2.356 NOE=***** (- 0.20/+ 0.20) Delta=2677.644  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   2.596 NOE=***** (- 0.20/+ 0.20) Delta=1777.404  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H4' 
+ R<average>=   4.193 NOE=***** (- 0.20/+ 0.20) Delta= 364.807  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.301 NOE=***** (- 0.20/+ 0.20) Delta=1035.699  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H2''
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.901 NOE=***** (- 0.20/+ 0.20) Delta= 977.099  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H3' 
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   3.603 NOE=***** (- 0.20/+ 0.20) Delta= 547.397  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H3' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.154 NOE=***** (- 0.20/+ 0.20) Delta= 419.846  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H3' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   5.268 NOE=***** (- 0.20/+ 0.20) Delta= 190.732  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H4' 
+ set-j-atoms
+          SEG2 2    CYT  H1' 
+ R<average>=   4.959 NOE=97.30 (- 0.20/+ 0.20) Delta=  92.341  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H4' 
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   3.275 NOE=***** (- 0.20/+ 0.20) Delta= 657.725  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H4' 
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   3.041 NOE=***** (- 0.20/+ 0.20) Delta=1706.959  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H4' 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   5.038 NOE=***** (- 0.20/+ 0.20) Delta= 113.962  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 3    ADE  H4' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   6.557 NOE=39.00 (- 0.20/+ 0.20) Delta=  32.443  E(NOE)=7843.768
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H2  
+ R<average>=   5.364 NOE=56.90 (- 0.20/+ 0.20) Delta=  51.536  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG2 3    ADE  H2  
+ R<average>=   4.348 NOE=***** (- 0.20/+ 0.20) Delta= 138.652  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.634 NOE=***** (- 0.20/+ 0.20) Delta= 421.366  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H1' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   3.868 NOE=***** (- 0.20/+ 0.20) Delta= 306.132  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 4    THY  H3' 
+ R<average>=   2.432 NOE=***** (- 0.20/+ 0.20) Delta=2857.568  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.584 NOE=***** (- 0.20/+ 0.20) Delta=2057.416  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   3.189 NOE=***** (- 0.20/+ 0.20) Delta= 668.811  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2''
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   4.207 NOE=***** (- 0.20/+ 0.20) Delta= 437.793  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2''
+ set-j-atoms
+          SEG2 5    GUA  H4' 
+ R<average>=   4.498 NOE=***** (- 0.20/+ 0.20) Delta= 359.502  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2''
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.083 NOE=***** (- 0.20/+ 0.20) Delta= 244.917  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H3' 
+ set-j-atoms
+          SEG2 4    THY  H1' 
+ R<average>=   4.096 NOE=***** (- 0.20/+ 0.20) Delta= 617.904  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H3' 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   3.698 NOE=***** (- 0.20/+ 0.20) Delta= 512.302  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H3' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   5.459 NOE=***** (- 0.20/+ 0.20) Delta= 150.541  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H6  
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.743 NOE=***** (- 0.20/+ 0.20) Delta= 177.257  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H6  
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.702 NOE=***** (- 0.20/+ 0.20) Delta= 168.298  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H1' 
+ set-j-atoms
+          SEG1 8    ADE  H2  
+ R<average>=   4.568 NOE=***** (- 0.20/+ 0.20) Delta= 105.432  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H1' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.147 NOE=***** (- 0.20/+ 0.20) Delta= 265.853  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H1' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.379 NOE=***** (- 0.20/+ 0.20) Delta= 304.621  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   3.086 NOE=***** (- 0.20/+ 0.20) Delta=1556.914  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H2''
+ R<average>=   1.440 NOE=***** (- 0.20/+ 0.20) Delta=5918.560  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   2.137 NOE=***** (- 0.20/+ 0.20) Delta=2527.863  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H4' 
+ R<average>=   3.564 NOE=***** (- 0.20/+ 0.20) Delta= 438.436  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   2.894 NOE=***** (- 0.20/+ 0.20) Delta= 559.106  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   2.426 NOE=***** (- 0.20/+ 0.20) Delta=2297.574  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 5    GUA  H4' 
+ R<average>=   3.566 NOE=***** (- 0.20/+ 0.20) Delta= 601.434  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.014 NOE=***** (- 0.20/+ 0.20) Delta= 939.986  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2''
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   2.787 NOE=***** (- 0.20/+ 0.20) Delta=1097.213  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H3' 
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   4.317 NOE=***** (- 0.20/+ 0.20) Delta= 650.683  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H3' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   3.779 NOE=***** (- 0.20/+ 0.20) Delta= 405.221  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H3' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   5.331 NOE=***** (- 0.20/+ 0.20) Delta= 196.669  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H4' 
+ set-j-atoms
+          SEG2 4    THY  H1' 
+ R<average>=   3.729 NOE=***** (- 0.20/+ 0.20) Delta= 481.271  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H4' 
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   3.160 NOE=***** (- 0.20/+ 0.20) Delta= 959.840  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H4' 
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   2.885 NOE=***** (- 0.20/+ 0.20) Delta=1677.115  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H4' 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.821 NOE=***** (- 0.20/+ 0.20) Delta= 134.179  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H4' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   6.343 NOE=43.00 (- 0.20/+ 0.20) Delta=  36.657  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H1' 
+ set-j-atoms
+          SEG1 6    ACL  H2  
+ R<average>=   5.657 NOE=73.80 (- 0.20/+ 0.20) Delta=  68.143  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H1' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.454 NOE=***** (- 0.20/+ 0.20) Delta= 458.546  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H1' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.616 NOE=***** (- 0.20/+ 0.20) Delta= 514.384  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H1' 
+ R<average>=   2.936 NOE=***** (- 0.20/+ 0.20) Delta=1467.064  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H2''
+ R<average>=   2.134 NOE=***** (- 0.20/+ 0.20) Delta=5897.866  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H3' 
+ R<average>=   2.050 NOE=***** (- 0.20/+ 0.20) Delta=2497.950  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   2.611 NOE=***** (- 0.20/+ 0.20) Delta=1057.389  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.182 NOE=***** (- 0.20/+ 0.20) Delta= 207.818  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 6    THY  H1' 
+ R<average>=   2.545 NOE=***** (- 0.20/+ 0.20) Delta=2837.455  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 6    THY  H3' 
+ R<average>=   2.257 NOE=***** (- 0.20/+ 0.20) Delta=2567.743  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 7    GUA  H4' 
+ R<average>=   4.677 NOE=***** (- 0.20/+ 0.20) Delta= 322.323  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.121 NOE=***** (- 0.20/+ 0.20) Delta= 905.879  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H3' 
+ set-j-atoms
+          SEG2 6    THY  H1' 
+ R<average>=   3.760 NOE=***** (- 0.20/+ 0.20) Delta= 544.240  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H3' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   4.646 NOE=***** (- 0.20/+ 0.20) Delta= 453.354  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H3' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   5.277 NOE=***** (- 0.20/+ 0.20) Delta= 158.723  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H6  
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   5.174 NOE=***** (- 0.20/+ 0.20) Delta= 206.826  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H6  
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.111 NOE=***** (- 0.20/+ 0.20) Delta= 184.889  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H1' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.098 NOE=***** (- 0.20/+ 0.20) Delta= 293.902  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H1' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.681 NOE=***** (- 0.20/+ 0.20) Delta= 417.319  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   3.698 NOE=***** (- 0.20/+ 0.20) Delta=1566.302  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   1.867 NOE=***** (- 0.20/+ 0.20) Delta=6568.133  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H4' 
+ R<average>=   3.702 NOE=***** (- 0.20/+ 0.20) Delta= 414.298  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   2.643 NOE=***** (- 0.20/+ 0.20) Delta=1807.357  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   4.276 NOE=***** (- 0.20/+ 0.20) Delta= 297.724  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   2.401 NOE=***** (- 0.20/+ 0.20) Delta=2557.599  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   2.832 NOE=***** (- 0.20/+ 0.20) Delta=2187.168  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 7    GUA  H4' 
+ R<average>=   3.193 NOE=***** (- 0.20/+ 0.20) Delta= 636.807  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.605 NOE=***** (- 0.20/+ 0.20) Delta= 977.395  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2''
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.084 NOE=***** (- 0.20/+ 0.20) Delta= 993.916  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H3' 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   4.487 NOE=***** (- 0.20/+ 0.20) Delta= 392.513  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H3' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.775 NOE=***** (- 0.20/+ 0.20) Delta= 377.225  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H4' 
+ set-j-atoms
+          SEG2 6    THY  H1' 
+ R<average>=   5.049 NOE=***** (- 0.20/+ 0.20) Delta= 108.951  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H4' 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   2.941 NOE=***** (- 0.20/+ 0.20) Delta= 781.059  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H4' 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   2.885 NOE=***** (- 0.20/+ 0.20) Delta=1827.115  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H4' 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   5.063 NOE=***** (- 0.20/+ 0.20) Delta= 122.937  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H4' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   5.962 NOE=38.60 (- 0.20/+ 0.20) Delta=  32.638  E(NOE)=7938.293
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H2  
+ R<average>=   4.887 NOE=62.80 (- 0.20/+ 0.20) Delta=  57.913  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H1' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.552 NOE=***** (- 0.20/+ 0.20) Delta= 441.448  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.605 NOE=***** (- 0.20/+ 0.20) Delta= 243.395  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   3.193 NOE=***** (- 0.20/+ 0.20) Delta=1596.807  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H2''
+ R<average>=   1.415 NOE=***** (- 0.20/+ 0.20) Delta=5648.585  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.790 NOE=***** (- 0.20/+ 0.20) Delta=1017.210  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   3.562 NOE=***** (- 0.20/+ 0.20) Delta= 639.438  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   2.393 NOE=***** (- 0.20/+ 0.20) Delta=2747.607  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.646 NOE=***** (- 0.20/+ 0.20) Delta= 659.354  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 9    ADE  H4' 
+ R<average>=   5.290 NOE=86.80 (- 0.20/+ 0.20) Delta=  81.510  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   2.805 NOE=***** (- 0.20/+ 0.20) Delta=1377.195  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H3' 
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   4.385 NOE=***** (- 0.20/+ 0.20) Delta= 544.615  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H6  
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.689 NOE=***** (- 0.20/+ 0.20) Delta= 159.311  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H6  
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   5.976 NOE=***** (- 0.20/+ 0.20) Delta= 122.024  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H1' 
+ set-j-atoms
+          SEG1 4    ADE  H2  
+ R<average>=   4.901 NOE=57.90 (- 0.20/+ 0.20) Delta=  52.999  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H2  
+ R<average>=   4.528 NOE=70.40 (- 0.20/+ 0.20) Delta=  65.872  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.259 NOE=***** (- 0.20/+ 0.20) Delta= 330.741  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H1' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   4.300 NOE=***** (- 0.20/+ 0.20) Delta= 389.700  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   3.882 NOE=***** (- 0.20/+ 0.20) Delta=1966.118  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H2''
+ R<average>=   1.595 NOE=***** (- 0.20/+ 0.20) Delta=8238.405  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H4' 
+ R<average>=   4.453 NOE=***** (- 0.20/+ 0.20) Delta= 448.547  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   3.508 NOE=***** (- 0.20/+ 0.20) Delta= 713.492  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   3.143 NOE=***** (- 0.20/+ 0.20) Delta= 940.857  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   2.364 NOE=***** (- 0.20/+ 0.20) Delta=2827.636  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H3' 
+ R<average>=   2.761 NOE=***** (- 0.20/+ 0.20) Delta=2037.239  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H4' 
+ R<average>=   3.657 NOE=***** (- 0.20/+ 0.20) Delta= 388.343  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   3.135 NOE=***** (- 0.20/+ 0.20) Delta=1126.865  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   3.438 NOE=***** (- 0.20/+ 0.20) Delta= 628.562  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2''
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   2.752 NOE=***** (- 0.20/+ 0.20) Delta=1307.248  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H3' 
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   4.265 NOE=***** (- 0.20/+ 0.20) Delta= 539.735  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H3' 
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   5.768 NOE=59.40 (- 0.20/+ 0.20) Delta=  53.632  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H3' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   4.540 NOE=***** (- 0.20/+ 0.20) Delta= 359.460  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H4' 
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   4.575 NOE=***** (- 0.20/+ 0.20) Delta= 137.425  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H4' 
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   3.292 NOE=***** (- 0.20/+ 0.20) Delta= 825.708  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H4' 
+ set-j-atoms
+          SEG2 9    ADE  H3' 
+ R<average>=   2.878 NOE=***** (- 0.20/+ 0.20) Delta=1737.122  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H4' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   5.369 NOE=89.10 (- 0.20/+ 0.20) Delta=  83.731  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   4.296 NOE=***** (- 0.20/+ 0.20) Delta= 167.704  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 9    ADE  H2  
+ R<average>=   4.022 NOE=***** (- 0.20/+ 0.20) Delta= 139.978  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   3.812 NOE=***** (- 0.20/+ 0.20) Delta= 488.188  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H1' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.432 NOE=***** (- 0.20/+ 0.20) Delta= 173.568  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H1' 
+ R<average>=   3.063 NOE=***** (- 0.20/+ 0.20) Delta=1376.937  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H2''
+ R<average>=   2.227 NOE=***** (- 0.20/+ 0.20) Delta=6677.773  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H3' 
+ R<average>=   2.746 NOE=***** (- 0.20/+ 0.20) Delta=2217.254  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   3.686 NOE=***** (- 0.20/+ 0.20) Delta= 569.314  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   2.518 NOE=***** (- 0.20/+ 0.20) Delta=3287.482  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   3.486 NOE=***** (- 0.20/+ 0.20) Delta= 477.514  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2''
+ set-j-atoms
+          SEG2 10   CYT  H1' 
+ R<average>=   2.594 NOE=***** (- 0.20/+ 0.20) Delta=2947.406  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2''
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   5.205 NOE=***** (- 0.20/+ 0.20) Delta= 193.795  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2''
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   4.008 NOE=***** (- 0.20/+ 0.20) Delta= 484.992  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H2''
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.243 NOE=***** (- 0.20/+ 0.20) Delta= 207.757  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H3' 
+ set-j-atoms
+          SEG2 10   CYT  H1' 
+ R<average>=   4.989 NOE=***** (- 0.20/+ 0.20) Delta= 297.011  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H3' 
+ set-j-atoms
+          SEG2 10   CYT  H5  
+ R<average>=   6.160 NOE=43.90 (- 0.20/+ 0.20) Delta=  37.740  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H3' 
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   4.015 NOE=***** (- 0.20/+ 0.20) Delta= 522.985  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H3' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   5.461 NOE=***** (- 0.20/+ 0.20) Delta=  97.539  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H5  
+ set-j-atoms
+          SEG2 9    ADE  H1' 
+ R<average>=   4.815 NOE=***** (- 0.20/+ 0.20) Delta= 153.185  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H5  
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.309 NOE=***** (- 0.20/+ 0.20) Delta= 236.691  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H5  
+ set-j-atoms
+          SEG2 10   CYT  H6  
+ R<average>=   2.692 NOE=***** (- 0.20/+ 0.20) Delta=2477.308  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H6  
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   5.279 NOE=***** (- 0.20/+ 0.20) Delta= 235.721  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 10   CYT  H6  
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   5.599 NOE=***** (- 0.20/+ 0.20) Delta=  97.401  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H1' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.239 NOE=***** (- 0.20/+ 0.20) Delta= 303.761  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2' 
+ set-j-atoms
+          SEG2 11   GUA  H1' 
+ R<average>=   3.700 NOE=***** (- 0.20/+ 0.20) Delta=1566.300  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2' 
+ set-j-atoms
+          SEG2 11   GUA  H3' 
+ R<average>=   2.706 NOE=***** (- 0.20/+ 0.20) Delta=2077.294  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   2.626 NOE=***** (- 0.20/+ 0.20) Delta=2497.374  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2''
+ set-j-atoms
+          SEG2 11   GUA  H1' 
+ R<average>=   2.340 NOE=***** (- 0.20/+ 0.20) Delta=3767.660  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2''
+ set-j-atoms
+          SEG2 11   GUA  H2' 
+ R<average>=   1.961 NOE=***** (- 0.20/+ 0.20) Delta=7238.039  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2''
+ set-j-atoms
+          SEG2 11   GUA  H3' 
+ R<average>=   3.166 NOE=***** (- 0.20/+ 0.20) Delta=1366.834  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H2''
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   3.898 NOE=***** (- 0.20/+ 0.20) Delta= 893.102  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H3' 
+ set-j-atoms
+          SEG2 11   GUA  H1' 
+ R<average>=   4.327 NOE=***** (- 0.20/+ 0.20) Delta= 361.673  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H3' 
+ set-j-atoms
+          SEG2 11   GUA  H8  
+ R<average>=   4.053 NOE=***** (- 0.20/+ 0.20) Delta= 399.947  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 11   GUA  H4' 
+ set-j-atoms
+          SEG2 11   GUA  H3' 
+ R<average>=   3.079 NOE=***** (- 0.20/+ 0.20) Delta=1346.921  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2''
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   2.296 NOE=***** (- 0.20/+ 0.20) Delta= 397.704  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2''
+ set-j-atoms
+          SEG2 1    GUA  H1' 
+ R<average>=   2.286 NOE=***** (- 0.20/+ 0.20) Delta= 397.714  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 2    GUA  H2' 
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   2.233 NOE=***** (- 0.20/+ 0.20) Delta= 397.767  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2''
+ set-j-atoms
+          SEG1 10   GUA  H3' 
+ R<average>=   3.480 NOE=***** (- 0.20/+ 0.20) Delta= 396.520  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2' 
+ set-j-atoms
+          SEG1 3    THY  H3' 
+ R<average>=   1.848 NOE=***** (- 0.20/+ 0.20) Delta= 398.152  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2' 
+ set-j-atoms
+          SEG2 8    THY  H3' 
+ R<average>=   2.214 NOE=***** (- 0.20/+ 0.20) Delta= 397.786  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H3' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   6.002 NOE=***** (- 0.20/+ 0.20) Delta= 393.998  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H3' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   5.229 NOE=***** (- 0.20/+ 0.20) Delta= 394.771  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   6.090 NOE=***** (- 0.20/+ 0.20) Delta= 393.910  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   4.119 NOE=***** (- 0.20/+ 0.20) Delta= 395.881  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 2    GUA  H1' 
+ R<average>=   8.173 NOE=***** (- 0.20/+ 0.20) Delta= 391.827  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   6.792 NOE=***** (- 0.20/+ 0.20) Delta= 393.208  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   4.750 NOE=***** (- 0.20/+ 0.20) Delta= 395.250  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 2    GUA  H3' 
+ R<average>=   8.538 NOE=***** (- 0.20/+ 0.20) Delta= 391.462  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 2    GUA  H4' 
+ R<average>=   8.166 NOE=***** (- 0.20/+ 0.20) Delta= 391.834  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 2    GUA  H4' 
+ R<average>=   5.977 NOE=***** (- 0.20/+ 0.20) Delta= 394.023  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 2    GUA  H4' 
+ R<average>=  10.038 NOE=***** (- 0.20/+ 0.20) Delta= 389.962  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   4.149 NOE=***** (- 0.20/+ 0.20) Delta= 395.851  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   3.053 NOE=***** (- 0.20/+ 0.20) Delta= 396.947  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 2    GUA  H8  
+ R<average>=   8.144 NOE=***** (- 0.20/+ 0.20) Delta= 391.856  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 3    THY  H2' 
+ R<average>=   6.437 NOE=***** (- 0.20/+ 0.20) Delta= 393.563  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 3    THY  H2' 
+ R<average>=   5.513 NOE=***** (- 0.20/+ 0.20) Delta= 394.487  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 3    THY  H2' 
+ R<average>=   4.202 NOE=***** (- 0.20/+ 0.20) Delta= 395.798  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.150 NOE=***** (- 0.20/+ 0.20) Delta= 395.850  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   2.760 NOE=***** (- 0.20/+ 0.20) Delta= 397.240  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 3    THY  H6  
+ R<average>=   4.386 NOE=***** (- 0.20/+ 0.20) Delta= 395.614  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 4    ADE  H2' 
+ R<average>=   7.973 NOE=***** (- 0.20/+ 0.20) Delta= 392.027  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 4    ADE  H2' 
+ R<average>=   8.447 NOE=***** (- 0.20/+ 0.20) Delta= 391.553  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 4    ADE  H2' 
+ R<average>=   3.996 NOE=***** (- 0.20/+ 0.20) Delta= 396.004  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H51 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   7.738 NOE=***** (- 0.20/+ 0.20) Delta= 392.262  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H52 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   8.542 NOE=***** (- 0.20/+ 0.20) Delta= 391.458  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H53 
+ set-j-atoms
+          SEG1 4    ADE  H2''
+ R<average>=   4.079 NOE=***** (- 0.20/+ 0.20) Delta= 395.921  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2''
+ set-j-atoms
+          SEG1 4    ADE  H1' 
+ R<average>=   2.432 NOE=***** (- 0.20/+ 0.20) Delta= 397.568  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 8    ADE  H2''
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   2.154 NOE=***** (- 0.20/+ 0.20) Delta= 397.846  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H2' 
+ set-j-atoms
+          SEG1 4    ADE  H3' 
+ R<average>=   2.401 NOE=***** (- 0.20/+ 0.20) Delta= 397.599  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H2' 
+ set-j-atoms
+          SEG2 9    ADE  H3' 
+ R<average>=   2.404 NOE=***** (- 0.20/+ 0.20) Delta= 397.596  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 4    ADE  H3' 
+ set-j-atoms
+          SEG1 4    ADE  H8  
+ R<average>=   4.815 NOE=***** (- 0.20/+ 0.20) Delta= 395.185  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 9    ADE  H3' 
+ set-j-atoms
+          SEG2 9    ADE  H8  
+ R<average>=   4.131 NOE=***** (- 0.20/+ 0.20) Delta= 395.869  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 6    ACL  H3' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.242 NOE=***** (- 0.20/+ 0.20) Delta= 396.758  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 7    CYT  H3' 
+ set-j-atoms
+          SEG1 7    CYT  H6  
+ R<average>=   3.657 NOE=***** (- 0.20/+ 0.20) Delta= 396.343  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   5.402 NOE=***** (- 0.20/+ 0.20) Delta= 394.598  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   4.105 NOE=***** (- 0.20/+ 0.20) Delta= 395.895  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H1' 
+ R<average>=   5.241 NOE=***** (- 0.20/+ 0.20) Delta= 394.759  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H2' 
+ R<average>=   3.643 NOE=***** (- 0.20/+ 0.20) Delta= 396.357  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H2' 
+ R<average>=   2.117 NOE=***** (- 0.20/+ 0.20) Delta= 397.883  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H2' 
+ R<average>=   3.396 NOE=***** (- 0.20/+ 0.20) Delta= 396.604  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   3.988 NOE=***** (- 0.20/+ 0.20) Delta= 396.012  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   2.470 NOE=***** (- 0.20/+ 0.20) Delta= 397.530  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H2''
+ R<average>=   3.584 NOE=***** (- 0.20/+ 0.20) Delta= 396.416  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   5.548 NOE=***** (- 0.20/+ 0.20) Delta= 394.452  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   4.022 NOE=***** (- 0.20/+ 0.20) Delta= 395.978  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H3' 
+ R<average>=   5.123 NOE=***** (- 0.20/+ 0.20) Delta= 394.877  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H4' 
+ R<average>=   7.114 NOE=***** (- 0.20/+ 0.20) Delta= 392.886  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H4' 
+ R<average>=   5.575 NOE=***** (- 0.20/+ 0.20) Delta= 394.425  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H4' 
+ R<average>=   6.868 NOE=***** (- 0.20/+ 0.20) Delta= 393.132  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.231 NOE=***** (- 0.20/+ 0.20) Delta= 396.769  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   2.702 NOE=***** (- 0.20/+ 0.20) Delta= 397.298  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 8    ADE  H8  
+ R<average>=   3.567 NOE=***** (- 0.20/+ 0.20) Delta= 396.433  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   5.648 NOE=***** (- 0.20/+ 0.20) Delta= 394.352  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   5.283 NOE=***** (- 0.20/+ 0.20) Delta= 394.717  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 9    THY  H1' 
+ R<average>=   5.406 NOE=***** (- 0.20/+ 0.20) Delta= 394.594  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 9    THY  H2' 
+ R<average>=   5.220 NOE=***** (- 0.20/+ 0.20) Delta= 394.780  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 9    THY  H2' 
+ R<average>=   4.479 NOE=***** (- 0.20/+ 0.20) Delta= 395.521  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 9    THY  H2' 
+ R<average>=   4.596 NOE=***** (- 0.20/+ 0.20) Delta= 395.404  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H51 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.797 NOE=***** (- 0.20/+ 0.20) Delta= 397.203  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H52 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.246 NOE=***** (- 0.20/+ 0.20) Delta= 397.754  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 9    THY  H53 
+ set-j-atoms
+          SEG1 9    THY  H6  
+ R<average>=   2.234 NOE=***** (- 0.20/+ 0.20) Delta= 397.766  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 10   GUA  H2' 
+ set-j-atoms
+          SEG1 11   CYT  H6  
+ R<average>=   3.275 NOE=***** (- 0.20/+ 0.20) Delta= 396.725  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 1    GUA  H2' 
+ set-j-atoms
+          SEG2 2    CYT  H6  
+ R<average>=   4.115 NOE=***** (- 0.20/+ 0.20) Delta= 395.885  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H2''
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   5.041 NOE=***** (- 0.20/+ 0.20) Delta= 394.959  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 11   CYT  H2' 
+ set-j-atoms
+          SEG1 11   CYT  H5  
+ R<average>=   3.716 NOE=***** (- 0.20/+ 0.20) Delta= 396.284  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2''
+ set-j-atoms
+          SEG2 4    THY  H1' 
+ R<average>=   2.340 NOE=***** (- 0.20/+ 0.20) Delta= 397.660  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2''
+ set-j-atoms
+          SEG1 1    CYT  H1' 
+ R<average>=   3.351 NOE=***** (- 0.20/+ 0.20) Delta= 396.649  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H2' 
+ set-j-atoms
+          SEG2 4    THY  H1' 
+ R<average>=   3.093 NOE=***** (- 0.20/+ 0.20) Delta= 396.907  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 1    CYT  H2' 
+ set-j-atoms
+          SEG1 1    CYT  H1' 
+ R<average>=   3.090 NOE=***** (- 0.20/+ 0.20) Delta= 396.910  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   5.347 NOE=***** (- 0.20/+ 0.20) Delta= 394.653  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   5.124 NOE=***** (- 0.20/+ 0.20) Delta= 394.876  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H1' 
+ R<average>=   3.931 NOE=***** (- 0.20/+ 0.20) Delta= 396.069  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H2' 
+ R<average>=   3.768 NOE=***** (- 0.20/+ 0.20) Delta= 396.232  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H2' 
+ R<average>=   3.462 NOE=***** (- 0.20/+ 0.20) Delta= 396.538  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H2' 
+ R<average>=   2.076 NOE=***** (- 0.20/+ 0.20) Delta= 397.924  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   4.275 NOE=***** (- 0.20/+ 0.20) Delta= 395.725  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   4.322 NOE=***** (- 0.20/+ 0.20) Delta= 395.678  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H2''
+ R<average>=   2.937 NOE=***** (- 0.20/+ 0.20) Delta= 397.063  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   5.758 NOE=***** (- 0.20/+ 0.20) Delta= 394.242  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   5.561 NOE=***** (- 0.20/+ 0.20) Delta= 394.439  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H3' 
+ R<average>=   4.169 NOE=***** (- 0.20/+ 0.20) Delta= 395.831  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H4' 
+ R<average>=   7.737 NOE=***** (- 0.20/+ 0.20) Delta= 392.263  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H4' 
+ R<average>=   7.394 NOE=***** (- 0.20/+ 0.20) Delta= 392.606  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H4' 
+ R<average>=   6.059 NOE=***** (- 0.20/+ 0.20) Delta= 393.941  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   4.246 NOE=***** (- 0.20/+ 0.20) Delta= 395.754  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   3.497 NOE=***** (- 0.20/+ 0.20) Delta= 396.503  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 3    ADE  H8  
+ R<average>=   2.918 NOE=***** (- 0.20/+ 0.20) Delta= 397.082  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 4    THY  H2' 
+ R<average>=   4.637 NOE=***** (- 0.20/+ 0.20) Delta= 395.363  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 4    THY  H2' 
+ R<average>=   5.222 NOE=***** (- 0.20/+ 0.20) Delta= 394.778  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 4    THY  H2' 
+ R<average>=   4.831 NOE=***** (- 0.20/+ 0.20) Delta= 395.169  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H51 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.690 NOE=***** (- 0.20/+ 0.20) Delta= 397.310  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H52 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.980 NOE=***** (- 0.20/+ 0.20) Delta= 397.020  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 4    THY  H53 
+ set-j-atoms
+          SEG2 4    THY  H6  
+ R<average>=   2.459 NOE=***** (- 0.20/+ 0.20) Delta= 397.541  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H2''
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.990 NOE=***** (- 0.20/+ 0.20) Delta= 396.010  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 5    GUA  H2' 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.377 NOE=***** (- 0.20/+ 0.20) Delta= 396.623  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   5.627 NOE=***** (- 0.20/+ 0.20) Delta= 394.373  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   5.511 NOE=***** (- 0.20/+ 0.20) Delta= 394.489  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H1' 
+ R<average>=   4.027 NOE=***** (- 0.20/+ 0.20) Delta= 395.973  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H2' 
+ R<average>=   3.626 NOE=***** (- 0.20/+ 0.20) Delta= 396.374  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H2' 
+ R<average>=   3.614 NOE=***** (- 0.20/+ 0.20) Delta= 396.386  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H2' 
+ R<average>=   1.943 NOE=***** (- 0.20/+ 0.20) Delta= 398.057  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H2''
+ R<average>=   3.802 NOE=***** (- 0.20/+ 0.20) Delta= 396.198  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H2''
+ R<average>=   3.920 NOE=***** (- 0.20/+ 0.20) Delta= 396.080  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H2''
+ R<average>=   2.873 NOE=***** (- 0.20/+ 0.20) Delta= 397.127  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   5.353 NOE=***** (- 0.20/+ 0.20) Delta= 394.647  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   5.418 NOE=***** (- 0.20/+ 0.20) Delta= 394.582  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H3' 
+ R<average>=   3.679 NOE=***** (- 0.20/+ 0.20) Delta= 396.321  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H4' 
+ R<average>=   7.121 NOE=***** (- 0.20/+ 0.20) Delta= 392.879  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H4' 
+ R<average>=   7.128 NOE=***** (- 0.20/+ 0.20) Delta= 392.872  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H4' 
+ R<average>=   5.234 NOE=***** (- 0.20/+ 0.20) Delta= 394.766  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.857 NOE=***** (- 0.20/+ 0.20) Delta= 395.143  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   4.410 NOE=***** (- 0.20/+ 0.20) Delta= 395.590  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 5    GUA  H8  
+ R<average>=   2.145 NOE=***** (- 0.20/+ 0.20) Delta= 397.855  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 6    THY  H2' 
+ R<average>=   4.452 NOE=***** (- 0.20/+ 0.20) Delta= 395.548  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 6    THY  H2' 
+ R<average>=   4.838 NOE=***** (- 0.20/+ 0.20) Delta= 395.162  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 6    THY  H2' 
+ R<average>=   5.358 NOE=***** (- 0.20/+ 0.20) Delta= 394.642  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H51 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   1.976 NOE=***** (- 0.20/+ 0.20) Delta= 398.024  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H52 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   2.246 NOE=***** (- 0.20/+ 0.20) Delta= 397.754  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 6    THY  H53 
+ set-j-atoms
+          SEG2 6    THY  H6  
+ R<average>=   3.204 NOE=***** (- 0.20/+ 0.20) Delta= 396.796  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H2' 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   2.345 NOE=***** (- 0.20/+ 0.20) Delta= 397.655  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 2    CYT  H2''
+ set-j-atoms
+          SEG2 2    CYT  H3' 
+ R<average>=   2.778 NOE=***** (- 0.20/+ 0.20) Delta= 397.222  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 7    GUA  H3' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   5.816 NOE=***** (- 0.20/+ 0.20) Delta= 394.184  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H3' 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   3.581 NOE=***** (- 0.20/+ 0.20) Delta= 396.419  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H2''
+ set-j-atoms
+          SEG2 8    THY  H3' 
+ R<average>=   3.019 NOE=***** (- 0.20/+ 0.20) Delta= 396.981  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG1 3    THY  H2''
+ set-j-atoms
+          SEG1 3    THY  H3' 
+ R<average>=   3.403 NOE=***** (- 0.20/+ 0.20) Delta= 396.597  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   4.794 NOE=***** (- 0.20/+ 0.20) Delta= 395.206  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   5.497 NOE=***** (- 0.20/+ 0.20) Delta= 394.503  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H1' 
+ R<average>=   4.773 NOE=***** (- 0.20/+ 0.20) Delta= 395.227  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H2' 
+ R<average>=   2.758 NOE=***** (- 0.20/+ 0.20) Delta= 397.242  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H2' 
+ R<average>=   3.733 NOE=***** (- 0.20/+ 0.20) Delta= 396.267  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H2' 
+ R<average>=   2.858 NOE=***** (- 0.20/+ 0.20) Delta= 397.142  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   2.792 NOE=***** (- 0.20/+ 0.20) Delta= 397.208  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   3.783 NOE=***** (- 0.20/+ 0.20) Delta= 396.217  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H2''
+ R<average>=   3.213 NOE=***** (- 0.20/+ 0.20) Delta= 396.787  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   4.419 NOE=***** (- 0.20/+ 0.20) Delta= 395.581  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   5.559 NOE=***** (- 0.20/+ 0.20) Delta= 394.441  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H3' 
+ R<average>=   4.989 NOE=***** (- 0.20/+ 0.20) Delta= 395.011  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H4' 
+ R<average>=   5.878 NOE=***** (- 0.20/+ 0.20) Delta= 394.122  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H4' 
+ R<average>=   6.909 NOE=***** (- 0.20/+ 0.20) Delta= 393.091  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H4' 
+ R<average>=   6.145 NOE=***** (- 0.20/+ 0.20) Delta= 393.855  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.942 NOE=***** (- 0.20/+ 0.20) Delta= 396.058  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   4.293 NOE=***** (- 0.20/+ 0.20) Delta= 395.707  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 7    GUA  H8  
+ R<average>=   3.033 NOE=***** (- 0.20/+ 0.20) Delta= 396.967  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   5.944 NOE=***** (- 0.20/+ 0.20) Delta= 394.056  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   5.769 NOE=***** (- 0.20/+ 0.20) Delta= 394.231  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 8    THY  H1' 
+ R<average>=   6.300 NOE=***** (- 0.20/+ 0.20) Delta= 393.700  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 8    THY  H2' 
+ R<average>=   3.544 NOE=***** (- 0.20/+ 0.20) Delta= 396.456  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 8    THY  H2' 
+ R<average>=   3.465 NOE=***** (- 0.20/+ 0.20) Delta= 396.535  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 8    THY  H2' 
+ R<average>=   4.367 NOE=***** (- 0.20/+ 0.20) Delta= 395.633  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H51 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.828 NOE=***** (- 0.20/+ 0.20) Delta= 397.172  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H52 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.879 NOE=***** (- 0.20/+ 0.20) Delta= 397.121  E(NOE)=********
+ ========================================
+ set-i-atoms
+          SEG2 8    THY  H53 
+ set-j-atoms
+          SEG2 8    THY  H6  
+ R<average>=   2.948 NOE=***** (- 0.20/+ 0.20) Delta= 397.052  E(NOE)=********
