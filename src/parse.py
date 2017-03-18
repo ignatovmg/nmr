@@ -5,13 +5,14 @@
 # In[86]:
 
 import re
+import sys
 
 
 # In[87]:
 
-pdbfile = '/home/mikhail/Projects/nmr/data/Cyclo-dA/useful/c_dA_final_dnm.pdb'
-subject = '/home/mikhail/Projects/nmr/data/Cyclo-dA/useful/C_dA_300_pks.txt'
-outpath = '/home/mikhail/Projects/nmr/data/Cyclo-dA/useful/out'
+pdbfile = sys.argv[1]
+subject = sys.argv[2]
+outpath = sys.argv[3]
 
 
 # In[95]:

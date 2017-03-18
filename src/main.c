@@ -137,7 +137,7 @@ void free_proton_groups(proton_groups* groups)
 }
 
 /*
- * singular decomposition of R (relaxation) matrix
+ * singular decomposition of R relaxation matrix
  * R = E*S*E', followed by calculating intensity matrix
  * I = exp^(-R*mix_time) using formula 
  * I = E*exp^(-L*mix_time)*E', where L = 
@@ -283,10 +283,24 @@ int main(int argc, char** argv)
  * sing_freq_coef = 3./2.*J(1*omega)*gamma^4*h^2/(4pi^2*10)
  * doub_freq_coef = 6.*J(2*omega)*gamma^4*h^2/(4pi^2*10)
 **/
-	double zero_freq_coef = 5.67426; // TODO: Decide about the constants
-	double doub_freq_coef = 3.0/2.0*5.67426/1.0047;  //
-	double sing_freq_coef = 6.0*5.67426/1.0196;  //
-	double mixing_time = 0.300;
+	//double zero_freq_coef = 5.67426; // TODO: Decide about the constants
+	//double sing_freq_coef = 3.0/2.0*5.67426/1.0047;  //
+	//double doub_freq_coef = 6.0*5.67426/1.0196;  //
+	
+	double omega = 0.0006;      // *10^8 Gz
+	double t_corr = 2.58;       // *10^(-9) s
+	double mixing_time = 0.300; // s
+	
+	double J_0 = t_corr; // *10^(-9) s
+	double J_1 = t_corr / (1.0 + pow(omega * t_corr / 10.0, 2));  // *10^(-9) s
+	double J_2 = t_corr / (1.0 + pow(omega * t_corr / 5.0, 2));   // *10^(-9) s
+	
+	double coeff = 5.838; // *10^7 <--- gamma^4*h^2/(4pi^2*10*10^(-48))
+	
+	double zero_freq_coef = J_0 * coeff / 100.0; // 1/s
+	double sing_freq_coef = 3.0 / 2.0 * J_1 * coeff / 100.0; // 1/s
+	double doub_freq_coef = 6.0 * J_2 * coeff / 100.0; // 1/s
+	
 	char* eq_groups_path = argv[1]; // path to equivalent proton groups
 	char* complex_path = argv[2]; // path to peptide
 	char* output_path = argv[3];

@@ -31,8 +31,8 @@ for fname in glob.glob('%s/*.pdb' % pdbs):
 	out = open('./sandbox/refined/'+fname.split('/')[-1][:-3]+'dat', 'w')
 	with open(fname, 'r') as f:
 		for line in f.readlines():
-			if line.startswith('ATOM'):
-				if 'H' in line[12:16]:
+			if line.startswith('ATOM') or line.startswith('HETATM'):
+				if 'H' == line[13]:
 					idx = line[6:11].strip()
 					name = line[12:16].strip()
 					x = float(line[30:38].strip())
