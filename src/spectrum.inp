@@ -1,0 +1,61 @@
+remarks file: nmr_relaxation/spectrum.inp
+remarks Prediction of a spectrum from a 3D structure
+
+structure @data/testing/CIL_04844_mod.psf end                      {*Read structure file.*}
+coor      @data/testing/CIL_04844_mod.pdb                             {*Read coordinates.*}
+
+relaxation
+  
+{*==========================           Specify the physical parameters of the system.*}
+ 
+    group      GROUP                         {*A group of spectra, GROUP, is defined.*}
+    {*unresolved GROUP 
+    	select (id 6 or id 7)
+    	select (id 53 or id 59) 
+    	select (id 65 or id 66 or id 67) 
+    	select (id 55 or id 57 or id 61)
+    	select (id 78 or id 79 or id 80)
+    	select (id 74 or id 75 or id 76)  
+    	select (id 12 or id 13)                             {*Protons are unresolved.*}
+    end*}
+    
+    {*unresolved GROUP 
+    	select (id 34 or id 35 or id 36)
+    	select (id 30 or id 31 or id 32)
+    	select (id 12 or id 18)
+    end*}
+    
+    average 6                                         {*R-6 average to methyl groups.*}
+    omega      GROUP 6.0e+4                           {*Spectrometer frequency, in Hz.*}
+    taucorrel  GROUP                                       {*Correlation times, in s.*}
+        model rigid
+        isotropic 1.0e-10                                          {*Order parameters.*}
+    end 
+
+    classification NOE                              {*Define a classification, NOE,*}
+
+    clgroup     NOE GROUP                           {*which belongs to group DMSO.  *}
+    taumix      NOE 0.2                                         {*Mixing time, in s.*}
+
+    cutoff                       {*No cutoff is used in setting up relaxation matrix.*}
+        mode none 
+    end
+    
+    {*calibrate                      {*A calibration factor can be entered for scaling.*} 
+        value NOE 0.0000001 
+    end*}
+
+{*==========================           Predict spectrum with the parameters for NOE.*}
+
+    set print data/testing/CIL_04844_mod.spect    end     {*Open the output file for the spectrum.*}
+
+    predict NOE
+        from (all) to (all)                               {*Select part of structure.*}
+        threshold 0.0                                   {*Minimum intensity printed.*}
+        cutoff 50.0                                          {*Distance cutoff, in A.*}
+        DIAGonal on
+    end
+
+end
+
+stop

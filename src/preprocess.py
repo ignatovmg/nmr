@@ -15,6 +15,7 @@ import sys
 
 perm_path = "./sandbox/matrix/"
 summary = "./sandbox/groups/"
+protons = "./sandbox/protons"
 
 if not os.path.isdir('./sandbox/matrix/'):
 	os.mkdir('./sandbox/matrix/')
@@ -58,7 +59,20 @@ for item in sorted(groups):
         f.write("%i\t%s\n" % (counter, item))
         #groups_dict.update({counter: tuple([int(item)])})
     groups_dict.update({item: counter})
-    counter+=1
+    counter+= 1
+
+f2 = open(protons, "r")
+
+current_proton_list = ";".join(groups_dict.keys()).split(";")
+for proton in f2.readlines():
+	proton = proton[:-1]
+	if proton not in current_proton_list:
+		groups_dict.update({proton: counter})
+		f.write("%i\t%s\n" % (counter, proton))
+		counter += 1
+		
+f2.close()
+
 
 
 # In[10]:

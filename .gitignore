@@ -39,7 +39,6 @@ Thumbs.db
 # Custom #
 ##########
 build
-data/RUN2
-data/60k.tgz
+data
 sandbox
 results

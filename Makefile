@@ -1,12 +1,11 @@
 CC=gcc
-CFLAGS=-Wall -O -std=gnu99 -fPIC -DTEST
+CFLAGS=-Wall -O3 -std=gnu99 -fPIC -DMETHOD=1 #-DTEST
 SRCDIR=src
 BUILDDIR=build
-LIBS=
+LIBS=`pkg-config --cflags --libs gsl`
 
-all:
-	$(CC) $(CFLAGS) $(LIBS) $(SRCDIR)/main.c `pkg-config --cflags --libs gsl` -o $(BUILDDIR)/main
-	chmod 700 $(BUILDDIR)/main
+all: $(SRCDIR)/main.c
+	$(CC) $(CFLAGS) $< $(LIBS) -o $(BUILDDIR)/main
     
 clean:
 	rm -rf ./build/*
