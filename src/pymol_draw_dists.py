@@ -12,7 +12,8 @@ cmd.load(sys.argv[1])
 penalties = sys.argv[2]
 max_num = int(sys.argv[3])
 
-#set dash_width, 4
+#cmd.set("dash_width", 4)
+#cmd.set("dash_width", 4)
 
 count = 0
 with open(penalties, "r") as f:

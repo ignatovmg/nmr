@@ -1,11 +1,11 @@
 #!/bin/bash
 
 RESTRAINTS=data/cilengitit_rosi/correct_distance_restraints_reind.csv #data/cilengitit_rosi/correct_rest_schdrop_reind.csv #data/cilengitit_rosi/correct_distance_restraints_reind.csv
-PDB_FOLDER=data/bst #data/cilengitit_rosi #data/RUN2_aligned
-OUT_FILE=sandbox/719715rotamers10k/distance_filtered #/md_dist #/distance_filtered_60k
+PDB_FOLDER=data/1000k #data/cilengitit_rosi #data/RUN2_aligned
+OUT_FILE=sandbox/1000k/distance_filtered_all_linear_score #/md_dist #/distance_filtered_60k
 THREADS=6
 
-mkdir sandbox/719715rotamers10k
+mkdir sandbox/1000k
 
 for ID in $(seq 0 $((THREADS-1))) 
 do

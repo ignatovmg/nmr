@@ -12,21 +12,21 @@ function progress_bar {
 }
 
 # experiment
-NOESY=data/cilengitit_rosi/rosi_vol_reind.csv
+NOESY=data/cilengitit_rosi/rosi_vol.csv
 #NOESY=data/testing/CIL_04844_mod_volume
 
 # path to complexes
-PDBS=data/1000k #data/cilengitit_rosi/CilMD.pdb #data/RUN2_aligned/CIL_30138_aln.pdb
+PDBS=data/cilengitit_rosi/CilMD.pdb ##data/cilengitit_rosi/CilMD.pdb #data/RUN2_aligned/CIL_30138_aln.pdb
 #PDBS=data/testing/CIL_04844_mod.pdb
 
 # preprocess data
-#python src/dataprep.py ${PDBS}
-#python src/preprocess.py ${NOESY}
+python src/dataprep.py ${PDBS}
+python src/preprocess.py ${NOESY}
 
 FILE_LIST=`find ./sandbox/refined/*`
 
 # clean file
-> ./sandbox/chi_scores_1000k
+> ./sandbox/chi_scores_md
 
 # calc scores
 ARR=(${FILE_LIST})
@@ -40,7 +40,7 @@ do
 
 SPECTRUM_FILES=$(find ./sandbox/matrix/*) || exit 1
 
-./build/main "./sandbox/groups/eq_groups" ${FILE} "./sandbox/chi_scores_1000k" ${SPECTRUM_FILES} || exit 1
+./build/main "./sandbox/groups/eq_groups" ${FILE} "./sandbox/chi_scores_md" ${SPECTRUM_FILES} || exit 1
 
 # for fun
 COUNTER=$((COUNTER+100))

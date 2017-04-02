@@ -34,12 +34,11 @@ for row in range(restraints.shape[0]):
 	distance = np.sqrt(((atoms[i] - atoms[j]) * (atoms[i] - atoms[j])).sum())
 	if min_d > distance:
 		penalty += k*(min_d - distance)*(min_d - distance);
+		penalties.append([abs(min_d - distance), i, j])
 		
-		penalties.append((abs(min_d - distance), i, j))
 	if max_d < distance:
 		penalty += k*(max_d - distance)*(max_d - distance);
-		
-		penalties.append((abs(min_d - distance), i, j))
+		penalties.append([abs(max_d - distance), i, j])
 
 name = out_dir+"/penalties_"+os.path.basename(pdb_file)[:-4]
 penalties_file = open(name, "w") 
