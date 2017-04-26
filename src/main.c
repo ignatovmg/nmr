@@ -5,18 +5,586 @@
 #include <assert.h>
 #include <math.h>
 
-typedef struct proton_group_
+#include "mol2/benergy.h"
+#include "mol2/gbsa.h"
+#include "mol2/icharmm.h"
+#include "mol2/minimize.h"
+#include "mol2/nbenergy.h"
+#include "mol2/pdb.h"
+
+#define __TOL__  5E-4
+#define __DMIN__ 1E-6
+
+
+typedef struct group_ // TODO: optimize size
 {
 	int N;
 	int id;
 	int group[3];
-}proton_group;
+}group;
 
-typedef struct proton_groups_
+typedef struct groups_
 {
 	int N;
-	proton_group* groups;
-}proton_groups;
+	int natoms;
+	group* groups;
+}groups;
+
+
+groups* init_proton_groups(int N);
+void free_proton_groups(groups* grps);
+groups* read_proton_groups(char* path);
+void print_proton_groups(groups* grps);
+int get_line_num(char* path);
+void my_print_matrix(double* m, int size);
+void my_fprint_matrix(FILE* f, double* m, int size);
+void my_fprint_matrix_stacked(FILE* f, double* m, int size);
+void my_pprint_matrix(char* path, double* m, int size);
+
+//                                                             e+9 Gz        e-9 s 
+double* rx_mat(struct mol_atom_group *ag, groups* grps, double omega, double t_cor);
+gsl_matrix* matrix_exp(double* rx, int size, double t_mix);
+gsl_matrix* peaks(struct mol_atom_group *ag, groups* grps, double omega, double t_cor, double t_mix);
+double fit_score(char* path, double* mat, int size);
+
+#ifdef TEST
+double best_multiplier(char* path, double* mat, int size);
+
+double* grad_numeric(struct mol_atom_group *ag, groups* grps, double omega, double t_cor, double t_mix);
+#endif
+
+
+int main(int argc, char** argv)
+{
+	char* pdb = argv[1];
+	char* psf = argv[2];
+	char* prm = argv[3];
+	char* rtf = argv[4];
+	char* grp = argv[5];
+	char* exp = argv[6];
+	
+	if (argc != 7)
+	{
+		fprintf(stderr, "argc wrong\n");
+		exit(EXIT_FAILURE);
+	}
+	
+	double omega = 0.6; // e+9 Gz
+	double t_cor = 0.1; // e-9 s
+	double t_mix = 0.2; // s
+	
+	struct mol_atom_group *ag = mol_read_pdb(pdb);
+	mol_atom_group_read_geometry(ag, psf, prm, rtf);
+	
+	// Read proton groups
+	groups* grps = read_proton_groups(grp);
+	int size = grps->N;
+
+	// Relaxation matrix
+	double* rx = rx_mat(ag, grps, omega, t_cor);
+	
+#ifdef TEST
+	my_pprint_matrix("sandbox/relaxation_matrix.csv", rx, size);
+#endif	
+
+	// Intencities
+	gsl_matrix* in = matrix_exp(rx, size, t_mix);
+		
+	// Normalization
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			in->data[i*size+j] *= sqrt(grps->groups[i].N * grps->groups[j].N);
+		}
+	}
+
+	//print_proton_groups(grps);
+	
+#ifdef TEST
+	my_pprint_matrix("sandbox/computed_matrix_raw.csv", in->data, size);
+#endif	
+	
+#ifdef TEST
+	double mult = best_multiplier(exp, in->data, size);
+	for (int i = 0; i < size * size; i++)
+	{
+		in->data[i] *= mult;	
+	}
+
+	my_pprint_matrix("sandbox/computed_matrix.csv", in->data, size);
+#endif
+	
+	double fit = fit_score(exp, in->data, size);
+	
+#ifdef TEST
+	printf("fit: %.5f\n", fit);
+#endif
+
+
+#ifdef TEST	
+	double* grad = grad_numeric(ag, grps, omega, t_cor, t_mix);
+	for (int i = 0; i < 30; i++)
+	{
+		printf("%.6f ", grad[i]);
+	}
+#endif
+
+	free_mol_atom_group(ag);
+	free_proton_groups(grps);
+	free(rx);
+
+	return 0;
+}
+
+
+
+//                                                             e+9 Gz        e-9 s 
+double* rx_mat(struct mol_atom_group *ag, groups* grps, double omega, double t_cor)
+{
+	int size = grps->N;
+	
+	double J_0 = t_cor;
+	double J_1 = t_cor / (1.0 +  4.0 * ( M_PI * M_PI ) * omega * omega * t_cor * t_cor );  // *10^(-9) s
+	double J_2 = t_cor / (1.0 + 16.0 * ( M_PI * M_PI ) * omega * omega * t_cor * t_cor );  // *10^(-9) s
+	
+	double gyr   = 2.6751965; // e+8
+	double hbar  = 1.0545919; // e-34;
+	double coef = pow(gyr, 4)*pow(hbar, 2);
+	
+	double  S0 =       J_0 * coef; // 1/s
+	double  S1 = 1.5 * J_1 * coef; // 1/s
+	double  S2 = 6.0 * J_2 * coef; // 1/s
+	
+	double* rx = calloc(size * size, sizeof(double));
+	
+	group *grpi, *grpj;	
+	struct mol_vector3 *coordi, *coordj;
+	double r_six;
+	float counter;
+	
+	for (int i = 0; i < size; i++)
+	{
+		grpi = &grps->groups[i];
+		
+		for (int j = i; j < size; j++)
+		{
+			grpj = &grps->groups[j];
+			
+			counter = 0.0;
+			rx[size*i+j] = 0.0;
+			
+			if (i == j)
+			{
+				// Self relaxation for unresolved groups if i == j
+				if (grps->groups[i].N > 1)
+				{
+					for (int i1 = 0; i1 < grps->groups[i].N; i1++)
+					{
+						for (int j1 = i1 + 1; j1 < grps->groups[j].N; j1++)
+						{
+							coordi = &ag->coords[grpi->group[i1]];
+							coordj = &ag->coords[grpj->group[j1]];
+					
+							r_six = (coordi->X - coordj->X) * (coordi->X - coordj->X) + \
+									(coordi->Y - coordj->Y) * (coordi->Y - coordj->Y) + \
+									(coordi->Z - coordj->Z) * (coordi->Z - coordj->Z);
+							
+							if (r_six > __DMIN__)
+							{
+								rx[size*i+j] += 1.0 / (r_six * r_six * r_six);
+								counter += 1.0;
+							}
+						}
+					}
+					
+					rx[size*i+j] /= counter;
+					rx[size*i+j] *= 2 * (grps->groups[i].N - 1) * (S1 + S2);
+				}
+			}
+			else
+			{
+				// 6 average if i != j
+				for (int i1 = 0; i1 < grps->groups[i].N; i1++)
+				{
+					for (int j1 = 0; j1 < grps->groups[j].N; j1++)
+					{
+						coordi = &ag->coords[grpi->group[i1]];
+						coordj = &ag->coords[grpj->group[j1]];
+					
+						r_six = (coordi->X - coordj->X) * (coordi->X - coordj->X) + \
+								(coordi->Y - coordj->Y) * (coordi->Y - coordj->Y) + \
+								(coordi->Z - coordj->Z) * (coordi->Z - coordj->Z);
+							
+						if (r_six > __DMIN__)
+						{
+							rx[size*i+j] += 1.0 / (r_six * r_six * r_six);
+							counter += 1.0;
+						}
+					}
+				}
+				
+				rx[size*i+j] /= counter;
+				rx[size*j+i]  = rx[size*i+j];
+			}
+		}
+	}
+	
+	
+	// Fill diagonal elements in R
+	double mult = S0 + 2 * S1 + S2;
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			if (i != j)
+			{
+				rx[i*size+i] += mult * grps->groups[j].N * rx[i*size+j];
+			}
+		}
+	}
+	
+	// Fill the rest of R
+	mult = S2 - S0;
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = i + 1; j < size; j++)
+		{
+			rx[i*size+j] = mult * sqrt(grps->groups[i].N * grps->groups[j].N) * rx[i*size+j];
+			rx[j*size+i] = rx[i*size+j];
+		}
+	}
+	
+	return rx;
+}
+
+gsl_matrix* matrix_exp(double* rx, int size, double t_mix)
+{
+	for (int i = 0; i < size*size; i++)
+	{
+			rx[i] *= -t_mix; // TODO: change this
+	}
+			
+	gsl_matrix_view m = gsl_matrix_view_array(rx, size, size);
+			
+	//print_matrix(&m.matrix);
+
+	gsl_vector *eval = gsl_vector_alloc(size);
+	gsl_matrix *evec = gsl_matrix_alloc(size, size);
+	gsl_matrix *res  = gsl_matrix_alloc(size, size);
+	gsl_eigen_symmv_workspace* w = gsl_eigen_symmv_alloc(size);
+	gsl_eigen_symmv(&m.matrix, eval, evec, w);
+	
+	//print_matrix(evec);
+	
+	//for (i = 0; i < size; i++)
+	//	eval->data[i] = exp(-t_mix*eval->data[i]);
+	for (int i = 0; i < size; i++)
+	{
+		eval->data[i] = exp(eval->data[i]);
+	}
+	
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = i; j < size; j++)
+		{
+			int id = i*size+j;
+			res->data[id] = 0.0;
+			
+			for (int k = 0; k < size; k++)
+			{
+				res->data[id] += eval->data[k]*evec->data[i*size+k]*evec->data[j*size+k];
+			}
+				
+			res->data[j*size+i] = res->data[i*size+j];
+		}
+	}
+		
+	//print_matrix(res);
+	
+	gsl_eigen_symmv_free(w);
+	gsl_vector_free(eval);
+	gsl_matrix_free(evec);
+
+    return res;
+}
+
+gsl_matrix* peaks(struct mol_atom_group *ag, groups* grps, double omega, double t_cor, double t_mix)
+{
+	int size = grps->N;
+
+	// Relaxation matrix
+	double* rx = rx_mat(ag, grps, omega, t_cor);
+	
+	// Intencities
+	gsl_matrix* in = matrix_exp(rx, size, t_mix);
+	free(rx);
+		
+	// Normalization
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			in->data[i*size+j] *= sqrt(grps->groups[i].N * grps->groups[j].N);
+		}
+	}
+	
+	return in;
+}
+
+double* grad_numeric(struct mol_atom_group *ag, groups* grps, double omega, double t_cor, double t_mix)
+{
+	gsl_matrix* pks1 = peaks(ag, grps, omega, t_cor, t_mix);
+	gsl_matrix* pks2;
+	
+	int size = grps->N;
+	double  step = 0.0001;
+	double* grad = calloc(3 * grps->natoms * size * size, sizeof(double));
+	
+	int counter = 0;
+	
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < grps->groups[i].N; j++)
+		{
+			int atom = grps->groups[i].group[j];
+			
+			// fill grad for X
+			ag->coords[atom].X += step;
+			pks2 = peaks(ag, grps, omega, t_cor, t_mix);
+			ag->coords[atom].X -= step;
+			
+			for (int k = 0; k < size * size; k++)
+			{
+				grad[(3 * counter + 0) * size * size + k] = (pks2->data[k] - pks1->data[k]) / step;
+			}
+			
+			gsl_matrix_free(pks2);
+			
+			// fill grad for Y
+			ag->coords[atom].Y += step;
+			pks2 = peaks(ag, grps, omega, t_cor, t_mix);
+			ag->coords[atom].Y -= step;
+			
+			for (int k = 0; k < size * size; k++)
+			{
+				grad[(3 * counter + 1) * size * size + k] = (pks2->data[k] - pks1->data[k]) / step;
+			}
+			
+			gsl_matrix_free(pks2);
+			
+			// fill grad for Z
+			ag->coords[atom].Z += step;
+			pks2 = peaks(ag, grps, omega, t_cor, t_mix);
+			ag->coords[atom].Z -= step;
+			
+			for (int k = 0; k < size * size; k++)
+			{
+				grad[(3 * counter + 2) * size * size + k] = (pks2->data[k] - pks1->data[k]) / step;
+			}
+			
+			gsl_matrix_free(pks2);
+			
+			counter++;
+		}
+	}
+	
+	gsl_matrix_free(pks1);
+	
+	return grad;
+}
+
+
+#ifdef TEST
+// For tests only
+double best_multiplier(char* path, double* mat, int size)
+{
+	FILE* f = fopen(path, "r");
+	if (f == NULL)
+	{
+		printf("%s not found\n", path);
+		exit(EXIT_FAILURE);
+	}
+	
+	int i, j;
+	double val;
+	double num = 0.0;
+	double den = 0.0;
+	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
+	{
+		num += val*mat[i*size+j];
+		//num += val;
+		den += mat[i*size+j]*mat[i*size+j];
+		//den += m[i*size+j];
+	}
+	rewind(f);
+	double k = num / den;
+	
+	return k;
+}
+#endif
+
+double fit_score(char* path, double* mat, int size)
+{
+	float power = 1.0 / 6.0;
+
+	FILE* f = fopen(path, "r");
+	if (f == NULL)
+	{
+		fprintf(stderr, "%s not found\n", path);
+		exit(EXIT_FAILURE);
+	}
+	
+	int i, j;
+	double val;
+	double num = 0.0;
+	double den = 0.0;	
+	
+	int nchar;
+	while((nchar = fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val)) != EOF)
+	{
+		if (nchar != 3)
+		{
+			fprintf(stderr, "%s: Wrong input\n", __func__);
+			exit(EXIT_FAILURE);
+		}
+		
+		num += val*mat[i*size+j];
+		//num += val;
+		den += mat[i*size+j]*mat[i*size+j];
+		//yden += mat[i*size+j];
+	}
+	rewind(f);
+	
+	double k = num / den;
+	
+#ifdef TEST
+	double* reference = (double*)calloc(size*size, sizeof(double));
+	
+	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
+	{
+		reference[i*size+j] = val;
+		reference[j*size+i] = reference[i*size+j];
+	}
+	
+	rewind(f);
+
+	my_pprint_matrix("sandbox/experimental_matrix.csv", reference, size);
+
+	free(reference);
+#endif
+	
+	double trm;
+	double fit = 0.0;
+	double nrm = 0.0;
+	int n = 0;
+	
+	while((nchar = fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val)) != EOF)
+	{
+		if (nchar != 3)
+		{
+			fprintf(stderr, "%s: Wrong input\n", __func__);
+			exit(EXIT_FAILURE);
+		}
+		
+		trm = 0.0;
+		if (fabs(val) > 0.0)
+		{
+			trm  = (val / fabs(val)) * pow(fabs(val), power);
+		}
+			
+		if (fabs(k * mat[i*size+j]) > 0.0)
+		{
+			trm -= (k * mat[i*size+j] / fabs(k * mat[i*size+j])) * pow(fabs(k * mat[i*size+j]), power);
+		}
+
+		fit += trm * trm;
+		nrm += pow(fabs(val), power);
+		n++;
+	}
+	
+	fclose(f);
+	return fit / nrm;
+}
+
+groups* init_proton_groups(int N)
+{
+	groups* grps = calloc(1, sizeof(groups));
+
+	grps->N = N;
+	grps->groups = calloc(N, sizeof(group));
+	//printf("N: %i\n", groups->N);
+	
+	return grps;
+}
+
+void free_proton_groups(groups* grps)
+{
+	free(grps->groups);
+	free(grps);
+}
+
+groups* read_proton_groups(char* path)
+{	
+	groups* grps = init_proton_groups(get_line_num(path));
+
+	FILE* grp_file = fopen(path, "r");
+	if (grp_file == NULL)
+	{
+		fprintf(stderr, "%s not found\n", path);
+		exit(EXIT_FAILURE);
+	}
+	
+	char str[100];
+	char *chunk;
+	
+	int counter = 0;
+	int natoms  = 0;
+	while(fgets(str, 100, grp_file) != NULL)
+	{
+		int grp_size = 0;
+		
+  		chunk = (char*)strtok(str, "\t");
+  		grps->groups[counter].id = atoi(chunk);
+  		
+  		assert(grps->groups[counter].id == counter);
+  		
+  		chunk = (char*)strtok(NULL, "\t");
+		while (chunk != NULL)
+		{
+			if (grp_size == 3)
+			{
+				fprintf(stderr, "Group cant me larger than 3\n");
+				exit(EXIT_FAILURE);
+			}
+			
+			grps->groups[counter].group[grp_size] = atoi(chunk) - 1;
+			chunk = strtok(NULL, "\t");
+			
+			grp_size++;
+			natoms++;
+		}
+		
+		grps->groups[counter].N = grp_size;
+		counter++;
+	}
+	
+	grps->natoms = natoms;
+	fclose(grp_file);
+
+	return grps;
+}
+
+void print_proton_groups(groups* grps)
+{
+	for (int i = 0; i < grps->N; i++)
+	{
+		printf("group %i of size %i: ", grps->groups[i].id, grps->groups[i].N);
+		for (int j = 0; j < grps->groups[i].N; j++)
+			printf("%i\t", grps->groups[i].group[j]);
+		printf("\n");
+	}
+}
 
 
 int get_line_num(char* path)
@@ -24,171 +592,16 @@ int get_line_num(char* path)
 	FILE* f = fopen(path, "r");
 	if (f == NULL)
 	{
-		printf("File not found\n");
-		exit(0);
+		fprintf(stderr, "File not found\n");
+		exit(EXIT_FAILURE);
 	}
 	char str[100];
 	int i = 0;
-	while(fgets(str, 100, f) != NULL)
-		i++;
+	while(fgets(str, 100, f) != NULL) i++;
+	
 	fclose(f);
 
 	return i;
-}
-
-int find_proton(int id, int* proton_ids, int size)
-{
-	int i = 0; 
-	while(proton_ids[i] != id && i < size)
-		 i++;
-		 
-	if (i >= size)
-	{
-		printf("proton %i not found\n", id);
-		exit(0);
-	}
-	
-	return i;
-}
-
-void init_proton_groups(proton_groups* groups, int N)
-{
-	groups->N = N;
-	//printf("N: %i\n", groups->N);
-	groups->groups = calloc(N, sizeof(proton_group));
-}
-
-void read_proton_groups(proton_groups* groups, char* path, int* proton_ids, int size)
-{	
-	init_proton_groups(groups, get_line_num(path));
-	//printf("N: %i\n", groups->N);
-
-	FILE* eq_groups_file = fopen(path, "r");
-	if (eq_groups_file == NULL)
-	{
-		printf("%s not found\n", path);
-		exit(0);
-	}
-	
-	char str[100];
-	char *chunk;
-	
-	int counter = 0;
-	while(fgets(str, 100, eq_groups_file) != NULL)
-	{
-		int group_size = 0;
-		
-		//printf("groups %s", str);
-  		chunk = (char*)strtok(str, "\t");
-  		//printf("%s\n", chunk);
-  		groups->groups[counter].id = atoi(chunk);
-  		
-  		assert(groups->groups[counter].id == counter);
-  		
-  		chunk = (char*)strtok(NULL, "\t");
-		while (chunk != NULL)
-		{
-			//printf("%s\n", chunk);
-			groups->groups[counter].group[group_size] = find_proton(atoi(chunk), proton_ids, size);
-			chunk = strtok(NULL, "\t");
-			group_size++;
-		}
-		groups->groups[counter].N = group_size;
-		counter++;
-	}
-	fclose(eq_groups_file);
-}
-
-void print_proton_groups(proton_groups* groups)
-{
-	for (int i = 0; i < groups->N; i++)
-	{
-		printf("group %i of size %i: ", groups->groups[i].id, groups->groups[i].N);
-		for (int j = 0; j < groups->groups[i].N; j++)
-			printf("%i\t", groups->groups[i].group[j]);
-		printf("\n");
-	}
-}
-
-void collapse_groups(double* dst, double* src, int src_size, proton_groups* grps)
-{
-	int dst_size = grps->N;
-
-	for (int i = 0; i < dst_size; i++)
-	{
-		proton_group* grp_i = &grps->groups[i];
-
-		for (int j = 0; j < dst_size; j++)
-		{
-			proton_group* grp_j = &grps->groups[j];
-			dst[i*dst_size+j] = 0.0;
-
-			for (int i_id = 0; i_id < grp_i->N; i_id++)
-				for (int j_id = 0; j_id < grp_j->N; j_id++)
-					dst[i*dst_size+j] += src[grp_i->group[i_id]*src_size + grp_j->group[j_id]];
-		}
-	}
-} 
-
-void collapse_groups_from_gsl(double* dst, gsl_matrix* src, proton_groups* grps)
-{
-	int src_size = src->size1;
-	collapse_groups(dst, src->data, src_size, grps);
-}
-
-void free_proton_groups(proton_groups* groups)
-{
-	free(groups->groups);
-	free(groups);
-}
-
-/*
- * singular decomposition of R relaxation matrix
- * R = E*S*E_T, followed by calculating the intensity matrix
- * I = exp^(-R*mix_time) using formula 
- * I = E*exp^(-L*mix_time)*E_T, where L = 
- * = identity_matrix*eigenvalues_vector
-**/
-gsl_matrix* get_intensity(double* input, int size, double mix_time)
-{
-	int i, j, k;
-	
-	for (i = 0; i < size*size; i++)
-			input[i] *= -mix_time;
-			
-	gsl_matrix_view m = gsl_matrix_view_array(input, size, size);
-			
-	//print_matrix(&m.matrix);
-
-	gsl_vector *eval = gsl_vector_alloc(size);
-	gsl_matrix *evec = gsl_matrix_alloc(size, size);
-	gsl_matrix *res = gsl_matrix_alloc(size, size);
-	gsl_eigen_symmv_workspace* w = gsl_eigen_symmv_alloc(size);
-	gsl_eigen_symmv(&m.matrix, eval, evec, w);
-	
-	//print_matrix(evec);
-	
-	//for (i = 0; i < size; i++)
-	//	eval->data[i] = exp(-mix_time*eval->data[i]);
-	for (i = 0; i < size; i++)
-		eval->data[i] = exp(eval->data[i]);
-	
-	for (i = 0; i < size; i++)
-		for (j = i; j < size; j++)
-		{
-			int id = i*size+j;
-			res->data[id] = 0.0;
-			for (k = 0; k < size; k++)
-				res->data[id] += eval->data[k]*evec->data[i*size+k]*evec->data[j*size+k];
-			res->data[j*size+i] = res->data[i*size+j];
-		}
-		
-	//print_matrix(res);
-	
-	gsl_eigen_symmv_free(w);
-	gsl_vector_free (eval);
-	gsl_matrix_free (evec);
-    return res;
 }
 
 void my_print_matrix(double* m, int size)
@@ -196,7 +609,9 @@ void my_print_matrix(double* m, int size)
 	for (int i = 0; i < size; i++)
 	{
 		for (int j = 0; j < size; j++)
+		{
 			printf("%.4f ", m[i*size+j]);
+		}
 		printf("\n");
 	}
 }
@@ -216,7 +631,9 @@ void my_fprint_matrix_stacked(FILE* f, double* m, int size)
 	for (int i = 0; i < size; i++)
 	{
 		for (int j = 0; j < size; j++)
+		{
 			fprintf(f, "%i\t%i\t%.2f\n", i, j, m[i*size+j]);
+		}
 	}
 }
 
@@ -227,396 +644,3 @@ void my_pprint_matrix(char* path, double* m, int size)
 	fclose(file);
 }
 
-#ifdef TEST
-// For tests only
-double best_k(char* path, double* m, int size)
-{
-	FILE* f = fopen(path, "r");
-	if (f == NULL)
-	{
-		printf("%s not found\n", path);
-		exit(0);
-	}
-	
-	int i, j;
-	double val;
-	double num = 0.0;
-	double den = 0.0;
-	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
-	{
-		num += val*m[i*size+j];
-		//num += val;
-		den += m[i*size+j]*m[i*size+j];
-		//den += m[i*size+j];
-	}
-	rewind(f);
-	double k = num/den;
-	
-	return k;
-}
-#endif
-
-double chi_score(char* path, double* m, int size, proton_groups* eq_groups)
-{
-	float power = 1.0/6.0;
-
-	FILE* f = fopen(path, "r");
-	if (f == NULL)
-	{
-		printf("%s not found\n", path);
-		exit(1);
-	}
-	
-	int i, j;
-	double val;
-	double num = 0.0;
-	double den = 0.0;	
-	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
-	{
-		num += val*m[i*size+j];
-		//num += val;
-		den += m[i*size+j]*m[i*size+j];
-		//yden += m[i*size+j];
-	}
-	rewind(f);
-	double k = num/den;
-	
-#ifdef TEST
-	double* reference = (double*)calloc(size*size, sizeof(double));
-	
-	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
-	{
-		reference[i*size+j] = val;
-		reference[j*size+i] = reference[i*size+j];
-	}
-	
-	rewind(f);
-
-	my_pprint_matrix("sandbox/experimental_matrix.csv", reference, size);
-
-	free(reference);
-#endif
-	
-	double trm;
-	double chi = 0.0;
-	double nrm = 0.0;
-	int n = 0;
-	while(fscanf(f, "%i\t%i\t%lf\n", &i, &j, &val) != EOF)
-	{
-		trm = 0.0;
-		if (fabs(val) > 0.0)
-			trm  = (val / fabs(val)) * pow(fabs(val), power);
-		if (fabs(k*m[i*size+j]) > 0.0)
-			trm -= (k*m[i*size+j] / fabs(k*m[i*size+j])) * pow(fabs(k*m[i*size+j]), power);
-
-		chi += trm*trm;
-		nrm += pow(fabs(val), power);
-		n++;
-	}
-	
-	fclose(f);
-	return chi/nrm;
-}
-
-
-int main(int argc, char** argv)
-{
-#ifndef METHOD
-	printf("How to treat unresolved groups? (0 or 1)\n");
-	exit(1);
-#endif
-
-	int i, j, k;          
-/*
- * zero_freq_coef = J(0)*gamma^4*h^2/(4pi^2*10)
- * sing_freq_coef = 3./2.*J(1*omega)*gamma^4*h^2/(4pi^2*10)
- * doub_freq_coef = 6.*J(2*omega)*gamma^4*h^2/(4pi^2*10)
-**/
-	//double zero_freq_coef = 5.67426; // TODO: Decide about the constants
-	//double sing_freq_coef = 3.0/2.0*5.67426/1.0047;  //
-	//double doub_freq_coef = 6.0*5.67426/1.0196;  //
-	
-	double omega       = 0.0006;    // *10^8 Gz
-	double t_corr      = 0.1;       // *10^(-9) s
-	double mixing_time = 0.2; // s
-	
-	double J_0 = t_corr; // *10^(-9) s
-	//double J_1 = t_corr / (1.0 + pow(       omega * t_corr / 10.0, 2));  // *10^(-9) s
-	//double J_2 = t_corr / (1.0 + pow( 2.0 * omega * t_corr / 10.0, 2));  // *10^(-9) s
-	
-	double J_1 = t_corr / (1.0 +  4.0 / ( M_PI * M_PI ) * omega * omega * t_corr * t_corr );  // *10^(-9) s
-	double J_2 = t_corr / (1.0 + 16.0 / ( M_PI * M_PI ) * omega * omega * t_corr * t_corr );  // *10^(-9) s
-	
-	//double coeff = 5.838; // *10^7 <--- gamma^4*h^2/(4pi^2*10*10^(-48))
-	double coeff = 56.95; // *10^7 <--- gamma^4*h^2/(4pi^2*10*10^(-48))
-	//double coeff = 7.17*100;
-	//double coeff = 34.986; 
-	//coeff = 56.65;
-	
-	double zero_freq_coef =       J_0 * coeff; // 1/s
-	double sing_freq_coef = 1.5 * J_1 * coeff; // 1/s
-	double doub_freq_coef = 6.0 * J_2 * coeff; // 1/s
-	
-#ifndef METHOD
-	printf("Ω_2 + 2*Ω_1 + Ω_0 = %.6f\n", zero_freq_coef + 2*sing_freq_coef + doub_freq_coef);
-	printf("Ω_2 - Ω_0 = %.6f\n", doub_freq_coef - zero_freq_coef);
-	printf("Ω_0 = %.6f\nΩ_1 = %.6f\nΩ_2 = %.6f\n", zero_freq_coef, sing_freq_coef, doub_freq_coef);
-	printf("J_0 = %f\n", J_0);
-	printf("J_1 = %f\n", J_1);
-	printf("J_2 = %f\n", J_2);
-#endif
-	
-	char* eq_groups_path = argv[1]; // path to equivalent proton groups
-	char* complex_path   = argv[2]; // path to peptide
-	char* output_path    = argv[3];
-	
-	//mprintf("Computing complex %s\n", complex_path);
-	//printf("argc=%i\n", argc);
-	
-	int size = get_line_num(complex_path);
-	double* rx_mat = calloc(size*size, sizeof(double));
-	memset(rx_mat, 0, sizeof(double)*size*size);
-	
-	FILE* f = fopen(complex_path, "r");
-	if (f == NULL)
-	{
-		printf("%s not found\n", complex_path);
-		exit(1);
-	}
-
-	double x,y,z;
-	int proton_id;
-	char s[1000];
-	int* proton_ids = calloc(size, sizeof(int));
-	k = 0;
-	
-	// Fill R cells with dij^6
-	for (i = 0; i < size; i++)
-	{
-		double xo, yo, zo;
-		for (j = 0; j <= i; j++)
-			fscanf(f, "%i\t%s\t%lf\t%lf\t%lf\n", &proton_id, s, &xo, &yo ,&zo);
-		//printf("%i --> \n", proton_id);
-		proton_ids[i] = proton_id;
-		
-		while (fscanf(f, "%i\t%s\t%lf\t%lf\t%lf\n", &proton_id, s, &x, &y ,&z) != EOF)
-		{
-			k = i*size+j;
-			rx_mat[k] = 0.0;
-			
-			if (i != j)
-			{
-				rx_mat[k] = (x-xo)*(x-xo)+(y-yo)*(y-yo)+(z-zo)*(z-zo);
-				rx_mat[k] = 1.0/(rx_mat[k]*rx_mat[k]*rx_mat[k]);
-				rx_mat[j*size+i] = rx_mat[k];
-			}
-			
-			j++;
-		}
-		rewind(f);
-	}
-	fclose(f);
-	
-	// Read proton groups
-	proton_groups* eq_groups;
-	eq_groups = calloc(1, sizeof(proton_groups));
-	
-	read_proton_groups(eq_groups, eq_groups_path, proton_ids, size);
-	//print_proton_groups(eq_groups);
-
-	if (METHOD == 1)
-	{
-		double* rx_mat_tmp = calloc(eq_groups->N*eq_groups->N, sizeof(double));
-		collapse_groups(rx_mat_tmp, rx_mat, size, eq_groups);
-		
-		free(rx_mat);
-		rx_mat = rx_mat_tmp;
-		
-		size = eq_groups->N;
-		
-		for (i = 0; i < size; i++)
-			for (j = 0; j < size; j++)
-				if (i != j)
-					rx_mat[i*size+j] /= (eq_groups->groups[i].N * eq_groups->groups[j].N);
-				else
-					// TODO: this value 85.45 can be used only with t_c = 1.0 & w = 0.0006 !!
-					rx_mat[i*size+j] *=  85.45 / eq_groups->groups[i].N;  // 898 if t_c = 1.0 & w = 0.0006
-				
-	}
-	
-	// Print distance matrix
-#ifdef TEST
-	double* dist = calloc(size*size, sizeof(double));
-	
-	for (int i = 0; i < size*size; i++)
-		dist[i] = pow(1.0/rx_mat[i], 1.0/6.0);
-		
-	my_pprint_matrix("sandbox/distance", dist, size);
-	free(dist);
-#endif
-	
-	
-	// Fill diagonal elements in R
-	double coef = zero_freq_coef + 2 * sing_freq_coef + doub_freq_coef;
-	
-	if (METHOD == 1)
-	{
-		for (i = 0; i < size; i++)
-		{
-			int id = i*size+i;    //    t_c = 1 & w = 6       t_c = 0.1 & w = 6
-		  //rx_mat[id] *= 85.45;  //    23.0469;              58.38
-		
-			for (j = 0; j < size; j++)
-				if (i != j)
-					rx_mat[id] += rx_mat[i*size+j] * coef * eq_groups->groups[j].N;
-		}
-	}
-	else
-	{
-		for (i = 0; i < size; i++)
-		{
-			int id = i*size+i;
-			rx_mat[id] = 0.0;
-			for (j = 0; j < size; j++)
-				if (i != j)
-					rx_mat[id] += rx_mat[i*size+j] * coef;
-		}
-
-		// Substract excessive terms from diagonal elements (not effective for method 1)
-		for (int counter = 0; counter < eq_groups->N; counter++)
-		{
-			proton_group* grp_tmp = &eq_groups->groups[counter];
-			for (i = 0; i < grp_tmp->N; i++)
-				for (j = 0; j < grp_tmp->N; j++)
-					if (i != j)
-					{
-						rx_mat[grp_tmp->group[i]*size+grp_tmp->group[i]] -= coef * rx_mat[grp_tmp->group[i] * size + grp_tmp->group[j]];
-					}
-		}
-	}
-	
-	// Fill the rest of R
-	coef = doub_freq_coef - zero_freq_coef;
-	
-	if (METHOD == 1)
-	{
-		for (i = 0; i < size; i++)
-			for (j = i; j < size; j++)
-				if (i != j)
-				{
-					rx_mat[i*size+j] = rx_mat[i*size+j] * coef * (eq_groups->groups[i].N * eq_groups->groups[j].N);
-					rx_mat[j*size+i] = rx_mat[i*size+j];
-				}
-	}
-	else
-	{
-		// Set cross-relaxation for protons within each group to 0	
-		for (int counter = 0; counter < eq_groups->N; counter++)
-		{
-			proton_group* grp_tmp = &eq_groups->groups[counter];
-			for (i = 0; i < grp_tmp->N; i++)
-				for (j = 0; j < grp_tmp->N; j++)
-					if (i != j)
-						rx_mat[grp_tmp->group[i]*size+grp_tmp->group[j]] = 0.0;
-		}
-	}
-
-		
-#ifdef TEST
-	my_pprint_matrix("sandbox/relaxation_matrix", rx_mat, size);
-#endif
-
-	// Get proton pairwise intencity
-	gsl_matrix* in = get_intensity(rx_mat, size, mixing_time);
-	
-	if (METHOD == 1)
-	{
-		for (i = 0; i < size; i++)
-			for (j = 0; j < size; j++)
-			{
-				if (i == j)
-					in->data[i*size+j] *= (double)(eq_groups->groups[i].N);
-				else
-					in->data[i*size+j] *= 1;
-			}
-	}
-	
-#ifdef TEST
-	my_pprint_matrix("sandbox/computed_matrix_raw", in->data, size);
-#endif
-	
-	//double test_mat[] = {1, 2, 3, 4, 2, 4, 2, 7, 3, 2, 1, 3, 4, 7, 3, 2};
-	//my_fprint_matrix(stdout, get_intensity(test_mat, 4, 1.00)->data, 4);
-	//getchar();
-	
-	// Get group pairwise intencity
-	double* grouped_in;
-	
-	if (METHOD == 1)
-	{
-		grouped_in = in->data;
-	}
-	else
-	{
-		grouped_in = calloc(eq_groups->N*eq_groups->N, sizeof(double));
-		collapse_groups_from_gsl(grouped_in, in, eq_groups);
-	}
-	
-#ifdef TEST
-	double multip = best_k(argv[4], grouped_in, eq_groups->N);
-	for (int i = 0; i < eq_groups->N*eq_groups->N; i++)
-		grouped_in[i] = multip*grouped_in[i];	
-
-	my_pprint_matrix("sandbox/computed_matrix", grouped_in, eq_groups->N);
-#endif	
-	
-#ifdef TEST
-	// TMP
-	float max_val = 0.0;
-	float mean = 0.0;
-	int count = 0;
-	for (i = 0; i < eq_groups->N-1; i++)
-		for (j = i+1; j < eq_groups->N; j++)
-		{
-			if (fabs(grouped_in[i*eq_groups->N+j]) >= max_val)
-				max_val = fabs(grouped_in[i]);
-				
-			mean += fabs(grouped_in[i*eq_groups->N+j]);
-			count ++;
-		}
-			
-	mean /= count;
-	printf("mean : %.6f\n", mean);
-#endif	
-	
-	// Add line to output file
-	
-	FILE* output = fopen(output_path, "a");
-	fprintf(output, "%s\t", complex_path);
-	double chi;
-	for (i = 0; i < argc-4; i++)
-	{
-		char* exp_path = argv[4+i];
-		chi = chi_score(exp_path, grouped_in, eq_groups->N, eq_groups);
-
-		if (i < argc-5)
-			fprintf(output, "%.6lf\t", chi);
-		else
-			fprintf(output, "%.6lf\n", chi);
-	}
-	fclose(output);
-
-#ifdef TEST
-	printf("chi: %.5f\n", chi);
-#endif
-
-	// Free
-	if (METHOD != 1)
-		free(grouped_in);
-		
-	free(proton_ids);
-	free_proton_groups(eq_groups);
-	free(rx_mat);
-	gsl_matrix_free(in);
-    return 0;
-}

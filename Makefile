@@ -1,11 +1,12 @@
 CC=gcc
-CFLAGS=-Wall -O3 -std=gnu99 -fPIC -DMETHOD=1 -DTEST
+CFLAGS=-Wall -O3 -std=gnu99 -fPIC -DTEST
 SRCDIR=src
 BUILDDIR=build
-LIBS=`pkg-config --cflags --libs gsl`
+LIBS=`pkg-config --cflags --libs gsl` -lmol2 -lm
 
-all: $(SRCDIR)/main.c
-	$(CC) $(CFLAGS) $< $(LIBS) -o $(BUILDDIR)/main
+all: $(SRCDIR)/main.c $(SRCDIR)/spring_pair_min.c
+	$(CC) $(CFLAGS) $(SRCDIR)/main.c $(LIBS) -o $(BUILDDIR)/main
+	$(CC) $(CFLAGS) $(SRCDIR)/spring_pair_min.c -lmol2 -lm -o $(BUILDDIR)/spring_pair_min
     
 clean:
 	rm -rf ./build/*

@@ -1,7 +1,11 @@
 make
-rm -f data/testing/CIL_04844_mod.spect
+
+rm -f data/noe_testing/some_cmin_xplor.spect
 xplor src/spectrum.inp
-cd data/testing
-python convert_spect.py CIL_04844_mod.pdb CIL_04844_mod.spect CIL_04844_mod_volume
+
+cd data/noe_testing
+python convert_spect.py some_cmin_xplor.pdb some_cmin_xplor.spect some_cmin_xplor_volume
 cd -
+
 ./run.sh
+

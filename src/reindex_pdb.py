@@ -23,7 +23,7 @@ with open(refpdb, 'r') as f:
 conv = {}
 with open(tarpdb, 'r') as f:		
 	for line in f.readlines():
-		if line[0:6] == "ATOM  " or line[0:6] == "HETATOM":
+		if line[0:6] == "ATOM  " or line[0:6] == "HETATM":
 			init_key = (line[17:20], line[12:16])
 			resi_id = line[22:26]
 			atom_id = line[6:11]
@@ -42,7 +42,7 @@ with open(tarpdb, 'r') as f:
 				if len(arr[key]) == 1:
 					conv.update({(resi_id, atom_id): ''.join([atom_id, key[1], key[0], resi_id, arr[key][0][1], key[1], key[0], arr[key][0][0]])})
 				else:
-					string = input('Enter line from reference pdb for atom %s %s %s %s in target pdb: ' % (atom_id, key[1], key[0], resi_id))
+					string = raw_input('Enter line from reference pdb for atom %s %s %s %s in target pdb: ' % (atom_id, key[1], key[0], resi_id))
 					
 					corr_atom_id = string[6:11]
 					corr_atom_nm = string[12:16]
@@ -51,7 +51,7 @@ with open(tarpdb, 'r') as f:
 					
 					conv.update({(resi_id, atom_id): ([atom_id, key[1], key[0], resi_id], [corr_atom_id,corr_atom_nm, corr_resi_nm, corr_resi_id])})
 			else:
-					string = input('Enter line from reference pdb for atom %s %s %s %s in target pdb: ' % (atom_id, key[1], key[0], resi_id))
+					string = raw_input('Enter line from reference pdb for atom %s %s %s %s in target pdb: ' % (atom_id, key[1], key[0], resi_id))
 					
 					corr_atom_id = string[6:11]
 					corr_atom_nm = string[12:16]

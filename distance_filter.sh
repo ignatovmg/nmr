@@ -1,11 +1,11 @@
 #!/bin/bash
 
-RESTRAINTS=data/cilengitit_rosi/correct_distance_restraints_reind.csv #data/cilengitit_rosi/correct_rest_schdrop_reind.csv #data/cilengitit_rosi/correct_distance_restraints_reind.csv
-PDB_FOLDER=data/1000k #data/cilengitit_rosi #data/RUN2_aligned
-OUT_FILE=sandbox/1000k/distance_filtered_all_linear_score #/md_dist #/distance_filtered_60k
-THREADS=6
+RESTRAINTS=data/formisha/dph/restraints.csv #data/cilengitit_rosi/correct_rest_schdrop_reind.csv #data/cilengitit_rosi/correct_distance_restraints_reind.csv
+PDB_FOLDER=data/runs/100D_min_k7 #data/cilengitit_rosi #data/RUN2_aligned
+OUT_FILE=sandbox/100D_min_k7/distance_filtered #/md_dist #/distance_filtered_60k
+THREADS=8
 
-mkdir sandbox/1000k
+mkdir sandbox/1M_min_k7
 
 for ID in $(seq 0 $((THREADS-1))) 
 do

@@ -1,15 +1,15 @@
 remarks file: nmr_relaxation/spectrum.inp
 remarks Prediction of a spectrum from a 3D structure
 
-structure @data/testing/CIL_04844_mod.psf end                      {*Read structure file.*}
-coor      @data/testing/CIL_04844_mod.pdb                             {*Read coordinates.*}
+structure @data/noe_testing/some_cmin_xplor.psf end                      {*Read structure file.*}
+coor      @data/noe_testing/some_cmin_xplor.pdb                             {*Read coordinates.*}
 
 relaxation
   
 {*==========================           Specify the physical parameters of the system.*}
  
     group      GROUP                         {*A group of spectra, GROUP, is defined.*}
-    {*unresolved GROUP 
+    unresolved GROUP 
     	select (id 6 or id 7)
     	select (id 53 or id 59) 
     	select (id 65 or id 66 or id 67) 
@@ -17,8 +17,8 @@ relaxation
     	select (id 78 or id 79 or id 80)
     	select (id 74 or id 75 or id 76)  
     	select (id 12 or id 13)                             {*Protons are unresolved.*}
-    end*}
-    
+    end
+
     {*unresolved GROUP 
     	select (id 34 or id 35 or id 36)
     	select (id 30 or id 31 or id 32)
@@ -26,7 +26,7 @@ relaxation
     end*}
     
     average 6                                         {*R-6 average to methyl groups.*}
-    omega      GROUP 6.0e+4                           {*Spectrometer frequency, in Hz.*}
+    omega      GROUP 6.0e+8                           {*Spectrometer frequency, in Hz.*}
     taucorrel  GROUP                                       {*Correlation times, in s.*}
         model rigid
         isotropic 1.0e-10                                          {*Order parameters.*}
@@ -47,12 +47,12 @@ relaxation
 
 {*==========================           Predict spectrum with the parameters for NOE.*}
 
-    set print data/testing/CIL_04844_mod.spect    end     {*Open the output file for the spectrum.*}
+    set print data/noe_testing/some_cmin_xplor.spect    end     {*Open the output file for the spectrum.*}
 
     predict NOE
         from (all) to (all)                               {*Select part of structure.*}
-        threshold 0.0                                   {*Minimum intensity printed.*}
-        cutoff 50.0                                          {*Distance cutoff, in A.*}
+        threshold 0.0                                    {*Minimum intensity printed.*}
+        cutoff 100.0                                          {*Distance cutoff, in A.*}
         DIAGonal on
     end
 
