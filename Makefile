@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -O3 -std=gnu99 -fPIC -DTEST
+CFLAGS=-Wall -O3 -std=gnu99 -fPIC -DTEST -g -pg
 SRCDIR=src
 BUILDDIR=build
 LIBS=`pkg-config --cflags --libs gsl` -lmol2 -lm
