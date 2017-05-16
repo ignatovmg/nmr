@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DIST_FILE=data/formisha/dph/restraints.csv
-DIR=data/formisha/dph
+DIST_FILE=data/good/restraints.csv
+DIR=data/good/
 
 SPR_COORD=${DIR}/springs.pdb
 MIN_INPUT=${DIR}/springs_input

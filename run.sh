@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # experiment
-NOESY=data/noe_testing/some_cmin_xplor_volume
+NOESY=data/good/tvol.csv
 
 # path to complexes
-PDB=data/formisha/dph/some_cmin.pdb
-PSF=data/formisha/dph/some_cmin.psf
-PRM=data/formisha/dph/par_all36_prot_met.prm
-RTF=data/formisha/dph/top_all36_prot_met.rtf
+PDB=data/good/md.pdb
+PSF=data/good/md.psf
+RTF=data/good/prm/top_all36_prot_met.rtf
+PRM=data/good/prm/par_all36_prot_met.prm
 GRP="sandbox/groups/eq_groups"
 EXP="sandbox/matrix/0"
 

@@ -26,7 +26,7 @@ relaxation
     end*}
     
     average 6                                         {*R-6 average to methyl groups.*}
-    omega      GROUP 6.0e+8                           {*Spectrometer frequency, in Hz.*}
+    omega      GROUP 6.0e+4                           {*Spectrometer frequency, in Hz.*}
     taucorrel  GROUP                                       {*Correlation times, in s.*}
         model rigid
         isotropic 1.0e-10                                          {*Order parameters.*}

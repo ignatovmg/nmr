@@ -1,10 +1,10 @@
 #!/bin/bash
 
-RESTRAINTS=data/cilengitit_rosi/correct_distance_restraints.csv  #data/formisha/dph/restraints.csv  #correct_distance_restraints.csv # test_restraints.csv #data/cilengitit_rosi/correct_rest_schdrop_reind.csv
-#data/1000k/CIL_466811.pdb #data/4_of_60k/C35_000130#001.pdb #data/4_of_60k/C52_000198#002.pdb #data/1000k/CIL_719715.pdb # 466811 965811 543475
-PDB_FILE=data/60k_min/CIL_033989.pdb
-PDB_FILE=data/cilengitit_rosi/CilMD.pdb  #sandbox/60k_min_k14/some_cmin_minimized.pdb
-OUT_FOLDER=./
+RESTRAINTS=data/formisha/dph/restraints.csv
+PDB_FILE=sandbox/100k_noemin_k5/some_cmin_noemin.pdb
+PDB_FILE=data/formisha/dph/some_cmin.pdb
+PDB_FILE=data/runs/100k_noemin_k5/CIL_006151.pdb
+OUT_FOLDER=sandbox/100k_noemin_k5
 
 NUM_PAIR=9
 

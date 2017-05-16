@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SPRK=10
+NOEK=50
 PDB_DIR=100k
 CONF_DIR=data/runs/raw/${PDB_DIR}
 RAW_DIR=${CONF_DIR}/raw
@@ -33,66 +33,22 @@ fi
 
 MAIN_DIR=data/good
 
-echo "proceed to min? SPRK=${SPRK}"
-read
+echo "proceed to min? NOEK=${NOEK}"
 
-RESTRAINTS=${MAIN_DIR}/restraints.csv
-SPRING_DIR=${MAIN_DIR}
-
-SPR_COORD=${SPRING_DIR}/springs.pdb
-MIN_INPUT=${SPRING_DIR}/springs_input
-
-
-> ${SPR_COORD}
-> ${MIN_INPUT}
-
-python -c '
-
-import sys
-
-out1 = open(sys.argv[2], "w")
-out2 = open(sys.argv[3], "w")
-
-fk = float(int(sys.argv[4]));
-
-with open(sys.argv[1], "r") as f:
-	lines = f.readlines()
-	out1.write("%i\n%s\n" % (len(lines) - 1, sys.argv[3]))
-	
-	for line in lines[1:]:
-		spt = line.split()
-		atom1 = int(spt[0])
-		atom2 = int(spt[1])
-		dst12 = (float(spt[2]) + float(spt[3]))/2.0
-		
-		out1.write("%.3f\n%.3f\n" % (dst12, fk))
-		out2.write("ATOM%7i\n" % atom1)
-		out2.write("ATOM%7i\n" % atom2)
-
-out2.write("END\n")
-
-out1.close()
-out2.close()	
-			
-' ${RESTRAINTS} ${MIN_INPUT} ${SPR_COORD} ${SPRK} || exit
-
-
-
-
-
-
-echo "springs generated, start min?"
-read
-
-PSF=${MAIN_DIR}/md.psf #data/cilengitit_rosi/mutated3_mod.psf #data/cilengitit_rosi/CilMD_mod.psf
+PSF=${MAIN_DIR}/md.psf
 RTF=${MAIN_DIR}/prm/top_all36_prot_met.rtf
 PRM=${MAIN_DIR}/prm/par_all36_prot_met.prm
 FIX=dummy
-SPR=${MAIN_DIR}/springs_input
 
 RAW_PDB=${COR_DIR}
-RES_DIR=data/runs/springs/${PDB_DIR}/fk${SPRK}
+RES_DIR=data/runs/noe/${PDB_DIR}/fk${NOEK}
 MIN_PDB=${RES_DIR}/pdb
+
+NOESY=data/good/tvol.csv
+python src/preprocess.py ${NOESY}
+
+GRP="sandbox/groups/eq_groups"
+EXP="sandbox/matrix/0"
 
 if [ -d ${RES_DIR} ]; then
 		echo "${RES_DIR} exists, are you sure?"
@@ -102,7 +58,6 @@ fi
 mkdir -p ${MIN_PDB}
 
 OUTPUT_PREFIX=${RES_DIR}/min
-
 
 CUR=0
 for SUFFIX in {0..9}; do
@@ -114,7 +69,7 @@ for SUFFIX in {0..9}; do
 		CUR=$((CUR+1))
 		echo "${PDB}: $CUR"
 	
-		ENERGY=$(./build/spring_pair_min ${PDB} ${PSF} ${PRM} ${RTF} ${FIX} ${SPR} ${OUT} | tail -n1) || ! echo "Error" || exit 1
+		ENERGY=$(./build/noe_min ${PDB} ${PSF} ${PRM} ${RTF} dummy dummy ${GRP} ${EXP} ${OUT} | tail -n1) || ! echo "Error" || exit 1
 		echo "${PDB} ${ENERGY}" >> ${OUTNAME}
 	done &
 done
